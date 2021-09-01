@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name Connectors_Molex)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Connectors_Molex.pretty-master/Connectors_Molex.pretty-master)(options "")(descr ""))
+  (lib (name Switch_E-SWITCH_TL3305AF160QG)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded/Switch_E-SWITCH_TL3305AF160QG)(options "")(descr ""))
+  (lib (name digikey-kicad-library-master)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded/digikey-kicad-library-master)(options "")(descr ""))
+  (lib (name Downloaded)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded)(options "")(descr ""))
+  (lib (name eec)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded/Switch_E-SWITCH_TL3305AF160QG/eec.pretty)(options "")(descr ""))
+)

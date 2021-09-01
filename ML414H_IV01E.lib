@@ -1,0 +1,23 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# ML414H_IV01E
+#
+DEF ML414H_IV01E BT 0 40 Y N 1 L N
+F0 "BT" -100 200 50 H V L BNN
+F1 "ML414H_IV01E" -100 -301 50 H V L BNN
+F2 "SEIKO_ML414H_IV01E" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Manufacturer Recommendation" 0 0 50 H I L BNN "STANDARD"
+F5 "SEIKO" 0 0 50 H I L BNN "MANUFACTURER"
+DRAW
+S 0 -150 25 150 0 0 0 F
+S 75 -75 100 75 0 0 0 F
+X ~ 1 -200 0 200 R 40 40 0 0 P 
+X ~ 2 300 0 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

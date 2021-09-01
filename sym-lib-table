@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Switch)(type Legacy)(uri E:/Documentos/KiCad/Libraries/Downloaded/Switch.lib)(options "")(descr ""))
+  (lib (name ML414H_IV01E)(type Legacy)(uri ${KIPRJMOD}/ML414H_IV01E.lib)(options "")(descr ""))
+  (lib (name Alcantara_v.1.0-cache)(type Legacy)(uri ${KIPRJMOD}/Alcantara_v.1.0-cache.lib)(options "")(descr ""))
+  (lib (name Alcantara_v.1.0-rescue)(type Legacy)(uri ${KIPRJMOD}/Alcantara_v.1.0-rescue.lib)(options "")(descr ""))
+  (lib (name E22_Radios_Zenith)(type Legacy)(uri E:/Documentos/KiCad/Libraries/E22_Radios_Zenith_Symbol/E22_Radios_Zenith.lib)(options "")(descr ""))
+)

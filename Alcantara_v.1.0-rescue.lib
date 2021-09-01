@@ -1,0 +1,124 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# E22-900M30S-E22_Radios_Zenith
+#
+DEF E22-900M30S-E22_Radios_Zenith U 0 40 Y Y 1 F N
+F0 "U" -400 750 50 H V C CNN
+F1 "E22-900M30S-E22_Radios_Zenith" 200 750 50 H V C CNN
+F2 "" 100 200 50 H I C CNN
+F3 "" 100 200 50 H I C CNN
+DRAW
+S -450 700 450 -650 0 1 0 f
+X GND 1 -550 600 100 R 50 50 1 1 W
+X VCC 10 -550 -450 100 R 50 50 1 1 W
+X GND 11 -550 -550 100 R 50 50 1 1 W
+X GND 12 550 -550 100 L 50 50 1 1 W
+X DIO1 13 550 -450 100 L 50 50 1 1 B
+X BUSY 14 550 -350 100 L 50 50 1 1 O
+X NRST 15 550 -250 100 L 50 50 1 1 I
+X MISO 16 550 -150 100 L 50 50 1 1 O
+X MOSI 17 550 -50 100 L 50 50 1 1 I
+X SCK 18 550 50 100 L 50 50 1 1 I
+X NSS 19 550 150 100 L 50 50 1 1 I
+X GND 2 -550 500 100 R 50 50 1 1 W
+X GND 20 550 400 100 L 50 50 1 1 W
+X ANT 21 550 500 100 L 50 50 1 1 O
+X GND 22 550 600 100 L 50 50 1 1 W
+X GND 3 -550 400 100 R 50 50 1 1 W
+X GND 4 -550 150 100 R 50 50 1 1 W
+X GND 5 -550 50 100 R 50 50 1 1 W
+X RXEN 6 -550 -50 100 R 50 50 1 1 I
+X TXEN 7 -550 -150 100 R 50 50 1 1 I
+X DIO2 8 -550 -250 100 R 50 50 1 1 B
+X VCC 9 -550 -350 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# MAX17205G+T-Alcantara_v.1.0-cache
+#
+DEF MAX17205G+T-Alcantara_v.1.0-cache IC 0 30 Y Y 1 F N
+F0 "IC" 1250 300 50 H V L CNN
+F1 "MAX17205G+T-Alcantara_v.1.0-cache" 1250 200 50 H V L CNN
+F2 "SON40P300X300X80-15N" 1250 100 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/MAX17205G+T.pdf" 1250 0 50 H I L CNN
+F4 "Battery Management MODELGAUGE M5 (MULTI-CELL) TDFN" 1250 -100 50 H I L CNN "Description"
+F5 "0.8" 1250 -200 50 H I L CNN "Height"
+F6 "700-MAX17205G+T" 1250 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX17205G%2bT?qs=sO%2FZ8XQFeM14gpZbIvukxg%3D%3D" 1250 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Maxim Integrated" 1250 -500 50 H I L CNN "Manufacturer_Name"
+F9 "MAX17205G+T" 1250 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1200 100 1200 -900 200 -900 200 100 N
+X REG3 1 0 0 200 R 50 50 0 0 P
+X AIN2 10 1400 -400 200 L 50 50 0 0 P
+X OD/SCL 11 1400 -300 200 L 50 50 0 0 P
+X DQ/SDA 12 1400 -200 200 L 50 50 0 0 P
+X CELLX 13 1400 -100 200 L 50 50 0 0 P
+X THRM 14 1400 0 200 L 50 50 0 0 P
+X EP 15 700 -1100 200 U 50 50 0 0 P
+X CSP 2 0 -100 200 R 50 50 0 0 P
+X REG2 3 0 -200 200 R 50 50 0 0 P
+X CSN 4 0 -300 200 R 50 50 0 0 P
+X VBATT 5 0 -400 200 R 50 50 0 0 P
+X CELL2 6 0 -500 200 R 50 50 0 0 P
+X CELL1 7 0 -600 200 R 50 50 0 0 P
+X ALRT1 8 1400 -600 200 L 50 50 0 0 P
+X AIN1 9 1400 -500 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# PJS008U-3000-0-Alcantara_v.1.0-cache
+#
+DEF PJS008U-3000-0-Alcantara_v.1.0-cache J 0 30 Y Y 1 F N
+F0 "J" 200 300 50 H V L CNN
+F1 "PJS008U-3000-0-Alcantara_v.1.0-cache" 200 200 50 H V L CNN
+F2 "PJS008U30000" 1400 100 50 H I L CNN
+F3 "https://www.yamaichi.de/uploads/media/PJS008U-3000.pdf" 1400 0 50 H I L CNN
+F4 "Memory Card Connectors MicroSD Card Conn Ver Dip Mnt Manual" 1400 -100 50 H I L CNN "Description"
+F5 "14.18" 950 -200 50 H I L CNN "Height"
+F6 "945-PJS008U-3000-0" 1400 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Yamaichi-Electronics/PJS008U-3000-0/?qs=nO3wRANIIvnp3f0XwG2X3A%3D%3D" 1400 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Yamaichi" 1400 -500 50 H I L CNN "Manufacturer_Name"
+F9 "PJS008U-3000-0" 1400 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 900 100 900 -500 200 -500 200 100 N
+X DAT2 1 0 0 200 R 50 50 0 0 P
+X CD/DAT3 2 0 -100 200 R 50 50 0 0 P
+X CMD 3 0 -200 200 R 50 50 0 0 P
+X VDD 4 0 -300 200 R 50 50 0 0 P
+X CLK 5 0 -400 200 R 50 50 0 0 P
+X VSS 6 1100 0 200 L 50 50 0 0 P
+X DAT0 7 1100 -100 200 L 50 50 0 0 P
+X DAT1 8 1100 -200 200 L 50 50 0 0 P
+X MH1 MH1 1100 -300 200 L 50 50 0 0 P
+X MH2 MH2 1100 -400 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# U_FL-R-SMT_10_-dk_Coaxial-Connectors-RF
+#
+DEF U_FL-R-SMT_10_-dk_Coaxial-Connectors-RF J 0 40 Y Y 1 F N
+F0 "J" -50 50 50 H V R CNN
+F1 "U_FL-R-SMT_10_-dk_Coaxial-Connectors-RF" 50 -100 50 H V L CNN
+F2 "digikey-footprints:Coax_Conn_U.FL" 200 200 60 H I L CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" 200 300 60 H I L CNN
+F4 "H9161CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "U.FL-R-SMT(10)" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Coaxial Connectors (RF)" 200 700 60 H I L CNN "Family"
+F8 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/hirose-electric-co-ltd/U.FL-R-SMT(10)/H9161CT-ND/2135256" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN U.FL RCPT STR 50 OHM SMD" 200 1000 60 H I L CNN "Description"
+F11 "Hirose Electric Co Ltd" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 2 -1 52 1789 -266 1 1 0 N -50 0 50 -25
+A 3 1 53 271 -1789 1 1 0 N 50 25 -50 0
+C 0 0 25 1 1 0 F
+X ~ 1 200 0 175 L 50 50 1 1 P
+X ~ 2 0 -200 145 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

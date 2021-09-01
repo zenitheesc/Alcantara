@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 142-0701-801_-_Modified
+D CONN SMA JACK STR 50OHM EDGE MNT
+K J502-ND
+F http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf
+$ENDCMP
+#
+#End Doc Library

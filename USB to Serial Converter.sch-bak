@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Interface-Controllers:FT232RL-REEL U?
+U 1 1 60D8D886
+P 4100 3900
+AR Path="/60D8D886" Ref="U?"  Part="1" 
+AR Path="/60D8A7EE/60D8D886" Ref="U?"  Part="1" 
+F 0 "U?" H 4300 4200 60  0000 C CNN
+F 1 "FT232RL-REEL" V 3950 3550 60  0000 C CNN
+F 2 "digikey-footprints:SSOP-28_W5.30mm" H 4300 4100 60  0001 L CNN
+F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 4300 4200 60  0001 L CNN
+F 4 "768-1007-1-ND" H 4300 4300 60  0001 L CNN "Digi-Key_PN"
+F 5 "FT232RL-REEL" H 4300 4400 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 4300 4500 60  0001 L CNN "Category"
+F 7 "Interface - Controllers" H 4300 4600 60  0001 L CNN "Family"
+F 8 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 4300 4700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/ftdi-future-technology-devices-international-ltd/FT232RL-REEL/768-1007-1-ND/1836402" H 4300 4800 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC USB FS SERIAL UART 28-SSOP" H 4300 4900 60  0001 L CNN "Description"
+F 11 "FTDI, Future Technology Devices International Ltd" H 4300 5000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4300 5100 60  0001 L CNN "Status"
+	1    4100 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 60E1BC52
+P 8850 2050
+F 0 "J?" H 8907 2517 50  0000 C CNN
+F 1 "USB_B_Micro" H 8907 2426 50  0000 C CNN
+F 2 "" H 9000 2000 50  0001 C CNN
+F 3 "~" H 9000 2000 50  0001 C CNN
+	1    8850 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8750 2450
+$Comp
+L power:GND #PWR?
+U 1 1 60E2020B
+P 8850 2500
+F 0 "#PWR?" H 8850 2250 50  0001 C CNN
+F 1 "GND" H 8855 2327 50  0000 C CNN
+F 2 "" H 8850 2500 50  0001 C CNN
+F 3 "" H 8850 2500 50  0001 C CNN
+	1    8850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2500 8850 2450
+$Comp
+L Device:R_Small R?
+U 1 1 60E207DE
+P 2600 3600
+F 0 "R?" H 2659 3646 50  0000 L CNN
+F 1 "R_Small" H 2659 3555 50  0000 L CNN
+F 2 "" H 2600 3600 50  0001 C CNN
+F 3 "~" H 2600 3600 50  0001 C CNN
+	1    2600 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60E21E35
+P 2600 4000
+F 0 "R?" H 2659 4046 50  0000 L CNN
+F 1 "R_Small" H 2659 3955 50  0000 L CNN
+F 2 "" H 2600 4000 50  0001 C CNN
+F 3 "~" H 2600 4000 50  0001 C CNN
+	1    2600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E2207D
+P 2600 4150
+F 0 "#PWR?" H 2600 3900 50  0001 C CNN
+F 1 "GND" H 2605 3977 50  0000 C CNN
+F 2 "" H 2600 4150 50  0001 C CNN
+F 3 "" H 2600 4150 50  0001 C CNN
+	1    2600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4150 2600 4100
+Wire Wire Line
+	2600 3900 2600 3800
+Wire Wire Line
+	2600 3350 2700 3350
+Connection ~ 2600 3800
+Wire Wire Line
+	2600 3800 2600 3700
+$Comp
+L Power_Protection:USBLC6-2SC6 U?
+U 1 1 60E25ED4
+P 9150 5050
+F 0 "U?" H 9150 5631 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 9150 5540 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9150 4550 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 9350 5400 50  0001 C CNN
+	1    9150 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9150 1850 2    50   Input ~ 0
+USB_CONN_V+
+NoConn ~ 9150 2250
+Text GLabel 9150 2050 2    50   Input ~ 0
+USB_CONN_D+
+Text GLabel 9150 2150 2    50   Input ~ 0
+USB_CONN_D-
+Text GLabel 8750 4950 0    50   Input ~ 0
+USB_CONN_D+
+Text GLabel 9550 4950 2    50   Input ~ 0
+USB_CONN_D-
+Text GLabel 8750 5150 0    50   Input ~ 0
+USB_D+
+Text GLabel 9550 5150 2    50   Input ~ 0
+USB_D-
+Wire Wire Line
+	2600 3800 3400 3800
+Text GLabel 3400 3700 0    50   Input ~ 0
+USB_D-
+Text GLabel 3400 3600 0    50   Input ~ 0
+USB_D+
+Text GLabel 2700 3350 2    50   Input ~ 0
+USB_CONN_V+
+Wire Wire Line
+	2600 3350 2600 3500
+$Comp
+L Device:C_Small C?
+U 1 1 60E31E88
+P 4800 3800
+F 0 "C?" V 4571 3800 50  0000 C CNN
+F 1 "100nF" V 4662 3800 50  0000 C CNN
+F 2 "" H 4800 3800 50  0001 C CNN
+F 3 "~" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E335D5
+P 5150 3950
+F 0 "#PWR?" H 5150 3700 50  0001 C CNN
+F 1 "GND" H 5155 3777 50  0000 C CNN
+F 2 "" H 5150 3950 50  0001 C CNN
+F 3 "" H 5150 3950 50  0001 C CNN
+	1    5150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3950 5150 3800
+Wire Wire Line
+	5150 3800 4900 3800
+Wire Wire Line
+	4700 3800 4500 3800
+$Comp
+L power:+5V #PWR?
+U 1 1 60E33F83
+P 4250 2850
+F 0 "#PWR?" H 4250 2700 50  0001 C CNN
+F 1 "+5V" H 4265 3023 50  0000 C CNN
+F 2 "" H 4250 2850 50  0001 C CNN
+F 3 "" H 4250 2850 50  0001 C CNN
+	1    4250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3400 4000 2900
+Wire Wire Line
+	4000 2900 4250 2900
+Wire Wire Line
+	4250 2900 4250 2850
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60E34BD6
+P 3650 2850
+F 0 "#PWR?" H 3650 2700 50  0001 C CNN
+F 1 "+3V3" H 3665 3023 50  0000 C CNN
+F 2 "" H 3650 2850 50  0001 C CNN
+F 3 "" H 3650 2850 50  0001 C CNN
+	1    3650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2850 3650 2900
+Wire Wire Line
+	3650 2900 3900 2900
+Wire Wire Line
+	3900 2900 3900 3400
+$Comp
+L power:GND #PWR?
+U 1 1 60E35BEC
+P 4250 3250
+F 0 "#PWR?" H 4250 3000 50  0001 C CNN
+F 1 "GND" H 4255 3077 50  0000 C CNN
+F 2 "" H 4250 3250 50  0001 C CNN
+F 3 "" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E361F1
+P 3650 3250
+F 0 "#PWR?" H 3650 3000 50  0001 C CNN
+F 1 "GND" H 3655 3077 50  0000 C CNN
+F 2 "" H 3650 3250 50  0001 C CNN
+F 3 "" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60E370A2
+P 4250 3050
+F 0 "C?" H 4342 3096 50  0000 L CNN
+F 1 "100nF" H 4342 3005 50  0000 L CNN
+F 2 "" H 4250 3050 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60E375B9
+P 3650 3050
+F 0 "C?" H 3850 3100 50  0000 R CNN
+F 1 "100nF" H 4050 3000 50  0000 R CNN
+F 2 "" H 3650 3050 50  0001 C CNN
+F 3 "~" H 3650 3050 50  0001 C CNN
+	1    3650 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2950 3650 2900
+Connection ~ 3650 2900
+Wire Wire Line
+	3650 3150 3650 3250
+Wire Wire Line
+	4250 3150 4250 3250
+Wire Wire Line
+	4250 2950 4250 2900
+Connection ~ 4250 2900
+$Comp
+L Device:LED_Small D?
+U 1 1 60E38D5C
+P 3050 4800
+F 0 "D?" H 3050 4593 50  0000 C CNN
+F 1 "RX_LED" H 3050 4684 50  0000 C CNN
+F 2 "" V 3050 4800 50  0001 C CNN
+F 3 "~" V 3050 4800 50  0001 C CNN
+	1    3050 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 60E39C1A
+P 2900 4900
+F 0 "D?" H 2900 5150 50  0000 C CNN
+F 1 "TX_LED" H 2900 5050 50  0000 C CNN
+F 2 "" V 2900 4900 50  0001 C CNN
+F 3 "~" V 2900 4900 50  0001 C CNN
+	1    2900 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 4800 3400 4800
+Wire Wire Line
+	3400 4900 3000 4900
+$Comp
+L Device:R_Small R?
+U 1 1 60E3ACF2
+P 2600 4800
+F 0 "R?" V 2796 4800 50  0000 C CNN
+F 1 "1K" V 2705 4800 50  0000 C CNN
+F 2 "" H 2600 4800 50  0001 C CNN
+F 3 "~" H 2600 4800 50  0001 C CNN
+	1    2600 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60E3B97E
+P 2500 4900
+F 0 "R?" V 2300 4900 50  0000 C CNN
+F 1 "1K" V 2400 4900 50  0000 C CNN
+F 2 "" H 2500 4900 50  0001 C CNN
+F 3 "~" H 2500 4900 50  0001 C CNN
+	1    2500 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 4800 2950 4800
+Wire Wire Line
+	2800 4900 2600 4900
+$Comp
+L power:+5V #PWR?
+U 1 1 60E3E0ED
+P 2200 4650
+F 0 "#PWR?" H 2200 4500 50  0001 C CNN
+F 1 "+5V" H 2215 4823 50  0000 C CNN
+F 2 "" H 2200 4650 50  0001 C CNN
+F 3 "" H 2200 4650 50  0001 C CNN
+	1    2200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4650 2200 4800
+Wire Wire Line
+	2200 4900 2400 4900
+Wire Wire Line
+	2500 4800 2200 4800
+Connection ~ 2200 4800
+Wire Wire Line
+	2200 4800 2200 4900
+NoConn ~ 3400 4700
+NoConn ~ 3400 4600
+NoConn ~ 3400 4500
+NoConn ~ 3400 4400
+NoConn ~ 3400 4300
+NoConn ~ 3400 4200
+NoConn ~ 3400 4100
+NoConn ~ 3400 3900
+NoConn ~ 4500 3900
+NoConn ~ 4500 4100
+NoConn ~ 4500 4200
+NoConn ~ 4500 4400
+NoConn ~ 4500 4500
+Text HLabel 3400 4000 0    50   Input ~ 0
+FTDI_RX
+Text HLabel 4500 4000 2    50   Input ~ 0
+FTDI_TX
+$Comp
+L power:GND #PWR?
+U 1 1 60F952ED
+P 4050 5400
+F 0 "#PWR?" H 4050 5150 50  0001 C CNN
+F 1 "GND" H 4055 5227 50  0000 C CNN
+F 2 "" H 4050 5400 50  0001 C CNN
+F 3 "" H 4050 5400 50  0001 C CNN
+	1    4050 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5400 4050 5250
+Wire Wire Line
+	4050 5250 4000 5250
+Wire Wire Line
+	3900 5250 3900 5100
+Wire Wire Line
+	4050 5250 4100 5250
+Wire Wire Line
+	4200 5250 4200 5100
+Connection ~ 4050 5250
+Wire Wire Line
+	4000 5250 4000 5100
+Connection ~ 4000 5250
+Wire Wire Line
+	4000 5250 3900 5250
+Wire Wire Line
+	4100 5100 4100 5250
+Connection ~ 4100 5250
+Wire Wire Line
+	4100 5250 4200 5250
+Wire Wire Line
+	4200 5250 4300 5250
+Wire Wire Line
+	4300 5250 4300 5100
+Connection ~ 4200 5250
+Wire Notes Line
+	7000 6500 7000 500 
+Wire Notes Line
+	7000 3700 11200 3700
+Text Notes 7150 750  0    98   Italic 20
+Micro USB Connector
+Text Notes 7100 3950 0    98   Italic 20
+USB ESD Protection
+Text Notes 600  800  0    98   Italic 20
+USB to Serial Converter
+$EndSCHEMATC
