@@ -63,35 +63,35 @@ $EndSheet
 $Comp
 L power:GND #PWR01
 U 1 1 61138544
-P 4400 7450
-F 0 "#PWR01" H 4400 7200 50  0001 C CNN
-F 1 "GND" H 4405 7277 50  0000 C CNN
-F 2 "" H 4400 7450 50  0001 C CNN
-F 3 "" H 4400 7450 50  0001 C CNN
-	1    4400 7450
+P 4700 7400
+F 0 "#PWR01" H 4700 7150 50  0001 C CNN
+F 1 "GND" H 4705 7227 50  0000 C CNN
+F 2 "" H 4700 7400 50  0001 C CNN
+F 3 "" H 4700 7400 50  0001 C CNN
+	1    4700 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 7450 4400 7400
+	4700 7400 4700 7350
 Wire Wire Line
-	4400 7400 4350 7400
+	4700 7350 4650 7350
 Wire Wire Line
-	4250 7400 4250 7300
+	4550 7350 4550 7250
 Wire Wire Line
-	4400 7400 4450 7400
+	4700 7350 4750 7350
 Wire Wire Line
-	4550 7400 4550 7300
-Connection ~ 4400 7400
+	4850 7350 4850 7250
+Connection ~ 4700 7350
 Wire Wire Line
-	4350 7300 4350 7400
-Connection ~ 4350 7400
+	4650 7250 4650 7350
+Connection ~ 4650 7350
 Wire Wire Line
-	4350 7400 4250 7400
+	4650 7350 4550 7350
 Wire Wire Line
-	4450 7300 4450 7400
-Connection ~ 4450 7400
+	4750 7250 4750 7350
+Connection ~ 4750 7350
 Wire Wire Line
-	4450 7400 4550 7400
+	4750 7350 4850 7350
 $Comp
 L Device:C_Small C5
 U 1 1 61143841
@@ -242,90 +242,90 @@ Wire Wire Line
 $Comp
 L dk_RF-Transceiver-Modules:ESP32-WROOM-32 MOD1
 U 1 1 60CDB9CF
-P 4250 5200
-F 0 "MOD1" H 4850 3350 60  0000 C CNN
-F 1 "ESP32-WROOM-32" V 4450 4200 60  0000 C CNN
-F 2 "digikey-footprints:ESP32-WROOM-32D" H 4450 5400 60  0001 L CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4450 5500 60  0001 L CNN
-F 4 "1904-1010-1-ND" H 4450 5600 60  0001 L CNN "Digi-Key_PN"
-F 5 "ESP32-WROOM-32" H 4450 5700 60  0001 L CNN "MPN"
-F 6 "RF/IF and RFID" H 4450 5800 60  0001 L CNN "Category"
-F 7 "RF Transceiver Modules" H 4450 5900 60  0001 L CNN "Family"
-F 8 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4450 6000 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305" H 4450 6100 60  0001 L CNN "DK_Detail_Page"
-F 10 "SMD MODULE, ESP32-D0WDQ6, 32MBIT" H 4450 6200 60  0001 L CNN "Description"
-F 11 "Espressif Systems" H 4450 6300 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4450 6400 60  0001 L CNN "Status"
-	1    4250 5200
+P 4550 5150
+F 0 "MOD1" H 5150 3300 60  0000 C CNN
+F 1 "ESP32-WROOM-32" V 4750 4150 60  0000 C CNN
+F 2 "digikey-footprints:ESP32-WROOM-32D" H 4750 5350 60  0001 L CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4750 5450 60  0001 L CNN
+F 4 "1904-1010-1-ND" H 4750 5550 60  0001 L CNN "Digi-Key_PN"
+F 5 "ESP32-WROOM-32" H 4750 5650 60  0001 L CNN "MPN"
+F 6 "RF/IF and RFID" H 4750 5750 60  0001 L CNN "Category"
+F 7 "RF Transceiver Modules" H 4750 5850 60  0001 L CNN "Family"
+F 8 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4750 5950 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305" H 4750 6050 60  0001 L CNN "DK_Detail_Page"
+F 10 "SMD MODULE, ESP32-D0WDQ6, 32MBIT" H 4750 6150 60  0001 L CNN "Description"
+F 11 "Espressif Systems" H 4750 6250 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4750 6350 60  0001 L CNN "Status"
+	1    4550 5150
 	1    0    0    -1  
 $EndComp
-Connection ~ 5200 4700
+Connection ~ 5500 4650
 Wire Wire Line
-	5200 4650 5200 4700
-Connection ~ 4750 4700
+	5500 4600 5500 4650
+Connection ~ 5050 4650
 Wire Wire Line
-	5200 4700 4750 4700
+	5500 4650 5050 4650
 Wire Wire Line
-	5200 4700 5200 4750
+	5500 4650 5500 4700
 $Comp
 L power:GND #PWR04
 U 1 1 6114294E
-P 5200 4950
-F 0 "#PWR04" H 5200 4700 50  0001 C CNN
-F 1 "GND" H 5205 4777 50  0000 C CNN
-F 2 "" H 5200 4950 50  0001 C CNN
-F 3 "" H 5200 4950 50  0001 C CNN
-	1    5200 4950
+P 5500 4900
+F 0 "#PWR04" H 5500 4650 50  0001 C CNN
+F 1 "GND" H 5505 4727 50  0000 C CNN
+F 2 "" H 5500 4900 50  0001 C CNN
+F 3 "" H 5500 4900 50  0001 C CNN
+	1    5500 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 61142948
-P 5200 4850
-F 0 "C2" H 5292 4896 50  0000 L CNN
-F 1 "10uF" H 5292 4805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5200 4850 50  0001 C CNN
-F 3 "~" H 5200 4850 50  0001 C CNN
-	1    5200 4850
+P 5500 4800
+F 0 "C2" H 5592 4846 50  0000 L CNN
+F 1 "10uF" H 5592 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 4800 50  0001 C CNN
+F 3 "~" H 5500 4800 50  0001 C CNN
+	1    5500 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 4700 4750 4750
+	5050 4650 5050 4700
 $Comp
 L power:GND #PWR02
 U 1 1 611407CF
-P 4750 4950
-F 0 "#PWR02" H 4750 4700 50  0001 C CNN
-F 1 "GND" H 4755 4777 50  0000 C CNN
-F 2 "" H 4750 4950 50  0001 C CNN
-F 3 "" H 4750 4950 50  0001 C CNN
-	1    4750 4950
+P 5050 4900
+F 0 "#PWR02" H 5050 4650 50  0001 C CNN
+F 1 "GND" H 5055 4727 50  0000 C CNN
+F 2 "" H 5050 4900 50  0001 C CNN
+F 3 "" H 5050 4900 50  0001 C CNN
+	1    5050 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 611407C9
-P 4750 4850
-F 0 "C1" H 4842 4896 50  0000 L CNN
-F 1 "0.1uF" H 4842 4805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4750 4850 50  0001 C CNN
-F 3 "~" H 4750 4850 50  0001 C CNN
-	1    4750 4850
+P 5050 4800
+F 0 "C1" H 5142 4846 50  0000 L CNN
+F 1 "0.1uF" H 5142 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 4800 50  0001 C CNN
+F 3 "~" H 5050 4800 50  0001 C CNN
+	1    5050 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR03
 U 1 1 61138053
-P 5200 4650
-F 0 "#PWR03" H 5200 4500 50  0001 C CNN
-F 1 "+3V3" H 5215 4823 50  0000 C CNN
-F 2 "" H 5200 4650 50  0001 C CNN
-F 3 "" H 5200 4650 50  0001 C CNN
-	1    5200 4650
+P 5500 4600
+F 0 "#PWR03" H 5500 4450 50  0001 C CNN
+F 1 "+3V3" H 5515 4773 50  0000 C CNN
+F 2 "" H 5500 4600 50  0001 C CNN
+F 3 "" H 5500 4600 50  0001 C CNN
+	1    5500 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 4700 4750 4700
+	4750 4650 5050 4650
 $Comp
 L Device:C_Small C4
 U 1 1 611FBCA3
@@ -441,32 +441,32 @@ Wire Wire Line
 Connection ~ 7750 4500
 Wire Wire Line
 	7750 4500 7900 4500
-Text GLabel 3700 5300 0    50   Input ~ 0
+Text GLabel 4000 5250 0    50   Input ~ 0
 EN
-Text GLabel 3700 5400 0    50   Input ~ 0
+Text GLabel 4000 5350 0    50   Input ~ 0
 IO0
 Wire Wire Line
-	3700 5300 3750 5300
+	4000 5250 4050 5250
 Wire Wire Line
-	3700 5400 3750 5400
+	4000 5350 4050 5350
 Wire Wire Line
-	3700 5500 3750 5500
+	4000 5450 4050 5450
 Wire Wire Line
-	3700 5600 3750 5600
+	4000 5550 4050 5550
 Wire Wire Line
-	3700 5700 3750 5700
+	4000 5650 4050 5650
 Wire Wire Line
-	3700 5800 3750 5800
+	4000 5750 4050 5750
 Wire Wire Line
-	3700 5900 3750 5900
+	4000 5850 4050 5850
 Wire Wire Line
-	3700 6000 3750 6000
+	4000 5950 4050 5950
 Wire Wire Line
-	3700 6100 3750 6100
+	4000 6050 4050 6050
 Wire Wire Line
-	3700 6200 3750 6200
+	4000 6150 4050 6150
 Wire Wire Line
-	3700 6300 3750 6300
+	4000 6250 4050 6250
 Text GLabel 3950 3250 2    50   Input ~ 0
 EN
 Connection ~ 3400 3250
@@ -526,31 +526,31 @@ Wire Wire Line
 	8450 4700 8450 4750
 Wire Wire Line
 	8450 4750 8500 4750
-Text GLabel 5200 6100 2    50   Input ~ 0
+Text GLabel 5500 6050 2    50   Input ~ 0
 FTDI_RX
-Text GLabel 5200 6200 2    50   Input ~ 0
+Text GLabel 5500 6150 2    50   Input ~ 0
 FTDI_TX
 Wire Wire Line
-	5200 6200 5150 6200
+	5500 6150 5450 6150
 Wire Wire Line
-	5150 6100 5200 6100
-Text GLabel 3700 6300 0    50   Input ~ 0
+	5450 6050 5500 6050
+Text GLabel 4000 6250 0    50   Input ~ 0
 GPS_RX
-Text GLabel 3700 6200 0    50   Input ~ 0
+Text GLabel 4000 6150 0    50   Input ~ 0
 GPS_TX
-Text GLabel 3700 6600 0    50   Input ~ 0
+Text GLabel 4000 6550 0    50   Input ~ 0
 GAUGE_SDA
-Text GLabel 3700 6700 0    50   Input ~ 0
+Text GLabel 4000 6650 0    50   Input ~ 0
 GAUGE_SCL
 Wire Wire Line
-	3700 6700 3750 6700
+	4000 6650 4050 6650
 Wire Wire Line
-	3700 6600 3750 6600
-Text GLabel 3700 6500 0    50   Input ~ 0
+	4000 6550 4050 6550
+Text GLabel 4000 6450 0    50   Input ~ 0
 VSPI_MISO
-Text GLabel 3700 6800 0    50   Input ~ 0
+Text GLabel 4000 6750 0    50   Input ~ 0
 VSPI_MOSI
-Text GLabel 3700 6400 0    50   Input ~ 0
+Text GLabel 4000 6350 0    50   Input ~ 0
 VSPI_SCLK
 NoConn ~ 9350 1950
 NoConn ~ 9350 2100
@@ -564,34 +564,34 @@ NoConn ~ 9350 4700
 NoConn ~ 9350 4850
 NoConn ~ 9300 5000
 NoConn ~ 9300 5150
-NoConn ~ 5150 6000
-NoConn ~ 5150 5900
-NoConn ~ 5150 5800
-NoConn ~ 5150 5700
-NoConn ~ 5150 5600
-NoConn ~ 5150 5500
-Text GLabel 3700 6000 0    50   Input ~ 0
+NoConn ~ 5450 5950
+NoConn ~ 5450 5850
+NoConn ~ 5450 5750
+NoConn ~ 5450 5650
+NoConn ~ 5450 5550
+NoConn ~ 5450 5450
+Text GLabel 4000 5950 0    50   Input ~ 0
 RGB_LED_B
-Text GLabel 5200 6500 2    50   Input ~ 0
+Text GLabel 5500 6450 2    50   Input ~ 0
 BUTTON_1
-Text GLabel 5200 6400 2    50   Input ~ 0
+Text GLabel 5500 6350 2    50   Input ~ 0
 BUTTON_2
 NoConn ~ 9250 5850
 NoConn ~ 9250 6000
 NoConn ~ 9200 5350
 NoConn ~ 9200 5500
 NoConn ~ 9200 5650
-Text GLabel 3700 7100 0    50   Input ~ 0
+Text GLabel 4000 7050 0    50   Input ~ 0
 RADIO_NRST
-Text GLabel 5200 5400 2    50   Input ~ 0
+Text GLabel 5500 5350 2    50   Input ~ 0
 RADIO_BUSY
-Text GLabel 5200 6700 2    50   Input ~ 0
+Text GLabel 5500 6650 2    50   Input ~ 0
 RADIO_DIO1
-Text GLabel 5200 6600 2    50   Input ~ 0
+Text GLabel 5500 6550 2    50   Input ~ 0
 RADIO_DIO2
-Text GLabel 3700 5900 0    50   Input ~ 0
+Text GLabel 4000 5850 0    50   Input ~ 0
 RADIO_TXEN
-Text GLabel 3700 5600 0    50   Input ~ 0
+Text GLabel 4000 5550 0    50   Input ~ 0
 RADIO_RXEN
 NoConn ~ 9200 3400
 NoConn ~ 9200 3550
@@ -600,37 +600,37 @@ NoConn ~ 9200 3850
 NoConn ~ 9200 4000
 NoConn ~ 9200 4150
 Wire Wire Line
-	3700 6400 3750 6400
+	4000 6350 4050 6350
 Wire Wire Line
-	3700 6500 3750 6500
+	4000 6450 4050 6450
 Wire Wire Line
-	3700 7000 3750 7000
+	4000 6950 4050 6950
 Wire Wire Line
-	3700 7100 3750 7100
-Text GLabel 3700 5500 0    50   Input ~ 0
+	4000 7050 4050 7050
+Text GLabel 4000 5450 0    50   Input ~ 0
 BUZZER
 Wire Wire Line
-	3700 6900 3750 6900
+	4000 6850 4050 6850
 NoConn ~ 9350 6200
-Text GLabel 3700 6100 0    50   Input ~ 0
+Text GLabel 4000 6050 0    50   Input ~ 0
 GPS_RESET
 Wire Wire Line
-	3700 6800 3750 6800
+	4000 6750 4050 6750
 NoConn ~ 9200 2400
-Text GLabel 3700 7000 0    50   Input ~ 0
+Text GLabel 4000 6950 0    50   Input ~ 0
 GPS_EXTINT
 NoConn ~ 9200 2250
-Text GLabel 5200 5300 2    50   Input ~ 0
+Text GLabel 5500 5250 2    50   Input ~ 0
 GAUGE_ALRT1
 NoConn ~ 9150 1200
 Wire Wire Line
-	5150 6400 5200 6400
+	5450 6350 5500 6350
 Wire Wire Line
-	5150 6500 5200 6500
+	5450 6450 5500 6450
 Wire Wire Line
-	5150 6600 5200 6600
+	5450 6550 5500 6550
 Wire Wire Line
-	5150 6700 5200 6700
+	5450 6650 5500 6650
 $Comp
 L power:+3V3 #PWR053
 U 1 1 614C013F
@@ -678,26 +678,26 @@ Wire Wire Line
 	8050 6200 8050 5900
 Wire Wire Line
 	7850 6200 7850 5900
-Text Notes 3050 6300 2    100  ~ 0
+Text Notes 3350 6250 2    100  ~ 0
 Serial 2
 Wire Notes Line
-	3200 6250 3100 6250
+	3500 6200 3400 6200
 Wire Notes Line
-	3200 6200 3300 6200
+	3500 6150 3600 6150
 Wire Notes Line
-	3200 6300 3300 6300
+	3500 6250 3600 6250
 Wire Notes Line
-	3200 6200 3200 6300
-Text Notes 5800 6200 0    100  ~ 0
+	3500 6150 3500 6250
+Text Notes 6100 6150 0    100  ~ 0
 Serial 0
 Wire Notes Line
-	5700 6150 5800 6150
+	6000 6100 6100 6100
 Wire Notes Line
-	5700 6200 5600 6200
+	6000 6150 5900 6150
 Wire Notes Line
-	5700 6100 5600 6100
+	6000 6050 5900 6050
 Wire Notes Line
-	5700 6200 5700 6100
+	6000 6150 6000 6050
 Text Notes 700  7600 0    50   ~ 0
 Verificar que os pinos conectados em VP e VN não flutuarão, \nse não um pullup será necessário nesses pinos. Ele não possui\npullup interno.
 $Comp
@@ -794,9 +794,9 @@ Text Notes 12150 1550 0    50   ~ 0
 >Refletir sobre quais decisões me trouxeram até aqui
 Text Notes 12250 1350 0    50   ~ 0
 > Ou ligar junto ao RGB principal
-Text GLabel 3700 5800 0    50   Input ~ 0
+Text GLabel 4000 5750 0    50   Input ~ 0
 GPS_TIMEPULSE
-Text GLabel 3700 6900 0    50   Input ~ 0
+Text GLabel 4000 6850 0    50   Input ~ 0
 SDCARD_NSS
 Wire Wire Line
 	8050 6200 8200 6200
@@ -809,13 +809,13 @@ Text Notes 12150 1700 0    50   ~ 0
 Wire Wire Line
 	3400 3250 3750 3250
 Wire Wire Line
-	5200 5300 5150 5300
+	5500 5250 5450 5250
 Wire Wire Line
-	5200 5400 5150 5400
+	5500 5350 5450 5350
 Wire Wire Line
-	4450 4700 4450 5100
-NoConn ~ 4100 5500
-NoConn ~ 4150 5800
+	4750 4650 4750 5050
+NoConn ~ 4400 5450
+NoConn ~ 4450 5750
 Text GLabel 9750 3100 0    50   Input ~ 0
 VSPI_MISO
 Text GLabel 9750 2800 0    50   Input ~ 0
@@ -830,7 +830,7 @@ Text GLabel 1800 1450 0    50   Input ~ 0
 VSPI_SCLK
 Text GLabel 9750 2950 0    50   Input ~ 0
 RADIO_NSS
-Text GLabel 3700 5700 0    50   Input ~ 0
+Text GLabel 4000 5650 0    50   Input ~ 0
 RADIO_NSS
 Text GLabel 1800 1750 0    50   Input ~ 0
 SDCARD_NSS
@@ -952,21 +952,21 @@ Wire Wire Line
 	8300 1300 8300 1200
 Text Notes 5150 2000 0    50   ~ 0
 Os resistores de pull-up ou pull-down devem ser utilizados um\npor vez, dependendo da tensão da flash interna da ESP.\n\nIsso ocorre pois o pino 12 é um pino lido no boot para selecionar\na tensão que alimenta a flash interna: \n1 -> 1.8V\n0 -> 3.3V\n\nLer mais sobre aqui:\nhttps://docs.espressif.com/projects/esp-idf/en/\nlatest/esp32/api-reference/peripherals/sd_pullup_requirements.\nhtml#no-pull-up-on-gpio12
-NoConn ~ 4100 5600
-NoConn ~ 4100 5400
-NoConn ~ 4100 5700
-NoConn ~ 4150 6100
-Text Notes 2250 5650 0    50   ~ 0
+NoConn ~ 4400 5550
+NoConn ~ 4400 5350
+NoConn ~ 4400 5650
+NoConn ~ 4450 6050
+Text Notes 2550 5600 0    50   ~ 0
 Internal Pull-down
-Text Notes 2250 5550 0    50   ~ 0
+Text Notes 2550 5500 0    50   ~ 0
 Internal Pull-down
-Text Notes 2250 5450 0    50   ~ 0
+Text Notes 2550 5400 0    50   ~ 0
 Internal Pull-up
-Text Notes 2250 6100 0    50   ~ 0
+Text Notes 2550 6050 0    50   ~ 0
 Internal Pull-up
-Text Notes 2250 5850 0    50   ~ 0
+Text Notes 2550 5800 0    50   ~ 0
 Internal Pull-down
-Text Notes 2250 5750 0    50   ~ 0
+Text Notes 2550 5700 0    50   ~ 0
 Internal Pull-up
 Wire Wire Line
 	8150 6050 8150 5900
@@ -1171,7 +1171,7 @@ Text Notes 550  2750 0    98   Italic 20
 Botão de Reset\n
 Text Notes 4850 700  0    98   Italic 20
 ESP32 Flash Voltage Pin\n
-Text Notes 550  4450 0    98   Italic 20
+Text Notes 600  4450 0    98   Italic 20
 ESP32
 Text Notes 7050 2750 0    98   Italic 20
 Auto Upload
