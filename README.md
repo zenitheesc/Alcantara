@@ -38,7 +38,7 @@
 
 ## Environment and tools
 
-`This system was designed using KiCad EDA v.5.1.6.`
+`This system was designed using KiCad EDA v.5.1.10.`
 
 ## Board
 
