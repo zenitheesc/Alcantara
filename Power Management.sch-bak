@@ -529,24 +529,14 @@ Wire Wire Line
 	3700 6050 3700 6800
 Wire Wire Line
 	2050 6400 2050 6800
-Wire Wire Line
-	2400 6100 2300 6100
-Wire Wire Line
-	2300 6100 2300 5650
 Connection ~ 2300 5650
 Wire Wire Line
 	2300 5650 3800 5650
-Wire Wire Line
-	3350 6100 3450 6100
-Wire Wire Line
-	3450 6100 3450 5750
 Wire Wire Line
 	3450 5750 3800 5750
 NoConn ~ 4600 5850
 Text Notes 800  7550 0    50   ~ 0
 O componente TLV809ED29DBZR é um surpervisor de tensão com saída push-pull.\nQuando a tensão de alimentação está acima do seu threshold de 2.93V ele leva a sua saída a VCC, habilitando o Boost Converter. \nCaso a tensão em VDD caia abaixo do seu threshold a saída será puxada para 0V, desligando o sistema
-Wire Wire Line
-	2900 6800 2900 6550
 $Comp
 L power:GND #PWR0111
 U 1 1 612ACC1E
@@ -559,21 +549,21 @@ F 3 "" H 2900 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:TLV809ED29DBZR IC1
+L Alcantara_v.1.0-rescue:TLV809ED29DBZR-SamacSys_Parts IC1
 U 1 1 612EBEE6
-P 2400 6200
-F 0 "IC1" H 2875 6565 50  0000 C CNN
-F 1 "TLV809ED29DBZR" H 2875 6474 50  0000 C CNN
-F 2 "SamacSys_Parts:SOT95P237X112-3N" H 3450 6300 50  0001 L CNN
-F 3 "https://www.ti.com/lit/ds/symlink/tlv809e.pdf?ts=1623232092527&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV809E%253FkeyMatch%253DTLV809EF30DBZR%2526tisearch%253Dsearch-everything%2526usecase%253DOPN" H 3450 6200 50  0001 L CNN
-F 4 "Supervisory Circuits Low-power voltage supervisor (reset IC) with active-low, push-pull output 3-SOT-23 -40 to 125" H 3450 6100 50  0001 L CNN "Description"
-F 5 "1.12" H 3450 6000 50  0001 L CNN "Height"
-F 6 "595-TLV809ED29DBZR" H 3450 5900 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV809ED29DBZR?qs=CiayqK2gdcJa0MXo3ZjyIg%3D%3D" H 3450 5800 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Texas Instruments" H 3450 5700 50  0001 L CNN "Manufacturer_Name"
-F 9 "TLV809ED29DBZR" H 3450 5600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2400 6200
-	1    0    0    -1  
+P 3400 6100
+F 0 "IC1" H 3875 6465 50  0000 C CNN
+F 1 "TLV809ED29DBZR" H 3875 6374 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT95P237X112-3N" H 4450 6200 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv809e.pdf?ts=1623232092527&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTLV809E%253FkeyMatch%253DTLV809EF30DBZR%2526tisearch%253Dsearch-everything%2526usecase%253DOPN" H 4450 6100 50  0001 L CNN
+F 4 "Supervisory Circuits Low-power voltage supervisor (reset IC) with active-low, push-pull output 3-SOT-23 -40 to 125" H 4450 6000 50  0001 L CNN "Description"
+F 5 "1.12" H 4450 5900 50  0001 L CNN "Height"
+F 6 "595-TLV809ED29DBZR" H 4450 5800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV809ED29DBZR?qs=CiayqK2gdcJa0MXo3ZjyIg%3D%3D" H 4450 5700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 4450 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "TLV809ED29DBZR" H 4450 5500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3400 6100
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
@@ -589,7 +579,7 @@ F 3 "~" H 5500 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:MAX17201G+T IC2
+L Alcantara_v.1.0-rescue:MAX17201G+T-SamacSys_Parts IC2
 U 1 1 613217CA
 P 5750 2450
 F 0 "IC2" H 6450 2865 50  0000 C CNN
@@ -753,4 +743,14 @@ Text Notes 750  2450 0    50   ~ 0
 O Mosfet tipo P em série com a bateria faz a função de\nproteção contra polaridade reversa.\n\nCaso a bateria seja invertida ele não conduzirá, protegendo\no circuito.\n\nNão utilizei um zener pois a tensão Vgs máxima permitida\nestá acima da que submeteremos no mosfet.\n\nAlém disso, descartei a necessidade de utilizar um resistor\nno gate, pois esse mosfet ficará constantemente ligado,\nentão o fenômeno de ringing não deve acontecer.\n\nAssitir esse vídeo para saber mais:\nhttps://www.youtube.com/watch?v=IrB-FPcv1Dc
 Text Notes 750  3700 0    50   ~ 0
 O componente MAX17201 é um monitor de bateria\nde célula única via I2C. Atentar para a diferença com\no MAX17211, que utiliza o protocolo 1-Wire.\n\nEste componente vai fornecer dados como a corrente que flui\npela bateria (por meio do shunt de 0.01ohm) e a tensão nela.\n\nAtentar-se também sobre a diferença com o MAX17205,\nque é um monitor para múltiplas células.
+Wire Wire Line
+	3400 6000 3450 6000
+Wire Wire Line
+	3450 6000 3450 5750
+Wire Wire Line
+	2450 6000 2300 6000
+Wire Wire Line
+	2300 6000 2300 5650
+Wire Wire Line
+	2900 6450 2900 6800
 $EndSCHEMATC

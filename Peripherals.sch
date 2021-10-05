@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L dk_Interface-Controllers:FT232RL-REEL U?
+L Alcantara_v.1.0-rescue:FT232RL-REEL-dk_Interface-Controllers U?
 U 1 1 60D8D886
 P 9500 3450
 AR Path="/60D8D886" Ref="U?"  Part="1" 
@@ -36,9 +36,11 @@ F 12 "Active" H 9700 4650 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J4
+L Alcantara_v.1.0-rescue:USB_B_Micro-Connector J4
 U 1 1 60E1BC52
 P 2300 1900
+AR Path="/60E1BC52" Ref="J4"  Part="1" 
+AR Path="/60D8A7EE/60E1BC52" Ref="J4"  Part="1" 
 F 0 "J4" H 2357 2367 50  0000 C CNN
 F 1 "USB_B_Micro" H 2357 2276 50  0000 C CNN
 F 2 "digikey-footprints:USB_Micro_B_Female_10118192" H 2450 1850 50  0001 C CNN
@@ -102,17 +104,6 @@ Wire Wire Line
 Connection ~ 8000 3350
 Wire Wire Line
 	8000 3350 8000 3250
-$Comp
-L Power_Protection:USBLC6-2SC6 U6
-U 1 1 60E25ED4
-P 4550 1850
-F 0 "U6" H 4700 2400 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 4950 2250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4550 1350 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4750 2200 50  0001 C CNN
-	1    4550 1850
-	1    0    0    -1  
-$EndComp
 Text GLabel 2600 1700 2    50   Input ~ 0
 USB_CONN_V+
 NoConn ~ 2600 2100
@@ -120,14 +111,8 @@ Text GLabel 2600 1900 2    50   Input ~ 0
 USB_CONN_D+
 Text GLabel 2600 2000 2    50   Input ~ 0
 USB_CONN_D-
-Text GLabel 4150 1750 0    50   Input ~ 0
-USB_CONN_D+
-Text GLabel 4950 1750 2    50   Input ~ 0
+Text GLabel 5600 1800 2    50   Input ~ 0
 USB_CONN_D-
-Text GLabel 4150 1950 0    50   Input ~ 0
-USB_D+
-Text GLabel 4950 1950 2    50   Input ~ 0
-USB_D-
 Wire Wire Line
 	8000 3350 8800 3350
 Text GLabel 8800 3250 0    50   Input ~ 0
@@ -510,31 +495,16 @@ FTDI_DTR
 Text HLabel 9900 3750 2    50   Input ~ 0
 FTDI_RTS
 $Comp
-L power:GND #PWR055
-U 1 1 614ABBBD
-P 4550 2300
-F 0 "#PWR055" H 4550 2050 50  0001 C CNN
-F 1 "GND" H 4555 2127 50  0000 C CNN
-F 2 "" H 4550 2300 50  0001 C CNN
-F 3 "" H 4550 2300 50  0001 C CNN
-	1    4550 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 2300 4550 2250
-$Comp
 L power:+3V3 #PWR054
 U 1 1 614AEBD0
-P 4550 1400
-F 0 "#PWR054" H 4550 1250 50  0001 C CNN
-F 1 "+3V3" H 4565 1573 50  0000 C CNN
-F 2 "" H 4550 1400 50  0001 C CNN
-F 3 "" H 4550 1400 50  0001 C CNN
-	1    4550 1400
+P 5550 1750
+F 0 "#PWR054" H 5550 1600 50  0001 C CNN
+F 1 "+3V3" H 5565 1923 50  0000 C CNN
+F 2 "" H 5550 1750 50  0001 C CNN
+F 3 "" H 5550 1750 50  0001 C CNN
+	1    5550 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 1400 4550 1450
 $Comp
 L Device:R_Small R31
 U 1 1 60E15770
@@ -709,7 +679,7 @@ F 3 "" H 6400 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:KSC941JLFS S1
+L Alcantara_v.1.0-rescue:KSC941JLFS-SamacSys_Parts S1
 U 1 1 60F54AAA
 P 2500 7450
 F 0 "S1" V 3950 7650 50  0000 C CNN
@@ -751,7 +721,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 4150 2150 4150
 $Comp
-L SamacSys_Parts:2N7002NXAKR Q3
+L Alcantara_v.1.0-rescue:2N7002NXAKR-SamacSys_Parts Q3
 U 1 1 615A524B
 P 5150 4600
 F 0 "Q3" H 5250 4900 50  0000 L CNN
@@ -768,7 +738,7 @@ F 9 "2N7002NXAKR" H 5600 3850 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:Buzzer_SMD_AST0760MCTRQ U5
+L Alcantara_v.1.0-rescue:Buzzer_SMD_AST0760MCTRQ-SamacSys_Parts U5
 U 1 1 615A94E9
 P 5450 3900
 F 0 "U5" V 5496 3722 50  0000 R CNN
@@ -784,7 +754,7 @@ Wire Wire Line
 	5450 4150 5450 4200
 Connection ~ 5100 6850
 $Comp
-L SamacSys_Parts:KSC941JLFS S2
+L Alcantara_v.1.0-rescue:KSC941JLFS-SamacSys_Parts S2
 U 1 1 60F919E7
 P 5650 7450
 F 0 "S2" V 7100 7650 50  0000 C CNN
@@ -801,4 +771,54 @@ F 9 "KSC941JLFS" H 6700 6850 50  0001 L CNN "Manufacturer_Part_Number"
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 5650 6250
+$Comp
+L SamacSys_Parts:TPD4S009DCKRG4 U6
+U 1 1 615EC0AE
+P 4400 1800
+F 0 "U6" H 4950 2065 50  0000 C CNN
+F 1 "TPD4S009DCKRG4" H 4950 1974 50  0000 C CNN
+F 2 "SOT65P210X110-6N" H 5350 1900 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tpd4s009.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&ts=1605773480012&ref_url=https%253A%252F%252Fwww.mouser.in%252F" H 5350 1800 50  0001 L CNN
+F 4 "ESD Suppressors / TVS Diodes 4 Ch Display/HDMI Port ESD Protection" H 5350 1700 50  0001 L CNN "Description"
+F 5 "1.1" H 5350 1600 50  0001 L CNN "Height"
+F 6 "595-TPD4S009DCKRG4" H 5350 1500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPD4S009DCKRG4/?qs=XGzIaZb%2FFYJF2wO%2FD%252BYU0w%3D%3D" H 5350 1400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 5350 1300 50  0001 L CNN "Manufacturer_Name"
+F 9 "TPD4S009DCKRG4" H 5350 1200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4400 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1800 4300 1800
+Wire Wire Line
+	4400 2000 4300 2000
+Wire Wire Line
+	4400 1900 4350 1900
+Wire Wire Line
+	4350 1900 4350 2050
+Wire Wire Line
+	5500 1800 5600 1800
+Wire Wire Line
+	5500 2000 5600 2000
+Wire Wire Line
+	5500 1900 5550 1900
+Wire Wire Line
+	5550 1900 5550 1750
+$Comp
+L power:GND #PWR0118
+U 1 1 61600071
+P 4350 2050
+F 0 "#PWR0118" H 4350 1800 50  0001 C CNN
+F 1 "GND" H 4355 1877 50  0000 C CNN
+F 2 "" H 4350 2050 50  0001 C CNN
+F 3 "" H 4350 2050 50  0001 C CNN
+	1    4350 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 2000 0    50   Input ~ 0
+USB_CONN_D+
+Text GLabel 5600 2000 2    50   Input ~ 0
+USB_CONN_D+
+Text GLabel 4300 1800 0    50   Input ~ 0
+USB_CONN_D-
 $EndSCHEMATC

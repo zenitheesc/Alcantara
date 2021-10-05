@@ -240,7 +240,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 5650 9850 5650
 $Comp
-L dk_RF-Transceiver-Modules:ESP32-WROOM-32 MOD1
+L Alcantara_v.1.0-rescue:ESP32-WROOM-32-dk_RF-Transceiver-Modules MOD1
 U 1 1 60CDB9CF
 P 4550 5150
 F 0 "MOD1" H 5150 3300 60  0000 C CNN
@@ -350,7 +350,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 5000 9850 5000
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
+L Alcantara_v.1.0-rescue:MMSS8050-H-TP-dk_Transistors-Bipolar-BJT-Single Q1
 U 1 1 61214E60
 P 8350 3900
 F 0 "Q1" H 8538 3953 60  0000 L CNN
@@ -370,7 +370,7 @@ F 12 "Active" H 8550 5100 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q2
+L Alcantara_v.1.0-rescue:MMSS8050-H-TP-dk_Transistors-Bipolar-BJT-Single Q2
 U 1 1 61215ACB
 P 8350 4500
 F 0 "Q2" H 8538 4447 60  0000 L CNN
@@ -701,7 +701,7 @@ Wire Notes Line
 Text Notes 700  7600 0    50   ~ 0
 Verificar que os pinos conectados em VP e VN não flutuarão, \nse não um pullup será necessário nesses pinos. Ele não possui\npullup interno.
 $Comp
-L SamacSys_Parts:EVP-AAM02W S5
+L Alcantara_v.1.0-rescue:EVP-AAM02W-SamacSys_Parts S5
 U 1 1 60E2AB97
 P 4950 3350
 F 0 "S5" H 5900 3500 50  0000 C CNN
@@ -736,7 +736,7 @@ Connection ~ 6200 3650
 Wire Wire Line
 	6200 3450 6200 3650
 $Comp
-L SamacSys_Parts:EVP-AAM02W S4
+L Alcantara_v.1.0-rescue:EVP-AAM02W-SamacSys_Parts S4
 U 1 1 60E6112B
 P 1950 3500
 F 0 "S4" H 2900 3650 50  0000 C CNN
@@ -770,30 +770,6 @@ Connection ~ 3200 3250
 Connection ~ 3200 3800
 Wire Wire Line
 	3200 3600 3200 3800
-Wire Notes Line
-	14700 0    14700 8250
-Wire Notes Line
-	14700 8250 11850 8250
-Wire Notes Line
-	11850 8250 11850 0   
-Wire Notes Line
-	11850 0    14700 0   
-Text Notes 12700 250  0    79   Italic 16
-LISTA DE AFAZERES
-Text Notes 12150 600  0    50   ~ 0
-> Mudar o conector micro USB para um 100% SMD
-Text Notes 12150 750  0    50   ~ 0
-> Escolher uma chave deslizante para o liga/desliga
-Text Notes 12150 900  0    50   ~ 0
-> Conferir o pinout dos botões de EN e IO0
-Text Notes 12150 1050 0    50   ~ 0
-> Editar silk dos botões
-Text Notes 12150 1200 0    50   ~ 0
-> Ponderar sobre a possibilidade de retirar os LEDs do FTDI
-Text Notes 12150 1550 0    50   ~ 0
->Refletir sobre quais decisões me trouxeram até aqui
-Text Notes 12250 1350 0    50   ~ 0
-> Ou ligar junto ao RGB principal
 Text GLabel 4000 5750 0    50   Input ~ 0
 GPS_TIMEPULSE
 Text GLabel 4000 6850 0    50   Input ~ 0
@@ -802,10 +778,6 @@ Wire Wire Line
 	8050 6200 8200 6200
 Wire Wire Line
 	7850 6200 7700 6200
-Text Notes 12150 1950 0    50   ~ 0
-> Mover o capacitor e resistor de reset mais pra perto\n   da ESP
-Text Notes 12150 1700 0    50   ~ 0
-> 4 camadas go BRRRRRRRR
 Wire Wire Line
 	3400 3250 3750 3250
 Wire Wire Line
@@ -986,7 +958,7 @@ F 3 "~" H 4050 1500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:PJS008U-3000-0 J5
+L Alcantara_v.1.0-rescue:PJS008U-3000-0-SamacSys_Parts J5
 U 1 1 612F4333
 P 3000 1650
 F 0 "J5" H 3000 1185 50  0000 C CNN
@@ -1003,7 +975,7 @@ F 9 "PJS008U-3000-0" H 3750 1050 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:53261-0527 J8
+L Alcantara_v.1.0-rescue:53261-0527-SamacSys_Parts J8
 U 1 1 61489378
 P 7750 5050
 F 0 "J8" H 7950 4600 50  0000 C CNN
@@ -1090,7 +1062,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 5950 7300 6050
 $Comp
-L SamacSys_Parts:TLV803EA30DCKR IC3
+L Alcantara_v.1.0-rescue:TLV803EA30DCKR-SamacSys_Parts IC3
 U 1 1 612F7BFE
 P 2150 3300
 F 0 "IC3" H 2650 3150 50  0000 C CNN

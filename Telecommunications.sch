@@ -111,7 +111,7 @@ Wire Wire Line
 	2050 4000 2050 4050
 NoConn ~ 3900 4450
 $Comp
-L dk_Coaxial-Connectors-RF:142-0701-801 J2
+L Alcantara_v.1.0-rescue:142-0701-801-dk_Coaxial-Connectors-RF J2
 U 1 1 60E543A4
 P 5300 4950
 F 0 "J2" H 5212 4918 50  0000 R CNN
@@ -384,7 +384,7 @@ RADIO_SCK
 Wire Wire Line
 	9400 4300 9450 4300
 $Comp
-L dk_Coaxial-Connectors-RF:142-0701-801 J?
+L Alcantara_v.1.0-rescue:142-0701-801-dk_Coaxial-Connectors-RF J?
 U 1 1 60FC2F34
 P 10500 3850
 AR Path="/60D267AF/60FC2F34" Ref="J?"  Part="1" 
@@ -596,7 +596,7 @@ Wire Wire Line
 	7500 4900 7500 4800
 Connection ~ 7500 4800
 $Comp
-L E22_Radios_Zenith:E22-900M30S U1
+L Alcantara_v.1.0-rescue:E22-900M30S-E22_Radios_Zenith U1
 U 1 1 612EA8AF
 P 8850 4350
 F 0 "U1" H 8850 5215 50  0000 C CNN
