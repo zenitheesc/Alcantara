@@ -9,25 +9,25 @@
     <img src="https://img.shields.io/badge/Linked%20to-EESC--USP-black?style=for-the-badge"/>
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/license/zenitheesc/Alcantara?style=for-the-badge"/>
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/issues">
-    <img src="https://img.shields.io/github/issues/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/issues/zenitheesc/Alcantara?style=for-the-badge"/>
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/commits/main">
-    <img src="https://img.shields.io/github/commit-activity/m/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge">
+    <img src="https://img.shields.io/github/commit-activity/zenitheesc/Alcantara?style=for-the-badge">
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/contributors/zenitheesc/Alcantara?style=for-the-badge"/>
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/commits/main">
-    <img src="https://img.shields.io/github/last-commit/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/last-commit/zenitheesc/Alcantara?style=for-the-badge"/>
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/issues">
-    <img src="https://img.shields.io/github/issues-raw/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge" />
+    <img src="https://img.shields.io/github/issues-raw/zenitheesc/Alcantara?style=for-the-badge" />
     </a>
     <a href="https://github.com/${{ env.REPOSITORY_FULL_NAME }}/pulls">
-    <img src = "https://img.shields.io/github/issues-pr-raw/${{ env.REPOSITORY_FULL_NAME }}?style=for-the-badge">
+    <img src = "https://img.shields.io/github/issues-pr-raw/zenitheesc/Alcantara?style=for-the-badge">
     </a>
 </p>
 
