@@ -38,12 +38,12 @@
 
 ## Environment and tools
 
-`Add list of dependencies and software needed to run this project (if possible add the versions that were used in development).`
+`This system was designed using KiCad EDA v.5.1.6.`
 
 ## Board
 
 <p align = "center">
-<img src=""/>
+<img src="https://github.com/MarcusMoraisEpifane/Alcantara/blob/main/Help/Components.png"/>
 </p>
 
 ---
