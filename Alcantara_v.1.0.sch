@@ -32,17 +32,17 @@ F2 "GPS_TX" I L 9850 1950 50
 F3 "GPS_RX" I L 9850 2100 50 
 F4 "GPS_EXTINT" I L 9850 2250 50 
 F5 "GPS_RESET" I L 9850 2400 50 
-F6 "GPS_TIMEPULSE" I L 9850 2550 50 
-F7 "RADIO_MOSI" I L 9850 2800 50 
-F8 "RADIO_MISO" I L 9850 3100 50 
-F9 "RADIO_NRST" I L 9850 3400 50 
-F10 "RADIO_BUSY" I L 9850 3550 50 
-F11 "RADIO_DIO1" I L 9850 3700 50 
-F12 "RADIO_DIO2" I L 9850 3850 50 
-F13 "RADIO_TXEN" I L 9850 4000 50 
-F14 "RADIO_RXEN" I L 9850 4150 50 
-F15 "RADIO_NSS" I L 9850 2950 50 
-F16 "RADIO_SCK" I L 9850 3250 50 
+F6 "RADIO_MOSI" I L 9850 2800 50 
+F7 "RADIO_MISO" I L 9850 3100 50 
+F8 "RADIO_NRST" I L 9850 3400 50 
+F9 "RADIO_BUSY" I L 9850 3550 50 
+F10 "RADIO_DIO1" I L 9850 3700 50 
+F11 "RADIO_DIO2" I L 9850 3850 50 
+F12 "RADIO_TXEN" I L 9850 4000 50 
+F13 "RADIO_RXEN" I L 9850 4150 50 
+F14 "RADIO_NSS" I L 9850 2950 50 
+F15 "RADIO_SCK" I L 9850 3250 50 
+F16 "GPS_ON_OFF" I L 9850 2550 50 
 $EndSheet
 $Sheet
 S 9850 4600 1200 1750
@@ -166,7 +166,7 @@ GPS_RESET
 Wire Wire Line
 	9750 2400 9850 2400
 Text GLabel 9750 2550 0    50   Input ~ 0
-GPS_TIMEPULSE
+GPS_ON_OFF
 Wire Wire Line
 	9750 2550 9850 2550
 Wire Wire Line
@@ -795,7 +795,7 @@ Text Notes 12150 1550 0    50   ~ 0
 Text Notes 12250 1350 0    50   ~ 0
 > Ou ligar junto ao RGB principal
 Text GLabel 4000 5750 0    50   Input ~ 0
-GPS_TIMEPULSE
+GPS_ON_OFF
 Text GLabel 4000 6850 0    50   Input ~ 0
 SDCARD_NSS
 Wire Wire Line
@@ -896,62 +896,35 @@ Connection ~ 2250 1750
 Wire Wire Line
 	2250 1750 1800 1750
 Wire Wire Line
-	8100 1600 8300 1600
+	8375 1650 8575 1650
 $Comp
 L Device:R_Small R6
 U 1 1 61313692
-P 8300 1400
-F 0 "R6" V 8104 1400 50  0000 C CNN
-F 1 "10K" V 8195 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 1400 50  0001 C CNN
-F 3 "~" H 8300 1400 50  0001 C CNN
-	1    8300 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R8
-U 1 1 61313698
-P 8300 1800
-F 0 "R8" V 8104 1800 50  0000 C CNN
-F 1 "10K" V 8195 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 1800 50  0001 C CNN
-F 3 "~" H 8300 1800 50  0001 C CNN
-	1    8300 1800
+P 8575 1450
+F 0 "R6" V 8379 1450 50  0000 C CNN
+F 1 "10K" V 8470 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8575 1450 50  0001 C CNN
+F 3 "~" H 8575 1450 50  0001 C CNN
+	1    8575 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 1600 8300 1500
-Wire Wire Line
-	8300 1600 8300 1700
-Connection ~ 8300 1600
+	8575 1650 8575 1550
 $Comp
 L power:+3V3 #PWR0105
 U 1 1 6134BA7C
-P 8300 1200
-F 0 "#PWR0105" H 8300 1050 50  0001 C CNN
-F 1 "+3V3" H 8315 1373 50  0000 C CNN
-F 2 "" H 8300 1200 50  0001 C CNN
-F 3 "" H 8300 1200 50  0001 C CNN
-	1    8300 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 6134BDD8
-P 8300 2000
-F 0 "#PWR0106" H 8300 1750 50  0001 C CNN
-F 1 "GND" H 8305 1827 50  0000 C CNN
-F 2 "" H 8300 2000 50  0001 C CNN
-F 3 "" H 8300 2000 50  0001 C CNN
-	1    8300 2000
+P 8575 1250
+F 0 "#PWR0105" H 8575 1100 50  0001 C CNN
+F 1 "+3V3" H 8590 1423 50  0000 C CNN
+F 2 "" H 8575 1250 50  0001 C CNN
+F 3 "" H 8575 1250 50  0001 C CNN
+	1    8575 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 2000 8300 1900
-Wire Wire Line
-	8300 1300 8300 1200
-Text Notes 5150 2000 0    50   ~ 0
-Os resistores de pull-up ou pull-down devem ser utilizados um\npor vez, dependendo da tensão da flash interna da ESP.\n\nIsso ocorre pois o pino 12 é um pino lido no boot para selecionar\na tensão que alimenta a flash interna: \n1 -> 1.8V\n0 -> 3.3V\n\nLer mais sobre aqui:\nhttps://docs.espressif.com/projects/esp-idf/en/\nlatest/esp32/api-reference/peripherals/sd_pullup_requirements.\nhtml#no-pull-up-on-gpio12
+	8575 1350 8575 1250
+Text Notes 4875 2450 0    47   ~ 0
+Os resistores de pull-up ou pull-down devem ser utilizados um\npor vez, dependendo da tensão da flash interna da ESP.\nNote que os resistores que atuam como pull-down estão na\npágina "Tecommunications" pois lá eles são os resistores do\nMosfet que aciona o GPS.\n\nIsso ocorre pois o pino 12 é um pino lido no boot para selecionar\na tensão que alimenta a flash interna: \n1 -> 1.8V\n0 -> 3.3V\n\nSe for necessário utilizar a flash de 3.3V (padrão) basta não utilizar\no pull-up.\n\nSe for necessário utilizar a flash de 1.8V (padrão), deve-se remover\no pull-down do gate do Mosfet, mas o sinal no GPIO12 deve ser\nbem definido (1 ou 0) quando quiser ligar ou desligar o GPS.\n\nLer mais sobre aqui:\nhttps://docs.espressif.com/projects/esp-idf/en/\nlatest/esp32/api-reference/peripherals/sd_pullup_requirements.\nhtml#no-pull-up-on-gpio12
 NoConn ~ 4400 5550
 NoConn ~ 4400 5350
 NoConn ~ 4400 5650
@@ -972,8 +945,8 @@ Wire Wire Line
 	8150 6050 8150 5900
 Wire Wire Line
 	8150 6050 8600 6050
-Text GLabel 8100 1600 0    50   Input ~ 0
-GPS_TIMEPULSE
+Text GLabel 8375 1650 0    50   Input ~ 0
+GPS_ON_OFF
 $Comp
 L Device:R_Small R5
 U 1 1 6158FB54

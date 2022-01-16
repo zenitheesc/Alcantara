@@ -1,4 +1,4 @@
-20786546520110606
+20869747536869901
 Alcantara_v.1
 AlcantaraLogoReto_2,5mm
 
@@ -2421,6 +2421,13 @@ speaker CUI
 0
 2
 2
+CONSMA001-G
+LINX_CONSMA001-G
+
+
+0
+5
+5
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -54319,6 +54326,13 @@ SEIKO_ML414H_IV01E
 0
 2
 2
+Downloaded
+SW_MSS-102545-14A-V-SMT
+
+
+0
+3
+3
 E22_Radios_Zenith
 E22-900M30S
 
@@ -59842,6 +59856,216 @@ Yellow 5381 Series LED
 0
 2
 2
+LogosZenith
+AlcantaraLogoReto_1,8mm
+
+
+0
+0
+0
+LogosZenith
+AlcantaraLogo_1,7mm
+
+
+0
+0
+0
+LogosZenith
+AlcantaraLogo_4,4mm
+
+
+0
+0
+0
+LogosZenith
+AlcantaraLogo_5,5mm
+
+
+0
+0
+0
+LogosZenith
+AlcantaraLogo_6,7mm
+
+
+0
+0
+0
+LogosZenith
+AlcantaraLogo_15mm
+
+
+0
+0
+0
+LogosZenith
+AçcantaraLogoNoYear_3,1mm
+
+
+0
+0
+0
+LogosZenith
+AçcantaraLogoReto_2,5mm
+
+
+0
+0
+0
+LogosZenith
+AçcantaraLogoReto_2,7mm
+
+
+0
+0
+0
+LogosZenith
+AçcantaraLogo_15mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogo2021Under_7,5mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogo2021Under_10mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogoV2_2,5mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogoV2_3mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogo_2,5mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogo_3,5mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogo_5,9mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogo_8,5mm
+
+
+0
+0
+0
+LogosZenith
+Logo_10,8mm
+
+
+0
+0
+0
+LogosZenith
+Logo_13,4mm
+
+
+0
+0
+0
+LogosZenith
+Logo_15,9mm
+
+
+0
+0
+0
+LogosZenith
+Logo_19,4mm
+
+
+0
+0
+0
+LogosZenith
+Logo_29,1mm
+
+
+0
+0
+0
+LogosZenith
+SateliteLogo_8,3,6mm
+
+
+0
+0
+0
+LogosZenith
+SateliteLogo_8,3mm
+
+
+0
+0
+0
+LogosZenith
+SateliteLogo_20,6mm
+
+
+0
+0
+0
+LogosZenith
+ThisBetterWork_15,9mm
+
+
+0
+0
+0
+LogosZenith
+ThisBetterWork_15,9mm_2
+
+
+0
+0
+0
+ML414H_IV01E
+SEIKO_ML414H_IV01E
+
+
+0
+2
+2
+MSS-102545-14A-V-SMT
+SW_MSS-102545-14A-V-SMT
+
+
+0
+3
+3
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -77804,6 +78028,20 @@ nRF24L01 adapter breakout
 0
 8
 8
+RF_Modules_Zenith
+2AD66-126x
+
+
+0
+16
+16
+RF_Modules_Zenith
+LoRa1262F30
+
+
+0
+16
+16
 RF_Shielding
 Laird_Technologies_97-2002_25.40x25.40mm
 Laird Technologies 97-2002 EZ PEEL Shielding Cabinet One Piece SMD 25.40x25.40mm (https://assets.lairdtech.com/home/brandworld/files/Board%20Level%20Shields%20Catalog%20Download.pdf)
@@ -79940,6 +80178,27 @@ Connector
 7
 7
 SamacSys_Parts
+532611071
+53261-1071
+Connector
+0
+12
+12
+SamacSys_Parts
+532617002
+53261-7002
+Connector
+0
+4
+4
+SamacSys_Parts
+533980771
+53398-0771-1
+Connector
+0
+9
+9
+SamacSys_Parts
 ANTGNSSCPSM12L1
 ANT-GNSSCP-SM12L1-3
 Antenna
@@ -79954,6 +80213,13 @@ AST0760MCTRQ
 2
 2
 SamacSys_Parts
+BD90C0AFPCE2
+TO-252-3_2019
+Integrated Circuit
+0
+3
+3
+SamacSys_Parts
 DIP1556W56P254L5232H483Q40N
 40P6
 Integrated Circuit
@@ -79967,6 +80233,13 @@ Switch
 0
 4
 4
+SamacSys_Parts
+ESQ-120-Y-X-D
+ESQ-120-Y-X-D
+Connector
+0
+40
+40
 SamacSys_Parts
 EVPAAM02W
 EVP-AAM02W-1
@@ -80003,6 +80276,20 @@ Connector
 13
 13
 SamacSys_Parts
+MMC5983MA
+MMC5983MA-7
+Integrated Circuit
+0
+16
+16
+SamacSys_Parts
+MS5607-02BA03
+MS5607-02BA03
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
 NE555DR
 D (R-PDSO-G8)
 Integrated Circuit
@@ -80024,6 +80311,13 @@ Connector
 10
 10
 SamacSys_Parts
+PTS636SM43JSMTRLFS
+PTS636 SM43J SMTR LFS-1
+Switch
+0
+2
+2
+SamacSys_Parts
 QFP50P1200X1200X160-64N
 64-pin, 10 x 10 mm  quad flat
 Integrated Circuit
@@ -80031,12 +80325,33 @@ Integrated Circuit
 64
 64
 SamacSys_Parts
+SOIC127P600X175-8N
++soic d
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
+SOIC127P790X216-8N
+soic 8
+Integrated Circuit
+0
+8
+8
+SamacSys_Parts
 SON40P300X300X80-15N
 T1433+2C
 Integrated Circuit
 0
 15
 15
+SamacSys_Parts
+SOP65P490X110-8N
+8 µMAX HEIGHT 1.1
+Integrated Circuit
+0
+8
+8
 SamacSys_Parts
 SOT50P160X90-3N
 SOT-523
@@ -80046,8 +80361,8 @@ MOSFET (N-Channel)
 3
 SamacSys_Parts
 SOT65P210X110-3N
-DCK0003A
-Integrated Circuit
+SOT323 (SC-70)
+Diode
 0
 3
 3
@@ -80074,11 +80389,25 @@ Integrated Circuit
 5
 SamacSys_Parts
 SOT230P700X180-4N
-DCY (R-PDSO-G4
-Integrated Circuit
+SOT_223
+MOSFET (N-Channel)
 0
 4
 4
+SamacSys_Parts
+ST_D2PAK
+ST_D2PAK
+Integrated Circuit
+0
+3
+3
+SamacSys_Parts
+TC33X-2_1
+TC33X-2_1
+Variable Resistor
+0
+3
+3
 SamacSys_Parts
 TL3305AF160QG
 TL3305AF160QG
@@ -80093,6 +80422,20 @@ Switch
 0
 4
 4
+SamacSys_Parts
+YC164JR07220RL
+YC164_FFW
+Resistor Network
+0
+8
+8
+SamacSys_Parts
+ZMOD4410AI3V
+ZMOD4410AI3V-1
+Integrated Circuit
+0
+12
+12
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -86827,6 +87170,20 @@ varistor SIOV
 0
 2
 2
+Zenith_Homemade_Components
+LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y
+LGA, 16 Pin (http://www.st.com/resource/en/datasheet/lis331hh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+LGA NoLead
+0
+16
+16
+Zenith_Homemade_Components
+MPX5070GP
+
+
+0
+6
+6
 digikey-footprints
 3-SIP_Module_TM1000Q
 

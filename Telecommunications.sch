@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF_GPS:NEO-M8N U?
-U 1 1 60D8A4F2
-P 3200 4650
-AR Path="/60D8A4F2" Ref="U?"  Part="1" 
-AR Path="/60D892C4/60D8A4F2" Ref="U4"  Part="1" 
-F 0 "U4" H 3700 5350 50  0000 C CNN
-F 1 "NEO-M8N" H 3550 3950 50  0000 C CNN
-F 2 "RF_GPS:ublox_NEO" H 3600 3800 50  0001 C CNN
-F 3 "https://www.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_%28UBX-15031086%29.pdf" H 3200 4650 50  0001 C CNN
-	1    3200 4650
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2500 4050
 NoConn ~ 2500 4150
 NoConn ~ 2500 4650
@@ -40,34 +27,10 @@ GPS_RESET
 Wire Wire Line
 	2400 5250 2500 5250
 NoConn ~ 2500 5350
-Text HLabel 4000 4950 2    50   Input ~ 0
-GPS_TIMEPULSE
+Text HLabel 2400 6325 0    50   Input ~ 0
+GPS_ON_OFF
 Wire Wire Line
 	4000 4950 3900 4950
-$Comp
-L power:GND #PWR023
-U 1 1 60E173C8
-P 3200 5650
-F 0 "#PWR023" H 3200 5400 50  0001 C CNN
-F 1 "GND" H 3205 5477 50  0000 C CNN
-F 2 "" H 3200 5650 50  0001 C CNN
-F 3 "" H 3200 5650 50  0001 C CNN
-	1    3200 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3200 5650 3200 5550
-$Comp
-L power:GND #PWR024
-U 1 1 60E17945
-P 3400 3300
-F 0 "#PWR024" H 3400 3050 50  0001 C CNN
-F 1 "GND" H 3405 3127 50  0000 C CNN
-F 2 "" H 3400 3300 50  0001 C CNN
-F 3 "" H 3400 3300 50  0001 C CNN
-	1    3400 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3200 3750 3200 3200
 Wire Wire Line
@@ -109,36 +72,35 @@ F 3 "~" H 2050 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 4000 2050 4050
-NoConn ~ 3900 4450
 $Comp
 L dk_Coaxial-Connectors-RF:142-0701-801 J2
 U 1 1 60E543A4
-P 5300 4950
-F 0 "J2" H 5212 4918 50  0000 R CNN
-F 1 "142-0701-801" H 5212 4827 50  0000 R CNN
-F 2 "Alcantara_v.1:SMA_Amphenol_132289_EdgeMount" H 5500 5150 60  0001 L CNN
-F 3 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 5500 5250 60  0001 L CNN
-F 4 "J502-ND" H 5500 5350 60  0001 L CNN "Digi-Key_PN"
-F 5 "142-0701-801" H 5500 5450 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5500 5550 60  0001 L CNN "Category"
-F 7 "Coaxial Connectors (RF)" H 5500 5650 60  0001 L CNN "Family"
-F 8 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 5500 5750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/142-0701-801/J502-ND/35280" H 5500 5850 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN SMA JACK STR 50OHM EDGE MNT" H 5500 5950 60  0001 L CNN "Description"
-F 11 "Cinch Connectivity Solutions Johnson" H 5500 6050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5500 6150 60  0001 L CNN "Status"
-	1    5300 4950
+P 5200 4825
+F 0 "J2" H 5112 4793 50  0000 R CNN
+F 1 "142-0701-801" H 5112 4702 50  0000 R CNN
+F 2 "Alcantara_v.1:SMA_Amphenol_132289_EdgeMount" H 5400 5025 60  0001 L CNN
+F 3 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 5400 5125 60  0001 L CNN
+F 4 "J502-ND" H 5400 5225 60  0001 L CNN "Digi-Key_PN"
+F 5 "142-0701-801" H 5400 5325 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5400 5425 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 5400 5525 60  0001 L CNN "Family"
+F 8 "http://www.belfuse.com/resources/Johnson/drawings/dr-1420701801.pdf" H 5400 5625 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/142-0701-801/J502-ND/35280" H 5400 5725 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN SMA JACK STR 50OHM EDGE MNT" H 5400 5825 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 5400 5925 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5400 6025 60  0001 L CNN "Status"
+	1    5200 4825
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:L_Small L2
 U 1 1 60E57109
-P 4100 4100
-F 0 "L2" H 4148 4146 50  0000 L CNN
-F 1 "L_Small" H 4148 4055 50  0000 L CNN
-F 2 "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 4100 4100 50  0001 C CNN
-F 3 "~" H 4100 4100 50  0001 C CNN
-	1    4100 4100
+P 4100 3825
+F 0 "L2" H 4148 3871 50  0000 L CNN
+F 1 "L_Small" H 4148 3780 50  0000 L CNN
+F 2 "Inductor_SMD:L_0402_1005Metric_Pad0.77x0.64mm_HandSolder" H 4100 3825 50  0001 C CNN
+F 3 "~" H 4100 3825 50  0001 C CNN
+	1    4100 3825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -146,11 +108,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 3600 3650 3600
 Wire Wire Line
-	4100 3600 4100 4000
+	4100 3600 4100 3725
 Wire Wire Line
-	3900 4650 4100 4650
-Wire Wire Line
-	4100 4650 4100 4200
+	4100 4200 4100 3925
 Wire Wire Line
 	3850 3600 4100 3600
 $Comp
@@ -167,85 +127,43 @@ $EndComp
 $Comp
 L Device:C_Small C15
 U 1 1 60E5C8AF
-P 4650 3750
-F 0 "C15" H 4742 3796 50  0000 L CNN
-F 1 "10nF" H 4742 3705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4650 3750 50  0001 C CNN
-F 3 "~" H 4650 3750 50  0001 C CNN
-	1    4650 3750
+P 4650 3725
+F 0 "C15" H 4742 3771 50  0000 L CNN
+F 1 "10nF" H 4742 3680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4650 3725 50  0001 C CNN
+F 3 "~" H 4650 3725 50  0001 C CNN
+	1    4650 3725
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 3650 4650 3600
+	4650 3625 4650 3600
 Wire Wire Line
 	4650 3600 4100 3600
 Connection ~ 4100 3600
 $Comp
-L power:GND #PWR025
-U 1 1 60E5D269
-P 4650 4000
-F 0 "#PWR025" H 4650 3750 50  0001 C CNN
-F 1 "GND" H 4655 3827 50  0000 C CNN
-F 2 "" H 4650 4000 50  0001 C CNN
-F 3 "" H 4650 4000 50  0001 C CNN
-	1    4650 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 4000 4650 3850
-$Comp
-L power:GND #PWR027
-U 1 1 60E5E7BC
-P 5300 5200
-F 0 "#PWR027" H 5300 4950 50  0001 C CNN
-F 1 "GND" H 5305 5027 50  0000 C CNN
-F 2 "" H 5300 5200 50  0001 C CNN
-F 3 "" H 5300 5200 50  0001 C CNN
-	1    5300 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 5200 5300 5150
-$Comp
 L Alcantara_v.1.0-rescue:U_FL-R-SMT_10_-dk_Coaxial-Connectors-RF J1
 U 1 1 60E666C0
-P 5300 4350
+P 5200 4200
 AR Path="/60E666C0" Ref="J1"  Part="1" 
 AR Path="/60D892C4/60E666C0" Ref="J1"  Part="1" 
-F 0 "J1" V 5332 4438 50  0000 L CNN
-F 1 "U_FL-R-SMT_10_" V 5423 4438 50  0000 L CNN
-F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 5500 4550 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 5500 4650 60  0001 L CNN
-F 4 "H9161CT-ND" H 5500 4750 60  0001 L CNN "Digi-Key_PN"
-F 5 "U.FL-R-SMT(10)" H 5500 4850 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5500 4950 60  0001 L CNN "Category"
-F 7 "Coaxial Connectors (RF)" H 5500 5050 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 5500 5150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/hirose-electric-co-ltd/U.FL-R-SMT(10)/H9161CT-ND/2135256" H 5500 5250 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN U.FL RCPT STR 50 OHM SMD" H 5500 5350 60  0001 L CNN "Description"
-F 11 "Hirose Electric Co Ltd" H 5500 5450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5500 5550 60  0001 L CNN "Status"
-	1    5300 4350
+F 0 "J1" V 5232 4288 50  0000 L CNN
+F 1 "U_FL-R-SMT_10_" V 5323 4288 50  0000 L CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 5400 4400 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 5400 4500 60  0001 L CNN
+F 4 "H9161CT-ND" H 5400 4600 60  0001 L CNN "Digi-Key_PN"
+F 5 "U.FL-R-SMT(10)" H 5400 4700 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5400 4800 60  0001 L CNN "Category"
+F 7 "Coaxial Connectors (RF)" H 5400 4900 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Hirose%20PDFs/UFL%20Series.pdf" H 5400 5000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/hirose-electric-co-ltd/U.FL-R-SMT(10)/H9161CT-ND/2135256" H 5400 5100 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN U.FL RCPT STR 50 OHM SMD" H 5400 5200 60  0001 L CNN "Description"
+F 11 "Hirose Electric Co Ltd" H 5400 5300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5400 5400 60  0001 L CNN "Status"
+	1    5200 4200
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 60E67239
-P 5300 4600
-F 0 "#PWR026" H 5300 4350 50  0001 C CNN
-F 1 "GND" H 5305 4427 50  0000 C CNN
-F 2 "" H 5300 4600 50  0001 C CNN
-F 3 "" H 5300 4600 50  0001 C CNN
-	1    5300 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4100 4650 4850 4650
-Connection ~ 4100 4650
-Wire Wire Line
-	5100 4950 4850 4950
-Wire Wire Line
-	4850 4950 4850 4650
+	5000 4825 4850 4825
 Text Notes 600  800  0    98   Italic 20
 Geopositioning System
 Text HLabel 9450 4400 2    50   Input ~ 0
@@ -538,13 +456,6 @@ Wire Wire Line
 	2400 4350 2500 4350
 Text HLabel 2400 4350 0    50   Input ~ 0
 GPS_TX
-Wire Wire Line
-	5300 4550 5300 4600
-Wire Wire Line
-	5100 4350 4850 4350
-Wire Wire Line
-	4850 4350 4850 4650
-Connection ~ 4850 4650
 $Comp
 L Device:R_Small R11
 U 1 1 615FE2D1
@@ -604,6 +515,204 @@ F 1 "E22-900M30S" H 8850 5124 50  0000 C CNN
 F 2 "E22_Radios_Zenith:E22-900M30S" H 8950 4550 50  0001 C CNN
 F 3 "" H 8950 4550 50  0001 C CNN
 	1    8850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0118
+U 1 1 616C88D8
+P 4650 3850
+F 0 "#PWR0118" H 4650 3600 50  0001 C CNN
+F 1 "GNDA" H 4655 3677 50  0000 C CNN
+F 2 "" H 4650 3850 50  0001 C CNN
+F 3 "" H 4650 3850 50  0001 C CNN
+	1    4650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4200 4100 4200
+Connection ~ 4100 4200
+Wire Wire Line
+	4650 3850 4650 3825
+NoConn ~ 3900 4650
+$Comp
+L power:GNDA #PWR0119
+U 1 1 616F731D
+P 5200 5075
+F 0 "#PWR0119" H 5200 4825 50  0001 C CNN
+F 1 "GNDA" H 5205 4902 50  0000 C CNN
+F 2 "" H 5200 5075 50  0001 C CNN
+F 3 "" H 5200 5075 50  0001 C CNN
+	1    5200 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4200 4850 4200
+Wire Wire Line
+	5200 5025 5200 5075
+Wire Wire Line
+	4850 4200 4850 4825
+Connection ~ 4850 4200
+Wire Wire Line
+	4850 4200 5000 4200
+$Comp
+L power:GNDA #PWR0120
+U 1 1 61701EA3
+P 5200 4450
+F 0 "#PWR0120" H 5200 4200 50  0001 C CNN
+F 1 "GNDA" H 5205 4277 50  0000 C CNN
+F 2 "" H 5200 4450 50  0001 C CNN
+F 3 "" H 5200 4450 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4400 5200 4450
+Wire Wire Line
+	3900 4100 3975 4100
+Wire Wire Line
+	3975 4100 3975 4300
+Wire Wire Line
+	3975 4300 3900 4300
+$Comp
+L power:GNDA #PWR0121
+U 1 1 6170C71A
+P 3975 4350
+F 0 "#PWR0121" H 3975 4100 50  0001 C CNN
+F 1 "GNDA" H 3980 4177 50  0000 C CNN
+F 2 "" H 3975 4350 50  0001 C CNN
+F 3 "" H 3975 4350 50  0001 C CNN
+	1    3975 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 4350 3975 4300
+Connection ~ 3975 4300
+$Comp
+L Device:R_Small R?
+U 1 1 61A3932D
+P 2600 6325
+AR Path="/60D8A7EE/61A3932D" Ref="R?"  Part="1" 
+AR Path="/60D892C4/61A3932D" Ref="R33"  Part="1" 
+F 0 "R33" V 2400 6325 50  0000 C CNN
+F 1 "330" V 2500 6325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2600 6325 50  0001 C CNN
+F 3 "~" H 2600 6325 50  0001 C CNN
+	1    2600 6325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 6325 2800 6325
+$Comp
+L Device:R_Small R?
+U 1 1 61A39334
+P 2800 6525
+AR Path="/60D8A7EE/61A39334" Ref="R?"  Part="1" 
+AR Path="/60D892C4/61A39334" Ref="R34"  Part="1" 
+F 0 "R34" V 2600 6525 50  0000 C CNN
+F 1 "10K" V 2700 6525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2800 6525 50  0001 C CNN
+F 3 "~" H 2800 6525 50  0001 C CNN
+	1    2800 6525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2800 6425 2800 6325
+Connection ~ 2800 6325
+Wire Wire Line
+	2800 6325 2900 6325
+Wire Wire Line
+	3200 6525 3200 6675
+Wire Wire Line
+	3200 6675 2800 6675
+Wire Wire Line
+	2800 6675 2800 6625
+$Comp
+L power:GND #PWR?
+U 1 1 61A39340
+P 3200 6775
+AR Path="/60D8A7EE/61A39340" Ref="#PWR?"  Part="1" 
+AR Path="/60D892C4/61A39340" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 3200 6525 50  0001 C CNN
+F 1 "GND" H 3205 6602 50  0000 C CNN
+F 2 "" H 3200 6775 50  0001 C CNN
+F 3 "" H 3200 6775 50  0001 C CNN
+	1    3200 6775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6775 3200 6675
+Connection ~ 3200 6675
+Wire Wire Line
+	2400 6325 2500 6325
+$Comp
+L SamacSys_Parts:2N7002NXAKR Q?
+U 1 1 61A39350
+P 2900 6325
+AR Path="/60D8A7EE/61A39350" Ref="Q?"  Part="1" 
+AR Path="/60D892C4/61A39350" Ref="Q7"  Part="1" 
+F 0 "Q7" H 3000 6625 50  0000 L CNN
+F 1 "2N7002NXAKR" V 3400 6125 50  0000 L CNN
+F 2 "SamacSys_Parts:SOT95P230X110-3N" H 3350 6275 50  0001 L CNN
+F 3 "" H 3350 6175 50  0001 L CNN
+F 4 "NEXPERIA - 2N7002NXAKR - MOSFET Transistor, Trench, N Channel, 190 mA, 60 V, 3 ohm, 10 V, 1.6 V" H 3350 6075 50  0001 L CNN "Description"
+F 5 "1.1" H 3350 5975 50  0001 L CNN "Height"
+F 6 "771-2N7002NXAKR" H 3350 5875 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Nexperia/2N7002NXAKR?qs=%252B6g0mu59x7JoAsZYPFXqhw%3D%3D" H 3350 5775 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Nexperia" H 3350 5675 50  0001 L CNN "Manufacturer_Name"
+F 9 "2N7002NXAKR" H 3350 5575 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2900 6325
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4000 4950
+$Comp
+L Zenith_Modified_Libraries:NEO-M8N U?
+U 1 1 60D8A4F2
+P 3200 4650
+AR Path="/60D8A4F2" Ref="U?"  Part="1" 
+AR Path="/60D892C4/60D8A4F2" Ref="U4"  Part="1" 
+F 0 "U4" H 3700 5350 50  0000 C CNN
+F 1 "NEO-M8N" H 3550 3950 50  0000 C CNN
+F 2 "RF_GPS:ublox_NEO" H 3600 3800 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/NEO-M8-FW3_DataSheet_%28UBX-15031086%29.pdf" H 3200 4650 50  0001 C CNN
+	1    3200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5550 3100 5675
+Wire Wire Line
+	3100 5675 3200 5675
+Wire Wire Line
+	3200 5675 3200 5925
+Wire Wire Line
+	3200 5675 3300 5675
+Wire Wire Line
+	3300 5675 3300 5550
+Connection ~ 3200 5675
+$Comp
+L power:GND1 #PWR0123
+U 1 1 61A77D8E
+P 2800 5875
+F 0 "#PWR0123" H 2800 5625 50  0001 C CNN
+F 1 "GND1" H 2805 5702 50  0000 C CNN
+F 2 "" H 2800 5875 50  0001 C CNN
+F 3 "" H 2800 5875 50  0001 C CNN
+	1    2800 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5875 2800 5675
+Wire Wire Line
+	2800 5675 3100 5675
+Connection ~ 3100 5675
+$Comp
+L power:GND1 #PWR0124
+U 1 1 61A7BDEF
+P 3400 3300
+F 0 "#PWR0124" H 3400 3050 50  0001 C CNN
+F 1 "GND1" H 3405 3127 50  0000 C CNN
+F 2 "" H 3400 3300 50  0001 C CNN
+F 3 "" H 3400 3300 50  0001 C CNN
+	1    3400 3300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
