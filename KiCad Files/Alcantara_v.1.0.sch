@@ -63,35 +63,35 @@ $EndSheet
 $Comp
 L power:GND #PWR01
 U 1 1 61138544
-P 4700 7400
-F 0 "#PWR01" H 4700 7150 50  0001 C CNN
-F 1 "GND" H 4705 7227 50  0000 C CNN
-F 2 "" H 4700 7400 50  0001 C CNN
-F 3 "" H 4700 7400 50  0001 C CNN
-	1    4700 7400
+P 3800 7450
+F 0 "#PWR01" H 3800 7200 50  0001 C CNN
+F 1 "GND" H 3805 7277 50  0000 C CNN
+F 2 "" H 3800 7450 50  0001 C CNN
+F 3 "" H 3800 7450 50  0001 C CNN
+	1    3800 7450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 7400 4700 7350
+	3800 7450 3800 7400
 Wire Wire Line
-	4700 7350 4650 7350
+	3800 7400 3750 7400
 Wire Wire Line
-	4550 7350 4550 7250
+	3650 7400 3650 7300
 Wire Wire Line
-	4700 7350 4750 7350
+	3800 7400 3850 7400
 Wire Wire Line
-	4850 7350 4850 7250
-Connection ~ 4700 7350
+	3950 7400 3950 7300
+Connection ~ 3800 7400
 Wire Wire Line
-	4650 7250 4650 7350
-Connection ~ 4650 7350
+	3750 7300 3750 7400
+Connection ~ 3750 7400
 Wire Wire Line
-	4650 7350 4550 7350
+	3750 7400 3650 7400
 Wire Wire Line
-	4750 7250 4750 7350
-Connection ~ 4750 7350
+	3850 7300 3850 7400
+Connection ~ 3850 7400
 Wire Wire Line
-	4750 7350 4850 7350
+	3850 7400 3950 7400
 $Comp
 L Device:C_Small C5
 U 1 1 61143841
@@ -143,18 +143,12 @@ Wire Wire Line
 Connection ~ 3750 3250
 Wire Wire Line
 	3750 3000 3750 2950
-Text GLabel 9750 800  0    50   Input ~ 0
-GAUGE_SDA
-Text GLabel 9750 950  0    50   Input ~ 0
-GAUGE_SCL
 Text GLabel 9750 1200 0    50   Input ~ 0
 GAUGE_ALRT1
 Text GLabel 9750 1950 0    50   Input ~ 0
 GPS_TX
 Wire Wire Line
 	9750 1950 9850 1950
-Text GLabel 9750 2100 0    50   Input ~ 0
-GPS_RX
 Wire Wire Line
 	9750 2100 9850 2100
 Text GLabel 9750 2250 0    50   Input ~ 0
@@ -242,90 +236,90 @@ Wire Wire Line
 $Comp
 L dk_RF-Transceiver-Modules:ESP32-WROOM-32 MOD1
 U 1 1 60CDB9CF
-P 4550 5150
-F 0 "MOD1" H 5150 3300 60  0000 C CNN
-F 1 "ESP32-WROOM-32" V 4750 4150 60  0000 C CNN
-F 2 "digikey-footprints:ESP32-WROOM-32D" H 4750 5350 60  0001 L CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4750 5450 60  0001 L CNN
-F 4 "1904-1010-1-ND" H 4750 5550 60  0001 L CNN "Digi-Key_PN"
-F 5 "ESP32-WROOM-32" H 4750 5650 60  0001 L CNN "MPN"
-F 6 "RF/IF and RFID" H 4750 5750 60  0001 L CNN "Category"
-F 7 "RF Transceiver Modules" H 4750 5850 60  0001 L CNN "Family"
-F 8 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4750 5950 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305" H 4750 6050 60  0001 L CNN "DK_Detail_Page"
-F 10 "SMD MODULE, ESP32-D0WDQ6, 32MBIT" H 4750 6150 60  0001 L CNN "Description"
-F 11 "Espressif Systems" H 4750 6250 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 4750 6350 60  0001 L CNN "Status"
-	1    4550 5150
+P 3650 5200
+F 0 "MOD1" H 4250 3350 60  0000 C CNN
+F 1 "ESP32-WROOM-32" V 3850 4200 60  0000 C CNN
+F 2 "digikey-footprints:ESP32-WROOM-32D" H 3850 5400 60  0001 L CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3850 5500 60  0001 L CNN
+F 4 "1904-1010-1-ND" H 3850 5600 60  0001 L CNN "Digi-Key_PN"
+F 5 "ESP32-WROOM-32" H 3850 5700 60  0001 L CNN "MPN"
+F 6 "RF/IF and RFID" H 3850 5800 60  0001 L CNN "Category"
+F 7 "RF Transceiver Modules" H 3850 5900 60  0001 L CNN "Family"
+F 8 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3850 6000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305" H 3850 6100 60  0001 L CNN "DK_Detail_Page"
+F 10 "SMD MODULE, ESP32-D0WDQ6, 32MBIT" H 3850 6200 60  0001 L CNN "Description"
+F 11 "Espressif Systems" H 3850 6300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3850 6400 60  0001 L CNN "Status"
+	1    3650 5200
 	1    0    0    -1  
 $EndComp
-Connection ~ 5500 4650
+Connection ~ 4600 4700
 Wire Wire Line
-	5500 4600 5500 4650
-Connection ~ 5050 4650
+	4600 4650 4600 4700
+Connection ~ 4150 4700
 Wire Wire Line
-	5500 4650 5050 4650
+	4600 4700 4150 4700
 Wire Wire Line
-	5500 4650 5500 4700
+	4600 4700 4600 4750
 $Comp
 L power:GND #PWR04
 U 1 1 6114294E
-P 5500 4900
-F 0 "#PWR04" H 5500 4650 50  0001 C CNN
-F 1 "GND" H 5505 4727 50  0000 C CNN
-F 2 "" H 5500 4900 50  0001 C CNN
-F 3 "" H 5500 4900 50  0001 C CNN
-	1    5500 4900
+P 4600 4950
+F 0 "#PWR04" H 4600 4700 50  0001 C CNN
+F 1 "GND" H 4605 4777 50  0000 C CNN
+F 2 "" H 4600 4950 50  0001 C CNN
+F 3 "" H 4600 4950 50  0001 C CNN
+	1    4600 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C2
 U 1 1 61142948
-P 5500 4800
-F 0 "C2" H 5592 4846 50  0000 L CNN
-F 1 "10uF" H 5592 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5500 4800 50  0001 C CNN
-F 3 "~" H 5500 4800 50  0001 C CNN
-	1    5500 4800
+P 4600 4850
+F 0 "C2" H 4692 4896 50  0000 L CNN
+F 1 "10uF" H 4692 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 4850 50  0001 C CNN
+F 3 "~" H 4600 4850 50  0001 C CNN
+	1    4600 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 4650 5050 4700
+	4150 4700 4150 4750
 $Comp
 L power:GND #PWR02
 U 1 1 611407CF
-P 5050 4900
-F 0 "#PWR02" H 5050 4650 50  0001 C CNN
-F 1 "GND" H 5055 4727 50  0000 C CNN
-F 2 "" H 5050 4900 50  0001 C CNN
-F 3 "" H 5050 4900 50  0001 C CNN
-	1    5050 4900
+P 4150 4950
+F 0 "#PWR02" H 4150 4700 50  0001 C CNN
+F 1 "GND" H 4155 4777 50  0000 C CNN
+F 2 "" H 4150 4950 50  0001 C CNN
+F 3 "" H 4150 4950 50  0001 C CNN
+	1    4150 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 611407C9
-P 5050 4800
-F 0 "C1" H 5142 4846 50  0000 L CNN
-F 1 "0.1uF" H 5142 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5050 4800 50  0001 C CNN
-F 3 "~" H 5050 4800 50  0001 C CNN
-	1    5050 4800
+P 4150 4850
+F 0 "C1" H 4242 4896 50  0000 L CNN
+F 1 "0.1uF" H 4242 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4150 4850 50  0001 C CNN
+F 3 "~" H 4150 4850 50  0001 C CNN
+	1    4150 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR03
 U 1 1 61138053
-P 5500 4600
-F 0 "#PWR03" H 5500 4450 50  0001 C CNN
-F 1 "+3V3" H 5515 4773 50  0000 C CNN
-F 2 "" H 5500 4600 50  0001 C CNN
-F 3 "" H 5500 4600 50  0001 C CNN
-	1    5500 4600
+P 4600 4650
+F 0 "#PWR03" H 4600 4500 50  0001 C CNN
+F 1 "+3V3" H 4615 4823 50  0000 C CNN
+F 2 "" H 4600 4650 50  0001 C CNN
+F 3 "" H 4600 4650 50  0001 C CNN
+	1    4600 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 4650 5050 4650
+	3850 4700 4150 4700
 $Comp
 L Device:C_Small C4
 U 1 1 611FBCA3
@@ -441,32 +435,32 @@ Wire Wire Line
 Connection ~ 7750 4500
 Wire Wire Line
 	7750 4500 7900 4500
-Text GLabel 4000 5250 0    50   Input ~ 0
+Text GLabel 3100 5300 0    50   Input ~ 0
 EN
-Text GLabel 4000 5350 0    50   Input ~ 0
+Text GLabel 3100 5400 0    50   Input ~ 0
 IO0
 Wire Wire Line
-	4000 5250 4050 5250
+	3100 5300 3150 5300
 Wire Wire Line
-	4000 5350 4050 5350
+	3100 5400 3150 5400
 Wire Wire Line
-	4000 5450 4050 5450
+	3100 5500 3150 5500
 Wire Wire Line
-	4000 5550 4050 5550
+	3100 5600 3150 5600
 Wire Wire Line
-	4000 5650 4050 5650
+	3100 5700 3150 5700
 Wire Wire Line
-	4000 5750 4050 5750
+	3100 5800 3150 5800
 Wire Wire Line
-	4000 5850 4050 5850
+	3100 5900 3150 5900
 Wire Wire Line
-	4000 5950 4050 5950
+	3100 6000 3150 6000
 Wire Wire Line
-	4000 6050 4050 6050
+	3100 6100 3150 6100
 Wire Wire Line
-	4000 6150 4050 6150
+	3100 6200 3150 6200
 Wire Wire Line
-	4000 6250 4050 6250
+	3100 6300 3150 6300
 Text GLabel 3950 3250 2    50   Input ~ 0
 EN
 Connection ~ 3400 3250
@@ -494,18 +488,18 @@ $EndComp
 $Comp
 L Device:C_Small C3
 U 1 1 612BFE20
-P 6400 3300
-F 0 "C3" H 6350 3400 50  0000 R CNN
-F 1 "0.1uF" H 6350 3200 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 3300 50  0001 C CNN
-F 3 "~" H 6400 3300 50  0001 C CNN
-	1    6400 3300
+P 6400 3400
+F 0 "C3" H 6350 3500 50  0000 R CNN
+F 1 "0.1uF" H 6350 3300 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6400 3400 50  0001 C CNN
+F 3 "~" H 6400 3400 50  0001 C CNN
+	1    6400 3400
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 3650 6400 3400
+	6400 3650 6400 3500
 Wire Wire Line
-	6400 3200 6400 3100
+	6400 3300 6400 3100
 Connection ~ 6400 3100
 Text GLabel 6650 3100 2    50   Input ~ 0
 IO0
@@ -526,111 +520,84 @@ Wire Wire Line
 	8450 4700 8450 4750
 Wire Wire Line
 	8450 4750 8500 4750
-Text GLabel 5500 6050 2    50   Input ~ 0
+Text GLabel 4600 6100 2    50   Input ~ 0
 FTDI_RX
-Text GLabel 5500 6150 2    50   Input ~ 0
+Text GLabel 4600 6200 2    50   Input ~ 0
 FTDI_TX
 Wire Wire Line
-	5500 6150 5450 6150
+	4600 6200 4550 6200
 Wire Wire Line
-	5450 6050 5500 6050
-Text GLabel 4000 6250 0    50   Input ~ 0
+	4550 6100 4600 6100
+Text GLabel 3100 6300 0    50   Input ~ 0
 GPS_RX
-Text GLabel 4000 6150 0    50   Input ~ 0
+Text GLabel 3100 6200 0    50   Input ~ 0
 GPS_TX
-Text GLabel 4000 6550 0    50   Input ~ 0
+Text GLabel 3100 6600 0    50   Input ~ 0
 GAUGE_SDA
-Text GLabel 4000 6650 0    50   Input ~ 0
+Text GLabel 3100 6700 0    50   Input ~ 0
 GAUGE_SCL
 Wire Wire Line
-	4000 6650 4050 6650
+	3100 6700 3150 6700
 Wire Wire Line
-	4000 6550 4050 6550
-Text GLabel 4000 6450 0    50   Input ~ 0
+	3100 6600 3150 6600
+Text GLabel 3100 6500 0    50   Input ~ 0
 VSPI_MISO
-Text GLabel 4000 6750 0    50   Input ~ 0
+Text GLabel 3100 6800 0    50   Input ~ 0
 VSPI_MOSI
-Text GLabel 4000 6350 0    50   Input ~ 0
+Text GLabel 3100 6400 0    50   Input ~ 0
 VSPI_SCLK
-NoConn ~ 9350 1950
-NoConn ~ 9350 2100
-NoConn ~ 9150 2800
-NoConn ~ 9200 2950
-NoConn ~ 9150 3100
-NoConn ~ 9200 3250
-NoConn ~ 9200 800 
-NoConn ~ 9200 950 
-NoConn ~ 9350 4700
-NoConn ~ 9350 4850
-NoConn ~ 9300 5000
-NoConn ~ 9300 5150
-NoConn ~ 5450 5950
-NoConn ~ 5450 5850
-NoConn ~ 5450 5750
-NoConn ~ 5450 5650
-NoConn ~ 5450 5550
-NoConn ~ 5450 5450
-Text GLabel 4000 5950 0    50   Input ~ 0
+NoConn ~ 4550 6000
+NoConn ~ 4550 5900
+NoConn ~ 4550 5800
+NoConn ~ 4550 5700
+NoConn ~ 4550 5600
+NoConn ~ 4550 5500
+Text GLabel 3100 6000 0    50   Input ~ 0
 RGB_LED_B
-Text GLabel 5500 6450 2    50   Input ~ 0
+Text GLabel 4600 6500 2    50   Input ~ 0
 BUTTON_1
-Text GLabel 5500 6350 2    50   Input ~ 0
+Text GLabel 4600 6400 2    50   Input ~ 0
 BUTTON_2
-NoConn ~ 9250 5850
-NoConn ~ 9250 6000
-NoConn ~ 9200 5350
-NoConn ~ 9200 5500
-NoConn ~ 9200 5650
-Text GLabel 4000 7050 0    50   Input ~ 0
+Text GLabel 3100 7100 0    50   Input ~ 0
 RADIO_NRST
-Text GLabel 5500 5350 2    50   Input ~ 0
+Text GLabel 4600 5400 2    50   Input ~ 0
 RADIO_BUSY
-Text GLabel 5500 6650 2    50   Input ~ 0
+Text GLabel 4600 6700 2    50   Input ~ 0
 RADIO_DIO1
-Text GLabel 5500 6550 2    50   Input ~ 0
+Text GLabel 4600 6600 2    50   Input ~ 0
 RADIO_DIO2
-Text GLabel 4000 5850 0    50   Input ~ 0
+Text GLabel 3100 5900 0    50   Input ~ 0
 RADIO_TXEN
-Text GLabel 4000 5550 0    50   Input ~ 0
+Text GLabel 3100 5600 0    50   Input ~ 0
 RADIO_RXEN
-NoConn ~ 9200 3400
-NoConn ~ 9200 3550
-NoConn ~ 9200 3700
-NoConn ~ 9200 3850
-NoConn ~ 9200 4000
-NoConn ~ 9200 4150
 Wire Wire Line
-	4000 6350 4050 6350
+	3100 6400 3150 6400
 Wire Wire Line
-	4000 6450 4050 6450
+	3100 6500 3150 6500
 Wire Wire Line
-	4000 6950 4050 6950
+	3100 7000 3150 7000
 Wire Wire Line
-	4000 7050 4050 7050
-Text GLabel 4000 5450 0    50   Input ~ 0
+	3100 7100 3150 7100
+Text GLabel 3100 5500 0    50   Input ~ 0
 BUZZER
 Wire Wire Line
-	4000 6850 4050 6850
-NoConn ~ 9350 6200
-Text GLabel 4000 6050 0    50   Input ~ 0
+	3100 6900 3150 6900
+Text GLabel 3100 6100 0    50   Input ~ 0
 GPS_RESET
 Wire Wire Line
-	4000 6750 4050 6750
-NoConn ~ 9200 2400
-Text GLabel 4000 6950 0    50   Input ~ 0
+	3100 6800 3150 6800
+Text GLabel 3100 7000 0    50   Input ~ 0
 GPS_EXTINT
-NoConn ~ 9200 2250
-Text GLabel 5500 5250 2    50   Input ~ 0
+Text GLabel 4600 5300 2    50   Input ~ 0
 GAUGE_ALRT1
-NoConn ~ 9150 1200
 Wire Wire Line
-	5450 6350 5500 6350
+	4550 6400 4600 6400
 Wire Wire Line
-	5450 6450 5500 6450
+	4550 6500 4600 6500
 Wire Wire Line
-	5450 6550 5500 6550
+	4550 6600 4600 6600
 Wire Wire Line
-	5450 6650 5500 6650
+	4550 6700 4600 6700
 $Comp
 L power:+3V3 #PWR053
 U 1 1 614C013F
@@ -678,28 +645,26 @@ Wire Wire Line
 	8050 6200 8050 5900
 Wire Wire Line
 	7850 6200 7850 5900
-Text Notes 3350 6250 2    100  ~ 0
+Text Notes 2450 6300 2    100  ~ 0
 Serial 2
 Wire Notes Line
-	3500 6200 3400 6200
+	2600 6250 2500 6250
 Wire Notes Line
-	3500 6150 3600 6150
+	2600 6200 2700 6200
 Wire Notes Line
-	3500 6250 3600 6250
+	2600 6300 2700 6300
 Wire Notes Line
-	3500 6150 3500 6250
-Text Notes 6100 6150 0    100  ~ 0
+	2600 6200 2600 6300
+Text Notes 5200 6200 0    100  ~ 0
 Serial 0
 Wire Notes Line
-	6000 6100 6100 6100
+	5100 6150 5200 6150
 Wire Notes Line
-	6000 6150 5900 6150
+	5100 6200 5000 6200
 Wire Notes Line
-	6000 6050 5900 6050
+	5100 6100 5000 6100
 Wire Notes Line
-	6000 6150 6000 6050
-Text Notes 700  7600 0    50   ~ 0
-Verificar que os pinos conectados em VP e VN não flutuarão, \nse não um pullup será necessário nesses pinos. Ele não possui\npullup interno.
+	5100 6200 5100 6100
 $Comp
 L SamacSys_Parts:EVP-AAM02W S5
 U 1 1 60E2AB97
@@ -770,131 +735,101 @@ Connection ~ 3200 3250
 Connection ~ 3200 3800
 Wire Wire Line
 	3200 3600 3200 3800
-Wire Notes Line
-	14700 0    14700 8250
-Wire Notes Line
-	14700 8250 11850 8250
-Wire Notes Line
-	11850 8250 11850 0   
-Wire Notes Line
-	11850 0    14700 0   
-Text Notes 12700 250  0    79   Italic 16
-LISTA DE AFAZERES
-Text Notes 12150 600  0    50   ~ 0
-> Mudar o conector micro USB para um 100% SMD
-Text Notes 12150 750  0    50   ~ 0
-> Escolher uma chave deslizante para o liga/desliga
-Text Notes 12150 900  0    50   ~ 0
-> Conferir o pinout dos botões de EN e IO0
-Text Notes 12150 1050 0    50   ~ 0
-> Editar silk dos botões
-Text Notes 12150 1200 0    50   ~ 0
-> Ponderar sobre a possibilidade de retirar os LEDs do FTDI
-Text Notes 12150 1550 0    50   ~ 0
->Refletir sobre quais decisões me trouxeram até aqui
-Text Notes 12250 1350 0    50   ~ 0
-> Ou ligar junto ao RGB principal
-Text GLabel 4000 5750 0    50   Input ~ 0
+Text GLabel 3100 5800 0    50   Input ~ 0
 GPS_ON_OFF
-Text GLabel 4000 6850 0    50   Input ~ 0
+Text GLabel 3100 6900 0    50   Input ~ 0
 SDCARD_NSS
 Wire Wire Line
 	8050 6200 8200 6200
 Wire Wire Line
 	7850 6200 7700 6200
-Text Notes 12150 1950 0    50   ~ 0
-> Mover o capacitor e resistor de reset mais pra perto\n   da ESP
-Text Notes 12150 1700 0    50   ~ 0
-> 4 camadas go BRRRRRRRR
 Wire Wire Line
 	3400 3250 3750 3250
 Wire Wire Line
-	5500 5250 5450 5250
+	4600 5300 4550 5300
 Wire Wire Line
-	5500 5350 5450 5350
+	4600 5400 4550 5400
 Wire Wire Line
-	4750 4650 4750 5050
-NoConn ~ 4400 5450
-NoConn ~ 4450 5750
+	3850 4700 3850 5100
 Text GLabel 9750 3100 0    50   Input ~ 0
 VSPI_MISO
 Text GLabel 9750 2800 0    50   Input ~ 0
 VSPI_MOSI
 Text GLabel 9750 3250 0    50   Input ~ 0
 VSPI_SCLK
-Text GLabel 4150 1750 2    50   Input ~ 0
+Text GLabel 4075 1675 2    50   Input ~ 0
 VSPI_MISO
-Text GLabel 1800 1650 0    50   Input ~ 0
+Text GLabel 1725 1575 0    50   Input ~ 0
 VSPI_MOSI
-Text GLabel 1800 1450 0    50   Input ~ 0
+Text GLabel 1725 1375 0    50   Input ~ 0
 VSPI_SCLK
 Text GLabel 9750 2950 0    50   Input ~ 0
 RADIO_NSS
-Text GLabel 4000 5650 0    50   Input ~ 0
+Text GLabel 3100 5700 0    50   Input ~ 0
 RADIO_NSS
-Text GLabel 1800 1750 0    50   Input ~ 0
+Text GLabel 1725 1675 0    50   Input ~ 0
 SDCARD_NSS
-NoConn ~ 3550 1450
-NoConn ~ 3550 1550
+NoConn ~ 3475 1375
+NoConn ~ 3475 1475
 $Comp
 L power:GND #PWR0103
 U 1 1 6126E144
-P 3650 1950
-F 0 "#PWR0103" H 3650 1700 50  0001 C CNN
-F 1 "GND" H 3655 1777 50  0000 C CNN
-F 2 "" H 3650 1950 50  0001 C CNN
-F 3 "" H 3650 1950 50  0001 C CNN
-	1    3650 1950
+P 3575 1875
+F 0 "#PWR0103" H 3575 1625 50  0001 C CNN
+F 1 "GND" H 3580 1702 50  0000 C CNN
+F 2 "" H 3575 1875 50  0001 C CNN
+F 3 "" H 3575 1875 50  0001 C CNN
+	1    3575 1875
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0104
 U 1 1 6126EAE6
-P 2350 1000
-F 0 "#PWR0104" H 2350 850 50  0001 C CNN
-F 1 "+3V3" H 2365 1173 50  0000 C CNN
-F 2 "" H 2350 1000 50  0001 C CNN
-F 3 "" H 2350 1000 50  0001 C CNN
-	1    2350 1000
+P 2275 925
+F 0 "#PWR0104" H 2275 775 50  0001 C CNN
+F 1 "+3V3" H 2290 1098 50  0000 C CNN
+F 2 "" H 2275 925 50  0001 C CNN
+F 3 "" H 2275 925 50  0001 C CNN
+	1    2275 925 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 1850 3650 1850
+	3475 1775 3575 1775
 Wire Wire Line
-	3650 1850 3650 1950
+	3575 1775 3575 1875
 Wire Wire Line
-	1800 1450 2450 1450
+	1725 1375 2375 1375
 Wire Wire Line
-	1800 1650 2450 1650
+	1725 1575 2375 1575
 Wire Wire Line
-	2450 1750 2250 1750
+	2375 1675 2175 1675
 Wire Wire Line
-	2350 1000 2350 1050
+	2275 925  2275 975 
 Wire Wire Line
-	2350 1550 2450 1550
+	2275 1475 2375 1475
 $Comp
 L Device:R_Small R3
 U 1 1 612A0089
-P 2250 1250
-F 0 "R3" V 2054 1250 50  0000 C CNN
-F 1 "10K" V 2145 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2250 1250 50  0001 C CNN
-F 3 "~" H 2250 1250 50  0001 C CNN
-	1    2250 1250
+P 2175 1175
+F 0 "R3" V 1979 1175 50  0000 C CNN
+F 1 "10K" V 2070 1175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2175 1175 50  0001 C CNN
+F 3 "~" H 2175 1175 50  0001 C CNN
+	1    2175 1175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 1150 2250 1050
+	2175 1075 2175 975 
 Wire Wire Line
-	2250 1050 2350 1050
-Connection ~ 2350 1050
+	2175 975  2275 975 
+Connection ~ 2275 975 
 Wire Wire Line
-	2350 1050 2350 1550
+	2275 975  2275 1475
 Wire Wire Line
-	2250 1350 2250 1750
-Connection ~ 2250 1750
+	2175 1275 2175 1675
+Connection ~ 2175 1675
 Wire Wire Line
-	2250 1750 1800 1750
+	2175 1675 1725 1675
 Wire Wire Line
 	8375 1650 8575 1650
 $Comp
@@ -925,21 +860,17 @@ Wire Wire Line
 	8575 1350 8575 1250
 Text Notes 4875 2450 0    47   ~ 0
 Os resistores de pull-up ou pull-down devem ser utilizados um\npor vez, dependendo da tensão da flash interna da ESP.\nNote que os resistores que atuam como pull-down estão na\npágina "Tecommunications" pois lá eles são os resistores do\nMosfet que aciona o GPS.\n\nIsso ocorre pois o pino 12 é um pino lido no boot para selecionar\na tensão que alimenta a flash interna: \n1 -> 1.8V\n0 -> 3.3V\n\nSe for necessário utilizar a flash de 3.3V (padrão) basta não utilizar\no pull-up.\n\nSe for necessário utilizar a flash de 1.8V (padrão), deve-se remover\no pull-down do gate do Mosfet, mas o sinal no GPIO12 deve ser\nbem definido (1 ou 0) quando quiser ligar ou desligar o GPS.\n\nLer mais sobre aqui:\nhttps://docs.espressif.com/projects/esp-idf/en/\nlatest/esp32/api-reference/peripherals/sd_pullup_requirements.\nhtml#no-pull-up-on-gpio12
-NoConn ~ 4400 5550
-NoConn ~ 4400 5350
-NoConn ~ 4400 5650
-NoConn ~ 4450 6050
-Text Notes 2550 5600 0    50   ~ 0
+Text Notes 1650 5650 0    50   ~ 0
 Internal Pull-down
-Text Notes 2550 5500 0    50   ~ 0
+Text Notes 1650 5550 0    50   ~ 0
 Internal Pull-down
-Text Notes 2550 5400 0    50   ~ 0
+Text Notes 1650 5450 0    50   ~ 0
 Internal Pull-up
-Text Notes 2550 6050 0    50   ~ 0
+Text Notes 1650 6100 0    50   ~ 0
 Internal Pull-up
-Text Notes 2550 5800 0    50   ~ 0
+Text Notes 1650 5850 0    50   ~ 0
 Internal Pull-down
-Text Notes 2550 5700 0    50   ~ 0
+Text Notes 1650 5750 0    50   ~ 0
 Internal Pull-up
 Wire Wire Line
 	8150 6050 8150 5900
@@ -950,29 +881,29 @@ GPS_ON_OFF
 $Comp
 L Device:R_Small R5
 U 1 1 6158FB54
-P 4050 1500
-F 0 "R5" V 3854 1500 50  0000 C CNN
-F 1 "10K" V 3945 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4050 1500 50  0001 C CNN
-F 3 "~" H 4050 1500 50  0001 C CNN
-	1    4050 1500
+P 3975 1425
+F 0 "R5" V 3779 1425 50  0000 C CNN
+F 1 "10K" V 3870 1425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3975 1425 50  0001 C CNN
+F 3 "~" H 3975 1425 50  0001 C CNN
+	1    3975 1425
 	-1   0    0    -1  
 $EndComp
 $Comp
 L SamacSys_Parts:PJS008U-3000-0 J5
 U 1 1 612F4333
-P 3000 1650
-F 0 "J5" H 3000 1185 50  0000 C CNN
-F 1 "PJS008U-3000-0" H 3000 1276 50  0000 C CNN
-F 2 "SamacSys_Parts:PJS008U30000" H 3750 1750 50  0001 L CNN
-F 3 "https://www.yamaichi.de/uploads/media/PJS008U-3000.pdf" H 3750 1650 50  0001 L CNN
-F 4 "Memory Card Connectors MicroSD Card Conn Ver Dip Mnt Manual" H 3750 1550 50  0001 L CNN "Description"
-F 5 "14.18" H 3750 1450 50  0001 L CNN "Height"
-F 6 "945-PJS008U-3000-0" H 3750 1350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Yamaichi-Electronics/PJS008U-3000-0/?qs=nO3wRANIIvnp3f0XwG2X3A%3D%3D" H 3750 1250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Yamaichi" H 3750 1150 50  0001 L CNN "Manufacturer_Name"
-F 9 "PJS008U-3000-0" H 3750 1050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    3000 1650
+P 2925 1575
+F 0 "J5" H 2925 1110 50  0000 C CNN
+F 1 "PJS008U-3000-0" H 2925 1201 50  0000 C CNN
+F 2 "SamacSys_Parts:PJS008U30000" H 3675 1675 50  0001 L CNN
+F 3 "https://www.yamaichi.de/uploads/media/PJS008U-3000.pdf" H 3675 1575 50  0001 L CNN
+F 4 "Memory Card Connectors MicroSD Card Conn Ver Dip Mnt Manual" H 3675 1475 50  0001 L CNN "Description"
+F 5 "14.18" H 3675 1375 50  0001 L CNN "Height"
+F 6 "945-PJS008U-3000-0" H 3675 1275 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Yamaichi-Electronics/PJS008U-3000-0/?qs=nO3wRANIIvnp3f0XwG2X3A%3D%3D" H 3675 1175 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Yamaichi" H 3675 1075 50  0001 L CNN "Manufacturer_Name"
+F 9 "PJS008U-3000-0" H 3675 975 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2925 1575
 	1    0    0    1   
 $EndComp
 $Comp
@@ -995,67 +926,67 @@ $EndComp
 NoConn ~ 8450 5550
 NoConn ~ 7450 5550
 Wire Wire Line
-	3550 1750 4050 1750
+	3475 1675 3975 1675
 $Comp
 L Device:R_Small R26
 U 1 1 61524AEC
-P 3700 1500
-F 0 "R26" V 3504 1500 50  0000 C CNN
-F 1 "10K" V 3595 1500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3700 1500 50  0001 C CNN
-F 3 "~" H 3700 1500 50  0001 C CNN
-	1    3700 1500
+P 3625 1425
+F 0 "R26" V 3429 1425 50  0000 C CNN
+F 1 "10K" V 3520 1425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3625 1425 50  0001 C CNN
+F 3 "~" H 3625 1425 50  0001 C CNN
+	1    3625 1425
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R13
 U 1 1 61547DCC
-P 1950 1250
-F 0 "R13" V 1754 1250 50  0000 C CNN
-F 1 "10K" V 1845 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1950 1250 50  0001 C CNN
-F 3 "~" H 1950 1250 50  0001 C CNN
-	1    1950 1250
+P 1875 1175
+F 0 "R13" V 1679 1175 50  0000 C CNN
+F 1 "10K" V 1770 1175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1875 1175 50  0001 C CNN
+F 3 "~" H 1875 1175 50  0001 C CNN
+	1    1875 1175
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	1950 1350 1950 1850
+	1875 1275 1875 1775
 Wire Wire Line
-	1950 1850 2450 1850
+	1875 1775 2375 1775
 Wire Wire Line
-	1950 1150 1950 1050
+	1875 1075 1875 975 
 Wire Wire Line
-	1950 1050 2250 1050
-Connection ~ 2250 1050
+	1875 975  2175 975 
+Connection ~ 2175 975 
 $Comp
 L power:+3V3 #PWR0107
 U 1 1 615572C8
-P 3700 1300
-F 0 "#PWR0107" H 3700 1150 50  0001 C CNN
-F 1 "+3V3" H 3715 1473 50  0000 C CNN
-F 2 "" H 3700 1300 50  0001 C CNN
-F 3 "" H 3700 1300 50  0001 C CNN
-	1    3700 1300
+P 3625 1225
+F 0 "#PWR0107" H 3625 1075 50  0001 C CNN
+F 1 "+3V3" H 3640 1398 50  0000 C CNN
+F 2 "" H 3625 1225 50  0001 C CNN
+F 3 "" H 3625 1225 50  0001 C CNN
+	1    3625 1225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 1300 3700 1350
+	3625 1225 3625 1275
 Wire Wire Line
-	4050 1400 4050 1350
+	3975 1325 3975 1275
 Wire Wire Line
-	4050 1350 3700 1350
-Connection ~ 3700 1350
+	3975 1275 3625 1275
+Connection ~ 3625 1275
 Wire Wire Line
-	3700 1350 3700 1400
+	3625 1275 3625 1325
 Wire Wire Line
-	4050 1600 4050 1750
-Connection ~ 4050 1750
+	3975 1525 3975 1675
+Connection ~ 3975 1675
 Wire Wire Line
-	4050 1750 4150 1750
+	3975 1675 4075 1675
 Wire Wire Line
-	3700 1600 3700 1650
+	3625 1525 3625 1575
 Wire Wire Line
-	3700 1650 3550 1650
+	3625 1575 3475 1575
 Text Notes 650  2400 0    50   ~ 0
 Ler aqui sobre os resistores de pull-up para cartões SD:\nhttps://electronics.stackexchange.com/questions/39571/how-to-\ndo-pulling-up-or-down-correctly-when-interfacing-a-microsd-card
 Wire Wire Line
@@ -1152,4 +1083,12 @@ Text Notes 7050 5150 0    98   Italic 20
 Picoblade Externo\n
 Text Notes 550  700  0    98   Italic 20
 Cartão SD
+Text Notes 625  7675 0    50   ~ 0
+Verificar que os pinos conectados em VP e VN não flutuarão, \nse não um pullup será necessário nesses pinos. Ele não possui\npullup interno.
+Text GLabel 9750 950  0    50   Input ~ 0
+GAUGE_SCL
+Text GLabel 9750 800  0    50   Input ~ 0
+GAUGE_SDA
+Text GLabel 9750 2100 0    50   Input ~ 0
+GPS_RX
 $EndSCHEMATC
