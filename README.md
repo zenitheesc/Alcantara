@@ -49,6 +49,12 @@ The onboard GNSS module carries the NEO-M8N from u-blox, enabling it to be used 
 
 This system was designed using KiCad 5.1.10.
 
+## Block Diagram
+
+<p align = "center">
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Diagram.png"/>
+</p>
+
 
 ## Schematic
 
