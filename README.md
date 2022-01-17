@@ -1,5 +1,5 @@
-# Alcantara-v.1.0
-<h1 align="center" style="color:white; background-color:black">Alcântara_v.1.0</h1>
+# Alcantara v.1.0
+<h1 align="center" style="color:white; background-color:black">Alcantara v.1.0</h1>
 <h4 align="center"> Mobile Gorund Station for stratospheric probe monitoring and rescue. Goes well with the Zenith Monitor app.</h4>
 
 <p align="center">
@@ -57,56 +57,56 @@ The design was separated in hierarchical sheets to accommodate all components in
 On the main sheet you can find the ESP32 WROOM Module, the SD Card module (connected via SPI), Boot and Reset button (with the Brownout prevention voltage supervisor), auto upload transistors and the external connector.
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_1.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_1.png"/>
 </p>
 
 
 The second page contains the power section, with the TPS61092 Boost Converter (with another voltage supervisor for undervolting protection for the battery) for 5V, a 3.3V linear voltage regulator, the battery with a P channel mosfet for reverse voltage protection and a MAX17201G+T stand-alone fuel gauge for the 18650 battery voltage and current monitoring.
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_2.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_2.png"/>
 </p>
 
 On the third page you find the Neo-M8N module from u-blox and the E22-900M30S module from EBYTE.
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_3.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_3.png"/>
 </p>
 
 And the last page has the peripherals, the USB connector with its ESD protector, the RGB LED, the buzzer with its mosfet, the two user interface buttons and the USB to Serial Converter.
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_4.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Schematic_Page_4.png"/>
 </p>
 
 
 ## Board
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Top.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Top.png"/>
 </p>
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Bottom.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Bottom.png"/>
 </p>
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Perspective1.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Perspective1.png"/>
 </p>
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Perspective2.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Perspective2.png"/>
 </p>
 
 
 ## Use concept
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/PhoneConcept.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/PhoneConcept.png"/>
 </p>
 
 <p align = "center">
-<img src="https://raw.githubusercontent.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/BoxConcept.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/BoxConcept.png"/>
 </p>
 
 
