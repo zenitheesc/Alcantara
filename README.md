@@ -34,8 +34,10 @@
 
 <p align="center">
     <a href="#environment-and-tools">Environment and Tools</a> •
-    <a href="#z-hub">Z-Hub</a> •
-    <a href="#Alcantara">Alcantara</a>
+    <a href="#Block-Diagram">Block Diagram</a> •
+    <a href="#Schematic">Schematic</a> • 
+    <a href="#Board">Board</a> • 
+    <a href="#Use-Concept">Use Concept</a>
 </p>
 
 
