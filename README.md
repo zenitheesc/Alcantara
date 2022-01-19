@@ -37,6 +37,7 @@
     <a href="#Block-Diagram">Block Diagram</a> •
     <a href="#Schematic">Schematic</a> • 
     <a href="#Board">Board</a> • 
+    <a href="#BOM">BOM</a> • 
     <a href="#Use-Concept">Use Concept</a>
 </p>
 
@@ -106,6 +107,10 @@ And the last page has the peripherals, the USB connector with its ESD protector,
 <img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/Images/Perspective2.png"/>
 </p>
 
+
+## BOM
+
+https://htmlpreview.github.io/?https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/ibom.html
 
 ## Use concept
 
