@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR012
+L archive:power_GND #PWR012
 U 1 1 60D85621
 P 6650 3825
 F 0 "#PWR012" H 6650 3575 50  0001 C CNN
@@ -35,7 +35,7 @@ ALRT1
 Text HLabel 8750 1175 2    50   Input ~ 0
 Pack
 $Comp
-L Device:Thermistor_NTC TH?
+L archive:Device_Thermistor_NTC TH?
 U 1 1 60D8563E
 P 5550 3325
 AR Path="/60D8563E" Ref="TH?"  Part="1" 
@@ -48,7 +48,7 @@ F 3 "https://br.mouser.com/ProductDetail/Murata-Electronics/NCU15XH103F6SRC?qs=q
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
+L archive:Device_R R7
 U 1 1 60D85651
 P 6250 3725
 F 0 "R7" V 6043 3725 50  0000 C CNN
@@ -63,7 +63,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 2575 8050 2575
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 60D8567C
 P 7350 1875
 AR Path="/60D8567C" Ref="R?"  Part="1" 
@@ -76,7 +76,7 @@ F 3 "~" H 7350 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 60D85683
 P 8050 1875
 AR Path="/60D85683" Ref="R?"  Part="1" 
@@ -89,7 +89,7 @@ F 3 "~" H 8050 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 60D85689
 P 7700 1875
 AR Path="/60D85689" Ref="R?"  Part="1" 
@@ -102,7 +102,7 @@ F 3 "~" H 7700 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 60D85697
 P 8450 2175
 AR Path="/60D85697" Ref="R?"  Part="1" 
@@ -120,7 +120,7 @@ Wire Wire Line
 	7700 1575 7700 1675
 Connection ~ 7700 1675
 $Comp
-L power:+3V3 #PWR?
+L archive:power_+3V3 #PWR?
 U 1 1 60D856B4
 P 7700 1575
 AR Path="/60D856B4" Ref="#PWR?"  Part="1" 
@@ -133,7 +133,7 @@ F 3 "" H 7700 1575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:LD1117S33TR_SOT223 U3
+L archive:Regulator_Linear_LD1117S33TR_SOT223 U3
 U 1 1 60D979F1
 P 9100 5400
 F 0 "U3" H 9100 5642 50  0000 C CNN
@@ -144,7 +144,7 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L archive:Device_C_Small C9
 U 1 1 60D9A0A0
 P 5150 2375
 F 0 "C9" H 5200 2475 50  0000 L CNN
@@ -155,7 +155,7 @@ F 3 "~" H 5150 2375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L archive:Device_C_Small C7
 U 1 1 60D9AA24
 P 7300 3375
 F 0 "C7" H 7350 3475 50  0000 L CNN
@@ -166,7 +166,7 @@ F 3 "~" H 7300 3375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C11
+L archive:Device_C_Small C11
 U 1 1 60DA450D
 P 8500 5700
 F 0 "C11" H 8550 5800 50  0000 L CNN
@@ -177,7 +177,7 @@ F 3 "~" H 8500 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C12
+L archive:Device_C_Small C12
 U 1 1 60DA4E3C
 P 9650 5700
 F 0 "C12" H 9700 5800 50  0000 L CNN
@@ -188,7 +188,7 @@ F 3 "~" H 9650 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L archive:power_GND #PWR016
 U 1 1 60DA5F25
 P 9100 6000
 F 0 "#PWR016" H 9100 5750 50  0001 C CNN
@@ -201,7 +201,7 @@ $EndComp
 Wire Wire Line
 	9100 5700 9100 6000
 $Comp
-L power:GND #PWR015
+L archive:power_GND #PWR015
 U 1 1 60DAA209
 P 8500 6000
 F 0 "#PWR015" H 8500 5750 50  0001 C CNN
@@ -212,7 +212,7 @@ F 3 "" H 8500 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L archive:power_GND #PWR017
 U 1 1 60DAA5AA
 P 9650 6000
 F 0 "#PWR017" H 9650 5750 50  0001 C CNN
@@ -235,7 +235,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 5400 8800 5400
 $Comp
-L power:+3V3 #PWR018
+L archive:power_+3V3 #PWR018
 U 1 1 60DB2DA4
 P 9900 5250
 F 0 "#PWR018" H 9900 5100 50  0001 C CNN
@@ -251,7 +251,7 @@ Wire Wire Line
 	9900 5400 9900 5250
 Connection ~ 9650 5400
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 60DF3D23
 P 5600 1925
 AR Path="/60DF3D23" Ref="R?"  Part="1" 
@@ -274,7 +274,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 5350 3800 5350
 $Comp
-L Device:C_Small C6
+L archive:Device_C_Small C6
 U 1 1 60E78225
 P 1250 6200
 F 0 "C6" H 1100 6300 50  0000 L CNN
@@ -300,7 +300,7 @@ Wire Wire Line
 	4750 5450 4750 5350
 Connection ~ 4750 5350
 $Comp
-L Device:C_Small C8
+L archive:Device_C_Small C8
 U 1 1 60EDD3EF
 P 5250 5600
 F 0 "C8" H 5342 5646 50  0000 L CNN
@@ -313,7 +313,7 @@ $EndComp
 Wire Wire Line
 	5250 5500 5250 5350
 $Comp
-L power:GND #PWR09
+L archive:power_GND #PWR09
 U 1 1 60EE21CD
 P 5250 5800
 F 0 "#PWR09" H 5250 5550 50  0001 C CNN
@@ -326,7 +326,7 @@ $EndComp
 Wire Wire Line
 	5250 5800 5250 5700
 $Comp
-L Device:CP_Small C10
+L archive:Device_CP_Small C10
 U 1 1 60EE6DA6
 P 5700 5600
 F 0 "C10" H 5788 5646 50  0000 L CNN
@@ -342,7 +342,7 @@ Wire Wire Line
 	5700 5350 5250 5350
 Connection ~ 5250 5350
 $Comp
-L power:GND #PWR011
+L archive:power_GND #PWR011
 U 1 1 60EEBF1A
 P 5700 5800
 F 0 "#PWR011" H 5700 5550 50  0001 C CNN
@@ -355,7 +355,7 @@ $EndComp
 Wire Wire Line
 	5700 5800 5700 5700
 $Comp
-L power:+5V #PWR010
+L archive:power_+5V #PWR010
 U 1 1 60EF0BEA
 P 5700 5200
 F 0 "#PWR010" H 5700 5050 50  0001 C CNN
@@ -369,7 +369,7 @@ Wire Wire Line
 	5700 5200 5700 5350
 Connection ~ 5700 5350
 $Comp
-L power:+5V #PWR014
+L archive:power_+5V #PWR014
 U 1 1 60EF9622
 P 8500 5250
 F 0 "#PWR014" H 8500 5100 50  0001 C CNN
@@ -391,7 +391,7 @@ Synchronous Boost Converter
 Text Notes 600  800  0    98   Italic 20
 Stand-alone Fuel Gauge
 $Comp
-L Device:Battery_Cell BT2
+L archive:Device_Battery_Cell BT2
 U 1 1 61591953
 P 4050 2725
 F 0 "BT2" H 4168 2821 50  0000 L CNN
@@ -402,7 +402,7 @@ F 3 "~" V 4050 2785 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0101
+L archive:power_GND #PWR0101
 U 1 1 6100DB47
 P 4400 6800
 F 0 "#PWR0101" H 4400 6550 50  0001 C CNN
@@ -430,7 +430,7 @@ Wire Wire Line
 	4300 6550 4400 6550
 Connection ~ 4300 6550
 $Comp
-L Device:Q_PMOS_GSD Q4
+L archive:Device_Q_PMOS_GSD Q4
 U 1 1 610D18A9
 P 4650 1275
 F 0 "Q4" V 4992 1275 50  0000 C CNN
@@ -441,7 +441,7 @@ F 3 "~" H 4650 1275 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0108
+L archive:power_GND #PWR0108
 U 1 1 610FCF6D
 P 4650 1575
 F 0 "#PWR0108" H 4650 1325 50  0001 C CNN
@@ -452,7 +452,7 @@ F 3 "" H 4650 1575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:TPS61092 U2
+L archive:Regulator_Switching_TPS61092 U2
 U 1 1 60DF7C3A
 P 4200 5850
 F 0 "U2" H 4200 6575 50  0000 C CNN
@@ -468,7 +468,7 @@ Connection ~ 1250 5650
 Wire Wire Line
 	1000 5650 1250 5650
 $Comp
-L Device:L_Small L1
+L archive:Device_L_Small L1
 U 1 1 60E6B8CB
 P 3150 5350
 F 0 "L1" V 3250 5250 50  0000 R CNN
@@ -491,7 +491,7 @@ Connection ~ 3700 5350
 Wire Wire Line
 	1250 5350 1250 5650
 $Comp
-L power:GND #PWR0109
+L archive:power_GND #PWR0109
 U 1 1 612ACFAF
 P 1250 6800
 F 0 "#PWR0109" H 1250 6550 50  0001 C CNN
@@ -502,7 +502,7 @@ F 3 "" H 1250 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L archive:power_GND #PWR0110
 U 1 1 612B0FCE
 P 3700 6800
 F 0 "#PWR0110" H 3700 6550 50  0001 C CNN
@@ -529,7 +529,7 @@ The TLV809ED29DBZR is a voltage supervisor with a push-pull output.\nWhen its in
 Wire Wire Line
 	2900 6800 2900 6550
 $Comp
-L power:GND #PWR0111
+L archive:power_GND #PWR0111
 U 1 1 612ACC1E
 P 2900 6800
 F 0 "#PWR0111" H 2900 6550 50  0001 C CNN
@@ -540,7 +540,7 @@ F 3 "" H 2900 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:TLV809ED29DBZR IC1
+L archive:SamacSys_Parts_TLV809ED29DBZR IC1
 U 1 1 612EBEE6
 P 3400 6200
 F 0 "IC1" H 3875 6565 50  0000 C CNN
@@ -557,7 +557,7 @@ F 9 "TLV809ED29DBZR" H 4450 5600 50  0001 L CNN "Manufacturer_Part_Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 60D85691
 P 5550 2925
 AR Path="/60D85691" Ref="R?"  Part="1" 
@@ -570,7 +570,7 @@ F 3 "~" H 5550 2925 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:MAX17201G+T IC2
+L archive:SamacSys_Parts_MAX17201G+T IC2
 U 1 1 613217CA
 P 5800 2325
 F 0 "IC2" H 6500 2740 50  0000 C CNN
@@ -638,7 +638,7 @@ Connection ~ 5900 3725
 Wire Wire Line
 	5900 3725 4050 3725
 $Comp
-L power:GND #PWR0112
+L archive:power_GND #PWR0112
 U 1 1 61366CA9
 P 5550 3475
 F 0 "#PWR0112" H 5550 3225 50  0001 C CNN
@@ -660,7 +660,7 @@ Wire Wire Line
 	5550 3025 5550 3125
 Connection ~ 5550 3125
 $Comp
-L power:GND #PWR0113
+L archive:power_GND #PWR0113
 U 1 1 61376F3D
 P 5150 2575
 F 0 "#PWR0113" H 5150 2325 50  0001 C CNN
@@ -690,7 +690,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 3125 7200 3125
 $Comp
-L power:GND #PWR0114
+L archive:power_GND #PWR0114
 U 1 1 6138DA91
 P 7300 3825
 F 0 "#PWR0114" H 7300 3575 50  0001 C CNN
@@ -737,7 +737,7 @@ The MAX17201 is an I2C single cell battery monitor. Be aware of \nthe difference
 Wire Wire Line
 	4650 1475 4650 1575
 $Comp
-L MSS-102545-14A-V-SMT:MSS-102545-14A-V-SMT S6
+L archive:MSS-102545-14A-V-SMT_MSS-102545-14A-V-SMT S6
 U 1 1 6196346E
 P 2125 6100
 F 0 "S6" V 1950 6150 50  0000 L CNN
@@ -765,7 +765,7 @@ Connection ~ 1775 5650
 Wire Wire Line
 	1775 5650 3800 5650
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 61991C9D
 P 1600 5975
 AR Path="/61991C9D" Ref="R?"  Part="1" 
@@ -787,7 +787,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 6200 1825 6200
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 6199CCDA
 P 1600 6400
 AR Path="/6199CCDA" Ref="R?"  Part="1" 
@@ -803,7 +803,7 @@ Wire Wire Line
 	1600 6300 1600 6200
 Connection ~ 1600 6200
 $Comp
-L power:GND #PWR0106
+L archive:power_GND #PWR0106
 U 1 1 619A465D
 P 1600 6800
 F 0 "#PWR0106" H 1600 6550 50  0001 C CNN

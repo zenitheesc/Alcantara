@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L dk_Interface-Controllers:FT232RL-REEL U?
+L archive:dk_Interface-Controllers_FT232RL-REEL U?
 U 1 1 60D8D886
 P 9500 3450
 AR Path="/60D8D886" Ref="U?"  Part="1" 
@@ -36,7 +36,7 @@ F 12 "Active" H 9700 4650 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J4
+L archive:Connector_USB_B_Micro J4
 U 1 1 60E1BC52
 P 2300 1900
 F 0 "J4" H 2357 2367 50  0000 C CNN
@@ -48,7 +48,7 @@ F 3 "~" H 2450 1850 50  0001 C CNN
 $EndComp
 NoConn ~ 2200 2300
 $Comp
-L power:GND #PWR035
+L archive:power_GND #PWR035
 U 1 1 60E2020B
 P 2300 2350
 F 0 "#PWR035" H 2300 2100 50  0001 C CNN
@@ -61,7 +61,7 @@ $EndComp
 Wire Wire Line
 	2300 2350 2300 2300
 $Comp
-L Device:R_Small R27
+L archive:Device_R_Small R27
 U 1 1 60E207DE
 P 8000 3150
 F 0 "R27" H 8059 3196 50  0000 L CNN
@@ -72,7 +72,7 @@ F 3 "~" H 8000 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R28
+L archive:Device_R_Small R28
 U 1 1 60E21E35
 P 8000 3550
 F 0 "R28" H 8059 3596 50  0000 L CNN
@@ -83,7 +83,7 @@ F 3 "~" H 8000 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L archive:power_GND #PWR044
 U 1 1 60E2207D
 P 8000 3700
 F 0 "#PWR044" H 8000 3450 50  0001 C CNN
@@ -103,7 +103,7 @@ Connection ~ 8000 3350
 Wire Wire Line
 	8000 3350 8000 3250
 $Comp
-L Power_Protection:USBLC6-2SC6 U6
+L archive:Power_Protection_USBLC6-2SC6 U6
 U 1 1 60E25ED4
 P 4550 1850
 F 0 "U6" H 4700 2400 50  0000 C CNN
@@ -139,7 +139,7 @@ USB_CONN_V+
 Wire Wire Line
 	8000 2900 8000 3050
 $Comp
-L Device:C_Small C18
+L archive:Device_C_Small C18
 U 1 1 60E31E88
 P 10200 3350
 F 0 "C18" V 9971 3350 50  0000 C CNN
@@ -150,7 +150,7 @@ F 3 "~" H 10200 3350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR050
+L archive:power_GND #PWR050
 U 1 1 60E335D5
 P 10550 3500
 F 0 "#PWR050" H 10550 3250 50  0001 C CNN
@@ -167,7 +167,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 3350 9900 3350
 $Comp
-L power:+5V #PWR048
+L archive:power_+5V #PWR048
 U 1 1 60E33F83
 P 9650 2400
 F 0 "#PWR048" H 9650 2250 50  0001 C CNN
@@ -184,7 +184,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 2450 9650 2400
 $Comp
-L power:+3V3 #PWR045
+L archive:power_+3V3 #PWR045
 U 1 1 60E34BD6
 P 9050 2400
 F 0 "#PWR045" H 9050 2250 50  0001 C CNN
@@ -201,7 +201,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 2450 9300 2950
 $Comp
-L power:GND #PWR049
+L archive:power_GND #PWR049
 U 1 1 60E35BEC
 P 9650 2800
 F 0 "#PWR049" H 9650 2550 50  0001 C CNN
@@ -212,7 +212,7 @@ F 3 "" H 9650 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR046
+L archive:power_GND #PWR046
 U 1 1 60E361F1
 P 9050 2800
 F 0 "#PWR046" H 9050 2550 50  0001 C CNN
@@ -223,7 +223,7 @@ F 3 "" H 9050 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C17
+L archive:Device_C_Small C17
 U 1 1 60E370A2
 P 9650 2600
 F 0 "C17" H 9742 2646 50  0000 L CNN
@@ -234,7 +234,7 @@ F 3 "~" H 9650 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C16
+L archive:Device_C_Small C16
 U 1 1 60E375B9
 P 9050 2600
 F 0 "C16" H 9250 2650 50  0000 R CNN
@@ -270,7 +270,7 @@ FTDI_RX
 Text HLabel 9900 3550 2    50   Input ~ 0
 FTDI_TX
 $Comp
-L power:GND #PWR047
+L archive:power_GND #PWR047
 U 1 1 60F952ED
 P 9450 4950
 F 0 "#PWR047" H 9450 4700 50  0001 C CNN
@@ -311,7 +311,7 @@ Micro USB Connector & ESD Protection
 Text Notes 7100 800  0    98   Italic 20
 USB to Serial Converter
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 6101D387
 P 2050 4550
 AR Path="/6101D387" Ref="R?"  Part="1" 
@@ -324,7 +324,7 @@ F 3 "~" H 2050 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 6101D38D
 P 2050 4350
 AR Path="/6101D38D" Ref="R?"  Part="1" 
@@ -337,7 +337,7 @@ F 3 "~" H 2050 4350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 6101D393
 P 2050 4150
 AR Path="/6101D393" Ref="R?"  Part="1" 
@@ -358,7 +358,7 @@ Wire Wire Line
 Text HLabel 2300 4150 2    50   Input ~ 0
 RGB_LED_B
 $Comp
-L Device:R_Small R24
+L archive:Device_R_Small R24
 U 1 1 61029512
 P 4850 4600
 F 0 "R24" V 4650 4600 50  0000 C CNN
@@ -371,7 +371,7 @@ $EndComp
 Wire Wire Line
 	4950 4600 5050 4600
 $Comp
-L Device:R_Small R25
+L archive:Device_R_Small R25
 U 1 1 6102A606
 P 5050 4800
 F 0 "R25" V 4850 4800 50  0000 C CNN
@@ -393,7 +393,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 4950 5050 4900
 $Comp
-L power:GND #PWR041
+L archive:power_GND #PWR041
 U 1 1 6102C851
 P 5450 5050
 F 0 "#PWR041" H 5450 4800 50  0001 C CNN
@@ -407,7 +407,7 @@ Wire Wire Line
 	5450 5050 5450 4950
 Connection ~ 5450 4950
 $Comp
-L power:+5V #PWR040
+L archive:power_+5V #PWR040
 U 1 1 6102E81A
 P 5450 3600
 F 0 "#PWR040" H 5450 3450 50  0001 C CNN
@@ -422,7 +422,7 @@ BUZZER
 Wire Wire Line
 	4650 4600 4750 4600
 $Comp
-L power:GND #PWR037
+L archive:power_GND #PWR037
 U 1 1 61048D66
 P 3250 7050
 F 0 "#PWR037" H 3250 6800 50  0001 C CNN
@@ -433,7 +433,7 @@ F 3 "" H 3250 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R19
+L archive:Device_R_Small R19
 U 1 1 6104E8B6
 P 1950 6700
 F 0 "R19" V 1750 6700 50  0000 C CNN
@@ -446,7 +446,7 @@ $EndComp
 Wire Wire Line
 	1950 6800 1950 6850
 $Comp
-L power:+3V3 #PWR033
+L archive:power_+3V3 #PWR033
 U 1 1 610509F0
 P 1950 6550
 F 0 "#PWR033" H 1950 6400 50  0001 C CNN
@@ -459,7 +459,7 @@ $EndComp
 Wire Wire Line
 	1950 6550 1950 6600
 $Comp
-L Device:R_Small R23
+L archive:Device_R_Small R23
 U 1 1 610556C6
 P 5100 6700
 F 0 "R23" V 4900 6700 50  0000 C CNN
@@ -472,7 +472,7 @@ $EndComp
 Wire Wire Line
 	5100 6800 5100 6850
 $Comp
-L power:+3V3 #PWR038
+L archive:power_+3V3 #PWR038
 U 1 1 610556CE
 P 5100 6550
 F 0 "#PWR038" H 5100 6400 50  0001 C CNN
@@ -510,7 +510,7 @@ FTDI_DTR
 Text HLabel 9900 3750 2    50   Input ~ 0
 FTDI_RTS
 $Comp
-L power:GND #PWR055
+L archive:power_GND #PWR055
 U 1 1 614ABBBD
 P 4550 2300
 F 0 "#PWR055" H 4550 2050 50  0001 C CNN
@@ -523,7 +523,7 @@ $EndComp
 Wire Wire Line
 	4550 2300 4550 2250
 $Comp
-L power:+3V3 #PWR054
+L archive:power_+3V3 #PWR054
 U 1 1 614AEBD0
 P 4550 1400
 F 0 "#PWR054" H 4550 1250 50  0001 C CNN
@@ -536,7 +536,7 @@ $EndComp
 Wire Wire Line
 	4550 1400 4550 1450
 $Comp
-L Device:R_Small R31
+L archive:Device_R_Small R31
 U 1 1 60E15770
 P 4800 6850
 F 0 "R31" V 4600 6850 50  0000 C CNN
@@ -551,7 +551,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 6850 5100 6850
 $Comp
-L Device:C_Small C20
+L archive:Device_C_Small C20
 U 1 1 60E2260F
 P 4550 7000
 F 0 "C20" H 4458 6954 50  0000 R CNN
@@ -567,7 +567,7 @@ Connection ~ 4550 6850
 Wire Wire Line
 	4550 6850 4250 6850
 $Comp
-L power:GND #PWR057
+L archive:power_GND #PWR057
 U 1 1 60E25191
 P 4550 7150
 F 0 "#PWR057" H 4550 6900 50  0001 C CNN
@@ -580,7 +580,7 @@ $EndComp
 Wire Wire Line
 	4550 7150 4550 7100
 $Comp
-L Device:R_Small R30
+L archive:Device_R_Small R30
 U 1 1 60E29CED
 P 1700 6850
 F 0 "R30" V 1500 6850 50  0000 C CNN
@@ -593,7 +593,7 @@ $EndComp
 Wire Wire Line
 	1800 6850 1950 6850
 $Comp
-L Device:C_Small C19
+L archive:Device_C_Small C19
 U 1 1 60E2A26E
 P 1450 7000
 F 0 "C19" H 1358 6954 50  0000 R CNN
@@ -609,7 +609,7 @@ Connection ~ 1450 6850
 Wire Wire Line
 	1450 6850 1600 6850
 $Comp
-L power:GND #PWR056
+L archive:power_GND #PWR056
 U 1 1 60E2D0D4
 P 1450 7150
 F 0 "#PWR056" H 1450 6900 50  0001 C CNN
@@ -622,7 +622,7 @@ $EndComp
 Wire Wire Line
 	1450 7150 1450 7100
 $Comp
-L Device:LED_RGBA D2
+L archive:Device_LED_RGBA D2
 U 1 1 60F72337
 P 1550 4350
 F 0 "D2" H 1550 3883 50  0000 C CNN
@@ -633,7 +633,7 @@ F 3 "~" H 1550 4300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR0102
+L archive:power_+3V3 #PWR0102
 U 1 1 60F808B6
 P 1050 4000
 F 0 "#PWR0102" H 1050 3850 50  0001 C CNN
@@ -698,7 +698,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 6850 6400 7050
 $Comp
-L power:GND #PWR042
+L archive:power_GND #PWR042
 U 1 1 610461A3
 P 6400 7050
 F 0 "#PWR042" H 6400 6800 50  0001 C CNN
@@ -709,7 +709,7 @@ F 3 "" H 6400 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:KSC941JLFS S1
+L archive:SamacSys_Parts_KSC941JLFS S1
 U 1 1 60F54AAA
 P 2500 7450
 F 0 "S1" V 3950 7650 50  0000 C CNN
@@ -751,7 +751,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 4150 2150 4150
 $Comp
-L SamacSys_Parts:2N7002NXAKR Q3
+L archive:SamacSys_Parts_2N7002NXAKR Q3
 U 1 1 615A524B
 P 5150 4600
 F 0 "Q3" H 5250 4900 50  0000 L CNN
@@ -768,7 +768,7 @@ F 9 "2N7002NXAKR" H 5600 3850 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:Buzzer_SMD_AST0760MCTRQ U5
+L archive:SamacSys_Parts_Buzzer_SMD_AST0760MCTRQ U5
 U 1 1 615A94E9
 P 5450 3900
 F 0 "U5" V 5496 3722 50  0000 R CNN
@@ -784,7 +784,7 @@ Wire Wire Line
 	5450 4150 5450 4200
 Connection ~ 5100 6850
 $Comp
-L SamacSys_Parts:KSC941JLFS S2
+L archive:SamacSys_Parts_KSC941JLFS S2
 U 1 1 60F919E7
 P 5650 7450
 F 0 "S2" V 7100 7650 50  0000 C CNN

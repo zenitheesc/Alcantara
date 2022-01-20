@@ -38,7 +38,7 @@ Wire Wire Line
 Wire Wire Line
 	3425 2875 3425 2925
 $Comp
-L power:+3V3 #PWR019
+L archive:power_+3V3 #PWR019
 U 1 1 60E187D2
 P 2075 3275
 F 0 "#PWR019" H 2075 3125 50  0001 C CNN
@@ -49,7 +49,7 @@ F 3 "" H 2075 3275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR020
+L archive:power_GND #PWR020
 U 1 1 60E19D9C
 P 2075 3675
 F 0 "#PWR020" H 2075 3425 50  0001 C CNN
@@ -60,7 +60,7 @@ F 3 "" H 2075 3675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C13
+L archive:Device_C_Small C13
 U 1 1 60E1A4E4
 P 2075 3525
 F 0 "C13" H 2167 3571 50  0000 L CNN
@@ -73,7 +73,7 @@ $EndComp
 Wire Wire Line
 	2075 3625 2075 3675
 $Comp
-L dk_Coaxial-Connectors-RF:142-0701-801 J2
+L archive:dk_Coaxial-Connectors-RF_142-0701-801 J2
 U 1 1 60E543A4
 P 5250 4450
 F 0 "J2" H 5150 4450 50  0000 R CNN
@@ -93,7 +93,7 @@ F 12 "Active" H 5450 5650 60  0001 L CNN "Status"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:L_Small L2
+L archive:Device_L_Small L2
 U 1 1 60E57109
 P 4400 3525
 F 0 "L2" H 4448 3571 50  0000 L CNN
@@ -114,7 +114,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 3225 4400 3225
 $Comp
-L Device:R_Small R18
+L archive:Device_R_Small R18
 U 1 1 60E5B23B
 P 3950 3225
 F 0 "R18" V 3754 3225 50  0000 C CNN
@@ -125,7 +125,7 @@ F 3 "~" H 3950 3225 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C15
+L archive:Device_C_Small C15
 U 1 1 60E5C8AF
 P 5250 3350
 F 0 "C15" H 5342 3396 50  0000 L CNN
@@ -141,7 +141,7 @@ Wire Wire Line
 	5250 3225 4400 3225
 Connection ~ 4400 3225
 $Comp
-L Alcantara_v.1.0-rescue:U_FL-R-SMT_10_-dk_Coaxial-Connectors-RF J1
+L archive:Alcantara_v.1.0-rescue_U_FL-R-SMT_10_-dk_Coaxial-Connectors-RF J1
 U 1 1 60E666C0
 P 5250 3825
 AR Path="/60E666C0" Ref="J1"  Part="1" 
@@ -187,7 +187,7 @@ RADIO_DIO1
 Wire Wire Line
 	9425 4600 9475 4600
 $Comp
-L power:+5V #PWR?
+L archive:power_+5V #PWR?
 U 1 1 60FC2EF1
 P 7525 4350
 AR Path="/60D267AF/60FC2EF1" Ref="#PWR?"  Part="1" 
@@ -209,7 +209,7 @@ Wire Wire Line
 	7525 4600 7525 4500
 Connection ~ 7525 4500
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 60FC2EFC
 P 9525 4800
 AR Path="/60D267AF/60FC2EFC" Ref="#PWR?"  Part="1" 
@@ -226,7 +226,7 @@ Wire Wire Line
 Wire Wire Line
 	9525 4700 9425 4700
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 60FC2F04
 P 8225 5150
 AR Path="/60D267AF/60FC2F04" Ref="#PWR?"  Part="1" 
@@ -243,7 +243,7 @@ Wire Wire Line
 Wire Wire Line
 	8225 4700 8325 4700
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 60FC2F0C
 P 7525 3800
 AR Path="/60D267AF/60FC2F0C" Ref="#PWR?"  Part="1" 
@@ -302,7 +302,7 @@ RADIO_SCK
 Wire Wire Line
 	9425 4100 9475 4100
 $Comp
-L dk_Coaxial-Connectors-RF:142-0701-801 J?
+L archive:dk_Coaxial-Connectors-RF_142-0701-801 J?
 U 1 1 60FC2F34
 P 10525 3650
 AR Path="/60D267AF/60FC2F34" Ref="J?"  Part="1" 
@@ -345,7 +345,7 @@ LoRa & (G)FSK 30dBm Radio
 Wire Notes Line
 	6950 6500 6950 500 
 $Comp
-L ML414H_IV01E:ML414H_IV01E BT?
+L archive:ML414H_IV01E_ML414H_IV01E BT?
 U 1 1 6116FC93
 P 2875 2625
 AR Path="/6116FC93" Ref="BT?"  Part="1" 
@@ -360,7 +360,7 @@ F 5 "SEIKO" H 2875 2625 50  0001 L BNN "MANUFACTURER"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C_Small C14
+L archive:Device_C_Small C14
 U 1 1 61171146
 P 2825 2925
 F 0 "C14" V 2775 3025 50  0000 L CNN
@@ -371,7 +371,7 @@ F 3 "~" H 2825 2925 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R17
+L archive:Device_R_Small R17
 U 1 1 6117170F
 P 3125 2425
 F 0 "R17" V 2929 2425 50  0000 C CNN
@@ -382,7 +382,7 @@ F 3 "~" H 3125 2425 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR022
+L archive:power_+3V3 #PWR022
 U 1 1 61172368
 P 3125 2025
 F 0 "#PWR022" H 3125 1875 50  0001 C CNN
@@ -393,7 +393,7 @@ F 3 "" H 3125 2025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L archive:power_GND #PWR021
 U 1 1 61172B25
 P 2525 3025
 F 0 "#PWR021" H 2525 2775 50  0001 C CNN
@@ -414,7 +414,7 @@ Wire Wire Line
 Wire Wire Line
 	3125 2625 3075 2625
 $Comp
-L Device:D_Schottky_Small D1
+L archive:Device_D_Schottky_Small D1
 U 1 1 61179C6F
 P 3125 2175
 F 0 "D1" V 3171 2105 50  0000 R CNN
@@ -457,7 +457,7 @@ Wire Wire Line
 Text HLabel 2425 3975 0    50   Input ~ 0
 GPS_TX
 $Comp
-L Device:R_Small R11
+L archive:Device_R_Small R11
 U 1 1 615FE2D1
 P 9525 3350
 F 0 "R11" V 9329 3350 50  0000 C CNN
@@ -473,7 +473,7 @@ Connection ~ 9525 4000
 Wire Wire Line
 	9525 4000 9425 4000
 $Comp
-L power:+3V3 #PWR0115
+L archive:power_+3V3 #PWR0115
 U 1 1 61600D7D
 P 9525 3150
 F 0 "#PWR0115" H 9525 3000 50  0001 C CNN
@@ -486,7 +486,7 @@ $EndComp
 Wire Wire Line
 	9525 3150 9525 3250
 $Comp
-L Device:C_Small C21
+L archive:Device_C_Small C21
 U 1 1 61451F4E
 P 7525 4800
 F 0 "C21" H 7617 4846 50  0000 L CNN
@@ -507,7 +507,7 @@ Wire Wire Line
 	7525 4700 7525 4600
 Connection ~ 7525 4600
 $Comp
-L E22_Radios_Zenith:E22-900M30S U1
+L archive:E22_Radios_Zenith_E22-900M30S U1
 U 1 1 612EA8AF
 P 8875 4150
 F 0 "U1" H 8875 5015 50  0000 C CNN
@@ -518,7 +518,7 @@ F 3 "" H 8975 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR0118
+L archive:power_GNDA #PWR0118
 U 1 1 616C88D8
 P 5250 3475
 F 0 "#PWR0118" H 5250 3225 50  0001 C CNN
@@ -535,7 +535,7 @@ Wire Wire Line
 	5250 3475 5250 3450
 NoConn ~ 3925 4275
 $Comp
-L power:GNDA #PWR0119
+L archive:power_GNDA #PWR0119
 U 1 1 616F731D
 P 5250 4675
 F 0 "#PWR0119" H 5250 4425 50  0001 C CNN
@@ -555,7 +555,7 @@ Connection ~ 4900 3825
 Wire Wire Line
 	4900 3825 5050 3825
 $Comp
-L power:GNDA #PWR0120
+L archive:power_GNDA #PWR0120
 U 1 1 61701EA3
 P 5250 4050
 F 0 "#PWR0120" H 5250 3800 50  0001 C CNN
@@ -574,7 +574,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3925 3925 3925
 $Comp
-L power:GNDA #PWR0121
+L archive:power_GNDA #PWR0121
 U 1 1 6170C71A
 P 4100 3975
 F 0 "#PWR0121" H 4100 3725 50  0001 C CNN
@@ -588,7 +588,7 @@ Wire Wire Line
 	4100 3975 4100 3925
 Connection ~ 4100 3925
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 61A3932D
 P 2625 5950
 AR Path="/60D8A7EE/61A3932D" Ref="R?"  Part="1" 
@@ -603,7 +603,7 @@ $EndComp
 Wire Wire Line
 	2725 5950 2825 5950
 $Comp
-L Device:R_Small R?
+L archive:Device_R_Small R?
 U 1 1 61A39334
 P 2825 6150
 AR Path="/60D8A7EE/61A39334" Ref="R?"  Part="1" 
@@ -627,7 +627,7 @@ Wire Wire Line
 Wire Wire Line
 	2825 6300 2825 6250
 $Comp
-L power:GND #PWR?
+L archive:power_GND #PWR?
 U 1 1 61A39340
 P 3225 6400
 AR Path="/60D8A7EE/61A39340" Ref="#PWR?"  Part="1" 
@@ -645,7 +645,7 @@ Connection ~ 3225 6300
 Wire Wire Line
 	2425 5950 2525 5950
 $Comp
-L SamacSys_Parts:2N7002NXAKR Q?
+L archive:SamacSys_Parts_2N7002NXAKR Q?
 U 1 1 61A39350
 P 2925 5950
 AR Path="/60D8A7EE/61A39350" Ref="Q?"  Part="1" 
@@ -665,7 +665,7 @@ F 9 "2N7002NXAKR" H 3375 5200 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 NoConn ~ 4025 4575
 $Comp
-L Zenith_Modified_Libraries:NEO-M8N U?
+L archive:Zenith_Modified_Libraries_NEO-M8N U?
 U 1 1 60D8A4F2
 P 3225 4275
 AR Path="/60D8A4F2" Ref="U?"  Part="1" 
@@ -689,7 +689,7 @@ Wire Wire Line
 	3325 5300 3325 5175
 Connection ~ 3225 5300
 $Comp
-L power:GND1 #PWR0123
+L archive:power_GND1 #PWR0123
 U 1 1 61A77D8E
 P 2825 5500
 F 0 "#PWR0123" H 2825 5250 50  0001 C CNN
@@ -705,7 +705,7 @@ Wire Wire Line
 	2825 5300 3125 5300
 Connection ~ 3125 5300
 $Comp
-L power:GND1 #PWR0124
+L archive:power_GND1 #PWR0124
 U 1 1 61A7BDEF
 P 3425 2925
 F 0 "#PWR0124" H 3425 2675 50  0001 C CNN

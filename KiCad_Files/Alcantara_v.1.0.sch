@@ -61,7 +61,7 @@ F10 "FTDI_DTR" I L 9850 5000 50
 F11 "FTDI_RTS" I L 9850 5150 50 
 $EndSheet
 $Comp
-L power:GND #PWR01
+L archive:power_GND #PWR01
 U 1 1 61138544
 P 2350 3750
 F 0 "#PWR01" H 2350 3500 50  0001 C CNN
@@ -93,7 +93,7 @@ Connection ~ 2400 3700
 Wire Wire Line
 	2400 3700 2500 3700
 $Comp
-L Device:C_Small C5
+L archive:Device_C_Small C5
 U 1 1 61143841
 P 7900 1575
 F 0 "C5" H 8050 1675 50  0000 R CNN
@@ -104,7 +104,7 @@ F 3 "~" H 7900 1575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L archive:power_GND #PWR06
 U 1 1 61144448
 P 7900 1875
 F 0 "#PWR06" H 7900 1625 50  0001 C CNN
@@ -117,7 +117,7 @@ $EndComp
 Wire Wire Line
 	7900 1475 7900 1275
 $Comp
-L power:+3V3 #PWR07
+L archive:power_+3V3 #PWR07
 U 1 1 61144E10
 P 7900 975
 F 0 "#PWR07" H 7900 825 50  0001 C CNN
@@ -128,7 +128,7 @@ F 3 "" H 7900 975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R4
+L archive:Device_R_Small R4
 U 1 1 6114538C
 P 7900 1125
 F 0 "R4" H 7959 1171 50  0000 L CNN
@@ -234,7 +234,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 5650 9850 5650
 $Comp
-L dk_RF-Transceiver-Modules:ESP32-WROOM-32 MOD1
+L archive:dk_RF-Transceiver-Modules_ESP32-WROOM-32 MOD1
 U 1 1 60CDB9CF
 P 2200 1500
 F 0 "MOD1" H 2800 -350 60  0000 C CNN
@@ -262,7 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 1000 3150 1050
 $Comp
-L power:GND #PWR04
+L archive:power_GND #PWR04
 U 1 1 6114294E
 P 3150 1250
 F 0 "#PWR04" H 3150 1000 50  0001 C CNN
@@ -273,7 +273,7 @@ F 3 "" H 3150 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L archive:Device_C_Small C2
 U 1 1 61142948
 P 3150 1150
 F 0 "C2" H 3242 1196 50  0000 L CNN
@@ -286,7 +286,7 @@ $EndComp
 Wire Wire Line
 	2700 1000 2700 1050
 $Comp
-L power:GND #PWR02
+L archive:power_GND #PWR02
 U 1 1 611407CF
 P 2700 1250
 F 0 "#PWR02" H 2700 1000 50  0001 C CNN
@@ -297,7 +297,7 @@ F 3 "" H 2700 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L archive:Device_C_Small C1
 U 1 1 611407C9
 P 2700 1150
 F 0 "C1" H 2792 1196 50  0000 L CNN
@@ -308,7 +308,7 @@ F 3 "~" H 2700 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR03
+L archive:power_+3V3 #PWR03
 U 1 1 61138053
 P 3150 950
 F 0 "#PWR03" H 3150 800 50  0001 C CNN
@@ -321,7 +321,7 @@ $EndComp
 Wire Wire Line
 	2400 1000 2700 1000
 $Comp
-L Device:C_Small C4
+L archive:Device_C_Small C4
 U 1 1 611FBCA3
 P 7550 1575
 F 0 "C4" H 7500 1675 50  0000 R CNN
@@ -344,7 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 5000 9850 5000
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q1
+L archive:dk_Transistors-Bipolar-BJT-Single_MMSS8050-H-TP Q1
 U 1 1 61214E60
 P 5800 4875
 F 0 "Q1" H 5988 4928 60  0000 L CNN
@@ -364,7 +364,7 @@ F 12 "Active" H 6000 6075 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMSS8050-H-TP Q2
+L archive:dk_Transistors-Bipolar-BJT-Single_MMSS8050-H-TP Q2
 U 1 1 61215ACB
 P 5800 5475
 F 0 "Q2" H 5988 5422 60  0000 L CNN
@@ -384,7 +384,7 @@ F 12 "Active" H 6000 6675 60  0001 L CNN "Status"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small R1
+L archive:Device_R_Small R1
 U 1 1 61216528
 P 5450 4875
 F 0 "R1" V 5254 4875 50  0000 C CNN
@@ -395,7 +395,7 @@ F 3 "~" H 5450 4875 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:R_Small R2
+L archive:Device_R_Small R2
 U 1 1 61216A1C
 P 5450 5475
 F 0 "R2" V 5254 5475 50  0000 C CNN
@@ -475,7 +475,7 @@ Connection ~ 7900 1825
 Wire Wire Line
 	7900 1275 8100 1275
 $Comp
-L power:GND #PWR05
+L archive:power_GND #PWR05
 U 1 1 612BFDFC
 P 5900 3650
 F 0 "#PWR05" H 5900 3400 50  0001 C CNN
@@ -486,7 +486,7 @@ F 3 "" H 5900 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L archive:Device_C_Small C3
 U 1 1 612BFE20
 P 5900 3300
 F 0 "C3" H 5850 3400 50  0000 R CNN
@@ -599,7 +599,7 @@ Wire Wire Line
 Wire Wire Line
 	3100 3000 3150 3000
 $Comp
-L power:+3V3 #PWR053
+L archive:power_+3V3 #PWR053
 U 1 1 614C013F
 P 7075 3425
 F 0 "#PWR053" H 7075 3275 50  0001 C CNN
@@ -610,7 +610,7 @@ F 3 "" H 7075 3425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR051
+L archive:power_+5V #PWR051
 U 1 1 614C4F85
 P 8375 3425
 F 0 "#PWR051" H 8375 3275 50  0001 C CNN
@@ -625,7 +625,7 @@ Wire Wire Line
 Wire Wire Line
 	7525 3525 7525 3375
 $Comp
-L power:GND #PWR052
+L archive:power_GND #PWR052
 U 1 1 614FBA5A
 P 7725 3675
 F 0 "#PWR052" H 7725 3425 50  0001 C CNN
@@ -660,7 +660,7 @@ Wire Notes Line
 Wire Notes Line
 	3650 2500 3650 2400
 $Comp
-L SamacSys_Parts:EVP-AAM02W S5
+L archive:SamacSys_Parts_EVP-AAM02W S5
 U 1 1 60E2AB97
 P 4450 3250
 F 0 "S5" H 5400 3400 50  0000 C CNN
@@ -695,7 +695,7 @@ Connection ~ 5700 3550
 Wire Wire Line
 	5700 3350 5700 3550
 $Comp
-L SamacSys_Parts:EVP-AAM02W S4
+L archive:SamacSys_Parts_EVP-AAM02W S4
 U 1 1 60E6112B
 P 6100 1525
 F 0 "S4" H 7050 1675 50  0000 C CNN
@@ -766,7 +766,7 @@ SDCARD_NSS
 NoConn ~ 4750 6925
 NoConn ~ 4750 7025
 $Comp
-L power:GND #PWR0103
+L archive:power_GND #PWR0103
 U 1 1 6126E144
 P 4850 7425
 F 0 "#PWR0103" H 4850 7175 50  0001 C CNN
@@ -777,7 +777,7 @@ F 3 "" H 4850 7425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0104
+L archive:power_+3V3 #PWR0104
 U 1 1 6126EAE6
 P 3550 6475
 F 0 "#PWR0104" H 3550 6325 50  0001 C CNN
@@ -802,7 +802,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 7025 3650 7025
 $Comp
-L Device:R_Small R3
+L archive:Device_R_Small R3
 U 1 1 612A0089
 P 3450 6725
 F 0 "R3" V 3254 6725 50  0000 C CNN
@@ -827,7 +827,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 5350 3850 5350
 $Comp
-L Device:R_Small R6
+L archive:Device_R_Small R6
 U 1 1 61313692
 P 3850 5150
 F 0 "R6" V 3654 5150 50  0000 C CNN
@@ -840,7 +840,7 @@ $EndComp
 Wire Wire Line
 	3850 5350 3850 5250
 $Comp
-L power:+3V3 #PWR0105
+L archive:power_+3V3 #PWR0105
 U 1 1 6134BA7C
 P 3850 4950
 F 0 "#PWR0105" H 3850 4800 50  0001 C CNN
@@ -861,7 +861,7 @@ Wire Wire Line
 Text GLabel 3650 5350 0    50   Input ~ 0
 GPS_ON_OFF
 $Comp
-L Device:R_Small R5
+L archive:Device_R_Small R5
 U 1 1 6158FB54
 P 5250 6975
 F 0 "R5" V 5054 6975 50  0000 C CNN
@@ -872,7 +872,7 @@ F 3 "~" H 5250 6975 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SamacSys_Parts:PJS008U-3000-0 J5
+L archive:SamacSys_Parts_PJS008U-3000-0 J5
 U 1 1 612F4333
 P 4200 7125
 F 0 "J5" H 4200 6660 50  0000 C CNN
@@ -889,7 +889,7 @@ F 9 "PJS008U-3000-0" H 4950 6525 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    1   
 $EndComp
 $Comp
-L SamacSys_Parts:53261-0527 J8
+L archive:SamacSys_Parts_53261-0527 J8
 U 1 1 61489378
 P 7525 2525
 F 0 "J8" H 7725 2075 50  0000 C CNN
@@ -910,7 +910,7 @@ NoConn ~ 7225 3025
 Wire Wire Line
 	4750 7225 5250 7225
 $Comp
-L Device:R_Small R26
+L archive:Device_R_Small R26
 U 1 1 61524AEC
 P 4900 6975
 F 0 "R26" V 4704 6975 50  0000 C CNN
@@ -921,7 +921,7 @@ F 3 "~" H 4900 6975 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R13
+L archive:Device_R_Small R13
 U 1 1 61547DCC
 P 3150 6725
 F 0 "R13" V 2954 6725 50  0000 C CNN
@@ -941,7 +941,7 @@ Wire Wire Line
 	3150 6525 3450 6525
 Connection ~ 3450 6525
 $Comp
-L power:+3V3 #PWR0107
+L archive:power_+3V3 #PWR0107
 U 1 1 615572C8
 P 4900 6775
 F 0 "#PWR0107" H 4900 6625 50  0001 C CNN
@@ -976,7 +976,7 @@ Wire Wire Line
 Wire Wire Line
 	7075 3425 7075 3525
 $Comp
-L SamacSys_Parts:TLV803EA30DCKR IC3
+L archive:SamacSys_Parts_TLV803EA30DCKR IC3
 U 1 1 612F7BFE
 P 6300 1325
 F 0 "IC3" H 6800 1175 50  0000 C CNN
@@ -997,7 +997,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 1825 7550 1825
 $Comp
-L power:GND #PWR0116
+L archive:power_GND #PWR0116
 U 1 1 615212CE
 P 5550 1775
 F 0 "#PWR0116" H 5550 1525 50  0001 C CNN
@@ -1013,7 +1013,7 @@ Wire Wire Line
 	6100 1275 6250 1275
 Connection ~ 6250 1275
 $Comp
-L power:+3V3 #PWR0117
+L archive:power_+3V3 #PWR0117
 U 1 1 6153412D
 P 5050 1225
 F 0 "#PWR0117" H 5050 1075 50  0001 C CNN
