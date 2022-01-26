@@ -1,6 +1,5 @@
-# Alcantara v.1.0
-<h1 align="center" style="color:white; background-color:black">Alcantara v.1.0</h1>
-<h4 align="center"> Mobile Gorund Station for stratospheric probe monitoring and rescue. Goes well with the Zenith Monitor app.</h4>
+<h1 align="center" style="color:white; background-color:black">Alcantara</h1>
+<h4 align="center"> Mobile Ground Station for stratospheric probe monitoring and rescue</h4>
 
 <p align="center">
 	<a href="http://zenith.eesc.usp.br/">
