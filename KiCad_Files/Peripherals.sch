@@ -102,17 +102,6 @@ Wire Wire Line
 Connection ~ 8000 3350
 Wire Wire Line
 	8000 3350 8000 3250
-$Comp
-L archive:Power_Protection_USBLC6-2SC6 U6
-U 1 1 60E25ED4
-P 4550 1850
-F 0 "U6" H 4700 2400 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 4950 2250 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4550 1350 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 4750 2200 50  0001 C CNN
-	1    4550 1850
-	1    0    0    -1  
-$EndComp
 Text GLabel 2600 1700 2    50   Input ~ 0
 USB_CONN_V+
 NoConn ~ 2600 2100
@@ -120,13 +109,13 @@ Text GLabel 2600 1900 2    50   Input ~ 0
 USB_CONN_D+
 Text GLabel 2600 2000 2    50   Input ~ 0
 USB_CONN_D-
-Text GLabel 4150 1750 0    50   Input ~ 0
+Text GLabel 4250 1625 0    50   Input ~ 0
 USB_CONN_D+
-Text GLabel 4950 1750 2    50   Input ~ 0
+Text GLabel 5150 1625 2    50   Input ~ 0
 USB_CONN_D-
-Text GLabel 4150 1950 0    50   Input ~ 0
+Text GLabel 4250 2125 0    50   Input ~ 0
 USB_D+
-Text GLabel 4950 1950 2    50   Input ~ 0
+Text GLabel 5150 2125 2    50   Input ~ 0
 USB_D-
 Wire Wire Line
 	8000 3350 8800 3350
@@ -512,29 +501,29 @@ FTDI_RTS
 $Comp
 L archive:power_GND #PWR055
 U 1 1 614ABBBD
-P 4550 2300
-F 0 "#PWR055" H 4550 2050 50  0001 C CNN
-F 1 "GND" H 4555 2127 50  0000 C CNN
-F 2 "" H 4550 2300 50  0001 C CNN
-F 3 "" H 4550 2300 50  0001 C CNN
-	1    4550 2300
+P 4700 2325
+F 0 "#PWR055" H 4700 2075 50  0001 C CNN
+F 1 "GND" H 4705 2152 50  0000 C CNN
+F 2 "" H 4700 2325 50  0001 C CNN
+F 3 "" H 4700 2325 50  0001 C CNN
+	1    4700 2325
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 2300 4550 2250
+	4700 2325 4700 2275
 $Comp
 L archive:power_+3V3 #PWR054
 U 1 1 614AEBD0
-P 4550 1400
-F 0 "#PWR054" H 4550 1250 50  0001 C CNN
-F 1 "+3V3" H 4565 1573 50  0000 C CNN
-F 2 "" H 4550 1400 50  0001 C CNN
-F 3 "" H 4550 1400 50  0001 C CNN
-	1    4550 1400
+P 4700 1425
+F 0 "#PWR054" H 4700 1275 50  0001 C CNN
+F 1 "+3V3" H 4715 1598 50  0000 C CNN
+F 2 "" H 4700 1425 50  0001 C CNN
+F 3 "" H 4700 1425 50  0001 C CNN
+	1    4700 1425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 1400 4550 1450
+	4700 1425 4700 1475
 $Comp
 L archive:Device_R_Small R31
 U 1 1 60E15770
@@ -800,7 +789,6 @@ F 9 "KSC941JLFS" H 6700 6850 50  0001 L CNN "Manufacturer_Part_Number"
 	1    5650 7450
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 5650 6250
 $Bitmap
 Pos 9125 6850
 Scale 1.000000
@@ -1055,4 +1043,36 @@ B0 D1 0F 03 1F 22 9D 18 B2 10 E9 34 F5 11 A4 A3 70 66 CB AE A9 D9 F5 36 E9 1C BB
 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+Wire Wire Line
+	4250 1625 4300 1625
+Wire Wire Line
+	4250 2125 4300 2125
+Wire Wire Line
+	5100 2125 5150 2125
+Wire Wire Line
+	5100 1625 5150 1625
+Wire Wire Line
+	5650 6250 5650 6150
+Wire Wire Line
+	5650 6150 5450 6150
+Wire Wire Line
+	5450 6150 5450 6850
+Connection ~ 5450 6850
+$Comp
+L SamacSys_Parts:PESD2ETH-ADX IC5
+U 1 1 625E745E
+P 4650 1725
+F 0 "IC5" H 5350 1990 50  0000 C CNN
+F 1 "PESD2ETH-ADX" H 5350 1899 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT95P275X110-6N" H 5900 1825 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2ETH-AD.pdf" H 5900 1725 50  0001 L CNN
+F 4 "Ultra low capacitance double rail-to-rail ESD protection diode" H 5900 1625 50  0001 L CNN "Description"
+F 5 "1.1" H 5900 1525 50  0001 L CNN "Height"
+F 6 "771-PESD2ETH-ADX" H 5900 1425 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Nexperia/PESD2ETH-ADX?qs=W0yvOO0ixfHGl%2FIqaic%2F9w%3D%3D" H 5900 1325 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Nexperia" H 5900 1225 50  0001 L CNN "Manufacturer_Name"
+F 9 "PESD2ETH-ADX" H 5900 1125 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4650 1725
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

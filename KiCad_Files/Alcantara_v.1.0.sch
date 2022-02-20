@@ -552,23 +552,23 @@ NoConn ~ 3100 2100
 NoConn ~ 3100 2000
 NoConn ~ 3100 1900
 NoConn ~ 3100 1800
-Text GLabel 1650 2300 0    50   Input ~ 0
-RGB_LED_B
-Text GLabel 3150 2800 2    50   Input ~ 0
-BUTTON_1
-Text GLabel 3150 2700 2    50   Input ~ 0
-BUTTON_2
 Text GLabel 1650 3400 0    50   Input ~ 0
+RGB_LED_B
+Text GLabel 3150 3000 2    50   Input ~ 0
+BUTTON_1
+Text GLabel 3150 2900 2    50   Input ~ 0
+BUTTON_2
+Text GLabel 1650 1800 0    50   Input ~ 0
 RADIO_NRST
 Text GLabel 3150 1700 2    50   Input ~ 0
 RADIO_BUSY
-Text GLabel 3150 3000 2    50   Input ~ 0
+Text GLabel 3150 2800 2    50   Input ~ 0
 RADIO_DIO1
-Text GLabel 3150 2900 2    50   Input ~ 0
+Text GLabel 3150 2700 2    50   Input ~ 0
 RADIO_DIO2
 Text GLabel 1650 2200 0    50   Input ~ 0
 RADIO_TXEN
-Text GLabel 1650 1900 0    50   Input ~ 0
+Text GLabel 1650 3200 0    50   Input ~ 0
 RADIO_RXEN
 Wire Wire Line
 	1650 2700 1700 2700
@@ -578,15 +578,15 @@ Wire Wire Line
 	1650 3300 1700 3300
 Wire Wire Line
 	1650 3400 1700 3400
-Text GLabel 1650 1800 0    50   Input ~ 0
+Text GLabel 1650 3300 0    50   Input ~ 0
 BUZZER
 Wire Wire Line
 	1650 3200 1700 3200
-Text GLabel 1650 2400 0    50   Input ~ 0
+Text GLabel 1650 1900 0    50   Input ~ 0
 GPS_RESET
 Wire Wire Line
 	1650 3100 1700 3100
-Text GLabel 1650 3300 0    50   Input ~ 0
+Text GLabel 1650 2400 0    50   Input ~ 0
 GPS_EXTINT
 Text GLabel 3150 1600 2    50   Input ~ 0
 GAUGE_ALRT1
@@ -729,9 +729,9 @@ Connection ~ 7350 1275
 Connection ~ 7350 1825
 Wire Wire Line
 	7350 1625 7350 1825
-Text GLabel 1650 2100 0    50   Input ~ 0
+Text GLabel 1650 2300 0    50   Input ~ 0
 GPS_ON_OFF
-Text GLabel 1650 3200 0    50   Input ~ 0
+Text GLabel 1650 2100 0    50   Input ~ 0
 SDCARD_NSS
 Wire Wire Line
 	7825 3675 7975 3675
@@ -751,79 +751,21 @@ Text GLabel 9750 2800 0    50   Input ~ 0
 VSPI_MOSI
 Text GLabel 9750 3250 0    50   Input ~ 0
 VSPI_SCLK
-Text GLabel 5350 7225 2    50   Input ~ 0
-VSPI_MISO
-Text GLabel 3000 7125 0    50   Input ~ 0
-VSPI_MOSI
-Text GLabel 3000 6925 0    50   Input ~ 0
-VSPI_SCLK
 Text GLabel 9750 2950 0    50   Input ~ 0
 RADIO_NSS
 Text GLabel 1650 2000 0    50   Input ~ 0
 RADIO_NSS
-Text GLabel 3000 7225 0    50   Input ~ 0
-SDCARD_NSS
-NoConn ~ 4750 6925
-NoConn ~ 4750 7025
-$Comp
-L archive:power_GND #PWR0103
-U 1 1 6126E144
-P 4850 7425
-F 0 "#PWR0103" H 4850 7175 50  0001 C CNN
-F 1 "GND" H 4855 7252 50  0000 C CNN
-F 2 "" H 4850 7425 50  0001 C CNN
-F 3 "" H 4850 7425 50  0001 C CNN
-	1    4850 7425
-	1    0    0    -1  
-$EndComp
-$Comp
-L archive:power_+3V3 #PWR0104
-U 1 1 6126EAE6
-P 3550 6475
-F 0 "#PWR0104" H 3550 6325 50  0001 C CNN
-F 1 "+3V3" H 3565 6648 50  0000 C CNN
-F 2 "" H 3550 6475 50  0001 C CNN
-F 3 "" H 3550 6475 50  0001 C CNN
-	1    3550 6475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 7325 4850 7325
-Wire Wire Line
-	4850 7325 4850 7425
-Wire Wire Line
-	3000 6925 3650 6925
-Wire Wire Line
-	3000 7125 3650 7125
-Wire Wire Line
-	3650 7225 3450 7225
-Wire Wire Line
-	3550 6475 3550 6525
-Wire Wire Line
-	3550 7025 3650 7025
 $Comp
 L archive:Device_R_Small R3
 U 1 1 612A0089
-P 3450 6725
-F 0 "R3" V 3254 6725 50  0000 C CNN
-F 1 "10K" V 3345 6725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3450 6725 50  0001 C CNN
-F 3 "~" H 3450 6725 50  0001 C CNN
-	1    3450 6725
-	1    0    0    -1  
+P 3625 6500
+F 0 "R3" V 3575 6625 50  0000 C CNN
+F 1 "10K" V 3575 6825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3625 6500 50  0001 C CNN
+F 3 "~" H 3625 6500 50  0001 C CNN
+	1    3625 6500
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3450 6625 3450 6525
-Wire Wire Line
-	3450 6525 3550 6525
-Connection ~ 3550 6525
-Wire Wire Line
-	3550 6525 3550 7025
-Wire Wire Line
-	3450 6825 3450 7225
-Connection ~ 3450 7225
-Wire Wire Line
-	3450 7225 3000 7225
 Wire Wire Line
 	3650 5350 3850 5350
 $Comp
@@ -863,30 +805,13 @@ GPS_ON_OFF
 $Comp
 L archive:Device_R_Small R5
 U 1 1 6158FB54
-P 5250 6975
-F 0 "R5" V 5054 6975 50  0000 C CNN
-F 1 "10K" V 5145 6975 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5250 6975 50  0001 C CNN
-F 3 "~" H 5250 6975 50  0001 C CNN
-	1    5250 6975
+P 3425 6500
+F 0 "R5" V 3375 6625 50  0000 C CNN
+F 1 "10K" V 3375 6825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3425 6500 50  0001 C CNN
+F 3 "~" H 3425 6500 50  0001 C CNN
+	1    3425 6500
 	-1   0    0    -1  
-$EndComp
-$Comp
-L archive:SamacSys_Parts_PJS008U-3000-0 J5
-U 1 1 612F4333
-P 4200 7125
-F 0 "J5" H 4200 6660 50  0000 C CNN
-F 1 "PJS008U-3000-0" H 4200 6751 50  0000 C CNN
-F 2 "SamacSys_Parts:PJS008U30000" H 4950 7225 50  0001 L CNN
-F 3 "https://www.yamaichi.de/uploads/media/PJS008U-3000.pdf" H 4950 7125 50  0001 L CNN
-F 4 "Memory Card Connectors MicroSD Card Conn Ver Dip Mnt Manual" H 4950 7025 50  0001 L CNN "Description"
-F 5 "14.18" H 4950 6925 50  0001 L CNN "Height"
-F 6 "945-PJS008U-3000-0" H 4950 6825 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Yamaichi-Electronics/PJS008U-3000-0/?qs=nO3wRANIIvnp3f0XwG2X3A%3D%3D" H 4950 6725 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Yamaichi" H 4950 6625 50  0001 L CNN "Manufacturer_Name"
-F 9 "PJS008U-3000-0" H 4950 6525 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4200 7125
-	1    0    0    1   
 $EndComp
 $Comp
 L archive:SamacSys_Parts_53261-0527 J8
@@ -907,68 +832,28 @@ F 9 "53261-0527" H 8275 1925 50  0001 L CNN "Manufacturer_Part_Number"
 $EndComp
 NoConn ~ 8225 3025
 NoConn ~ 7225 3025
-Wire Wire Line
-	4750 7225 5250 7225
 $Comp
 L archive:Device_R_Small R26
 U 1 1 61524AEC
-P 4900 6975
-F 0 "R26" V 4704 6975 50  0000 C CNN
-F 1 "10K" V 4795 6975 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 6975 50  0001 C CNN
-F 3 "~" H 4900 6975 50  0001 C CNN
-	1    4900 6975
+P 3525 6500
+F 0 "R26" V 3475 6650 50  0000 C CNN
+F 1 "10K" V 3475 6825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3525 6500 50  0001 C CNN
+F 3 "~" H 3525 6500 50  0001 C CNN
+	1    3525 6500
 	-1   0    0    -1  
 $EndComp
 $Comp
 L archive:Device_R_Small R13
 U 1 1 61547DCC
-P 3150 6725
-F 0 "R13" V 2954 6725 50  0000 C CNN
-F 1 "10K" V 3045 6725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3150 6725 50  0001 C CNN
-F 3 "~" H 3150 6725 50  0001 C CNN
-	1    3150 6725
+P 3325 6500
+F 0 "R13" V 3375 6350 50  0000 C CNN
+F 1 "10K" V 3375 6175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3325 6500 50  0001 C CNN
+F 3 "~" H 3325 6500 50  0001 C CNN
+	1    3325 6500
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3150 6825 3150 7325
-Wire Wire Line
-	3150 7325 3650 7325
-Wire Wire Line
-	3150 6625 3150 6525
-Wire Wire Line
-	3150 6525 3450 6525
-Connection ~ 3450 6525
-$Comp
-L archive:power_+3V3 #PWR0107
-U 1 1 615572C8
-P 4900 6775
-F 0 "#PWR0107" H 4900 6625 50  0001 C CNN
-F 1 "+3V3" H 4915 6948 50  0000 C CNN
-F 2 "" H 4900 6775 50  0001 C CNN
-F 3 "" H 4900 6775 50  0001 C CNN
-	1    4900 6775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 6775 4900 6825
-Wire Wire Line
-	5250 6875 5250 6825
-Wire Wire Line
-	5250 6825 4900 6825
-Connection ~ 4900 6825
-Wire Wire Line
-	4900 6825 4900 6875
-Wire Wire Line
-	5250 7075 5250 7225
-Connection ~ 5250 7225
-Wire Wire Line
-	5250 7225 5350 7225
-Wire Wire Line
-	4900 7075 4900 7125
-Wire Wire Line
-	4900 7125 4750 7125
 Text Notes 750  7275 0    50   ~ 0
 Read about the pull-up\nresitors for SD cards here:\nhttps://electronics.stackex\nchange.com/questions/39\n571/how-to-do-pulling-up\n-or-down-correctly-when-\ninterfacing-a-microsd-card
 Wire Wire Line
@@ -1333,4 +1218,106 @@ Wire Notes Line
 	475  5975 8900 5975
 Wire Notes Line
 	4350 475  4350 5975
+$Comp
+L SamacSys_Parts:MEM2075-00-140-01-A J5
+U 1 1 6204CE35
+P 3700 6650
+F 0 "J5" H 3950 6825 50  0000 C CNN
+F 1 "MEM2075-00-140-01-A" H 4925 6825 50  0000 C CNN
+F 2 "SamacSys_Parts:MEM20750014001A" H 4850 6750 50  0001 L CNN
+F 3 "" H 4850 6650 50  0001 L CNN
+F 4 "GCT (GLOBAL CONNECTOR TECHNOLOGY) - MEM2075-00-140-01-A - MICRO SD CARD CONN, PUSH-PUSH, 9POS, SMT" H 4850 6550 50  0001 L CNN "Description"
+F 5 "1.45" H 4850 6450 50  0001 L CNN "Height"
+F 6 "640-MEM20750014001A" H 4850 6350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/GCT/MEM2075-00-140-01-A?qs=KUoIvG%2F9IlZvfWpeERlq3Q%3D%3D" H 4850 6250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "GCT (GLOBAL CONNECTOR TECHNOLOGY)" H 4850 6150 50  0001 L CNN "Manufacturer_Name"
+F 9 "MEM2075-00-140-01-A" H 4850 6050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3700 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2850 6950 0    50   Input ~ 0
+VSPI_SCLK
+Text GLabel 2850 6850 0    50   Input ~ 0
+VSPI_MOSI
+Text GLabel 2850 6750 0    50   Input ~ 0
+SDCARD_NSS
+Wire Wire Line
+	3625 6600 3625 6650
+Wire Wire Line
+	3625 6650 3700 6650
+Wire Wire Line
+	3700 6750 3325 6750
+Wire Wire Line
+	3325 6750 3325 6600
+Wire Wire Line
+	2850 6750 3325 6750
+Connection ~ 3325 6750
+Wire Wire Line
+	2850 6850 3700 6850
+Wire Wire Line
+	3700 6950 2850 6950
+Text GLabel 2850 7050 0    50   Input ~ 0
+VSPI_MISO
+Wire Wire Line
+	2850 7050 3425 7050
+Wire Wire Line
+	3525 6600 3525 7150
+Wire Wire Line
+	3525 7150 3700 7150
+$Comp
+L archive:power_GND #PWR0103
+U 1 1 62145FAD
+P 4350 7550
+F 0 "#PWR0103" H 4350 7300 50  0001 C CNN
+F 1 "GND" H 4355 7377 50  0000 C CNN
+F 2 "" H 4350 7550 50  0001 C CNN
+F 3 "" H 4350 7550 50  0001 C CNN
+	1    4350 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:power_+3V3 #PWR0104
+U 1 1 6214FEEE
+P 4350 6225
+F 0 "#PWR0104" H 4350 6075 50  0001 C CNN
+F 1 "+3V3" H 4365 6398 50  0000 C CNN
+F 2 "" H 4350 6225 50  0001 C CNN
+F 3 "" H 4350 6225 50  0001 C CNN
+	1    4350 6225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 6225 4350 6275
+NoConn ~ 5000 6650
+NoConn ~ 5000 6850
+NoConn ~ 5000 7050
+NoConn ~ 5000 7250
+NoConn ~ 3700 7250
+Wire Wire Line
+	3425 6600 3425 7050
+Connection ~ 3425 7050
+Wire Wire Line
+	3425 7050 3700 7050
+Wire Wire Line
+	3325 6400 3325 6275
+Wire Wire Line
+	3325 6275 3425 6275
+Connection ~ 4350 6275
+Wire Wire Line
+	4350 6275 4350 6350
+Wire Wire Line
+	3425 6400 3425 6275
+Connection ~ 3425 6275
+Wire Wire Line
+	3425 6275 3525 6275
+Wire Wire Line
+	3525 6400 3525 6275
+Connection ~ 3525 6275
+Wire Wire Line
+	3525 6275 3625 6275
+Wire Wire Line
+	3625 6400 3625 6275
+Connection ~ 3625 6275
+Wire Wire Line
+	3625 6275 4350 6275
 $EndSCHEMATC

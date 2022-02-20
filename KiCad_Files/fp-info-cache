@@ -1,4 +1,4 @@
-20869747536869901
+20894571199150286
 Alcantara_v.1
 AlcantaraLogoReto_2,5mm
 
@@ -59857,6 +59857,20 @@ Yellow 5381 Series LED
 2
 2
 LogosZenith
+2.4_GHZ_Antenna_Left_Art
+http://www.ti.com/lit/an/swra117d/swra117d.pdf
+PCB antenna
+0
+0
+0
+LogosZenith
+2.4_GHZ_Antenna_Rigth_Art
+http://www.ti.com/lit/an/swra117d/swra117d.pdf
+PCB antenna
+0
+0
+0
+LogosZenith
 AlcantaraLogoReto_1,8mm
 
 
@@ -59893,6 +59907,20 @@ AlcantaraLogo_6,7mm
 0
 LogosZenith
 AlcantaraLogo_15mm
+
+
+0
+0
+0
+LogosZenith
+Alcantarav+Logo_3,6mm
+
+
+0
+0
+0
+LogosZenith
+Alcantarav.1.0_1,3mm
 
 
 0
@@ -60047,6 +60075,20 @@ ThisBetterWork_15,9mm
 0
 LogosZenith
 ThisBetterWork_15,9mm_2
+
+
+0
+0
+0
+LogosZenith
+v.1.0 - 2021_1,6mm
+
+
+0
+0
+0
+LogosZenith
+v.1.0 - 2021_2,1mm
 
 
 0
@@ -80171,6 +80213,13 @@ Undefined or Miscellaneous
 5
 5
 SamacSys_Parts
+3030
+3030-1
+Undefined or Miscellaneous
+0
+3
+3
+SamacSys_Parts
 532610527
 53261-0527-2
 Connector
@@ -80325,6 +80374,13 @@ Integrated Circuit
 64
 64
 SamacSys_Parts
+RHDR40W66P254_2X20_5146X500X1105P
+M20-6102045
+Connector
+0
+40
+40
+SamacSys_Parts
 SOIC127P600X175-8N
 +soic d
 Integrated Circuit
@@ -80346,6 +80402,20 @@ Integrated Circuit
 15
 15
 SamacSys_Parts
+SON50P100X145X60-6N-D
+UQFN 1.45x1 6L-1
+TVS Diode (Uni-directional)
+0
+6
+6
+SamacSys_Parts
+SON225P300X800X143-6N
+M830120
+Antenna
+0
+6
+6
+SamacSys_Parts
 SOP65P490X110-8N
 8 µMAX HEIGHT 1.1
 Integrated Circuit
@@ -80361,8 +80431,8 @@ MOSFET (N-Channel)
 3
 SamacSys_Parts
 SOT65P210X110-3N
-SOT323 (SC-70)
-Diode
+SC70 (SOT-323)
+Transistor
 0
 3
 3
@@ -80381,6 +80451,13 @@ Integrated Circuit
 3
 3
 SamacSys_Parts
+SOT95P275X110-6N
+(SC-74; TSOP6); 6 leads
+Integrated Circuit
+0
+6
+6
+SamacSys_Parts
 SOT95P280X145-5N
 [SOT-23] (RJ-5)
 Integrated Circuit
@@ -80388,9 +80465,16 @@ Integrated Circuit
 5
 5
 SamacSys_Parts
+SOT95P280X145-6N
+MCP1501T-10E/CHY-1
+Integrated Circuit
+0
+6
+6
+SamacSys_Parts
 SOT230P700X180-4N
-SOT_223
-MOSFET (N-Channel)
+(DB) [SOT-223]
+Integrated Circuit
 0
 4
 4
@@ -87170,6 +87254,27 @@ varistor SIOV
 0
 2
 2
+Zenith_Homemade_Components
+BatteryHolder_Short_Pin_Keystone_1042_1x18650
+Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
+18650 Keystone 1042 Li-ion
+0
+2
+2
+Zenith_Homemade_Components
+Crystal_SMD_5032-4Pin_5.0x3.2mm
+SMD Crystal SERIES SMD2520/4 http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf, 5.0x3.2mm^2 package
+SMD SMT crystal
+0
+4
+4
+Zenith_Homemade_Components
+Crystal_SMD_5032-4Pin_5.0x3.2mm_Hand_Soldering
+SMD Crystal SERIES SMD2520/4 http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf, 5.0x3.2mm^2 package
+SMD SMT crystal
+0
+4
+4
 Zenith_Homemade_Components
 LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y
 LGA, 16 Pin (http://www.st.com/resource/en/datasheet/lis331hh.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py

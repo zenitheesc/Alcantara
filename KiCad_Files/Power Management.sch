@@ -133,17 +133,6 @@ F 3 "" H 7700 1575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L archive:Regulator_Linear_LD1117S33TR_SOT223 U3
-U 1 1 60D979F1
-P 9100 5400
-F 0 "U3" H 9100 5642 50  0000 C CNN
-F 1 "LD1117S33TR_SOT223" H 9100 5551 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 9100 5600 50  0001 C CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 9200 5150 50  0001 C CNN
-	1    9100 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L archive:Device_C_Small C9
 U 1 1 60D9A0A0
 P 5150 2375
@@ -166,25 +155,14 @@ F 3 "~" H 7300 3375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L archive:Device_C_Small C11
-U 1 1 60DA450D
-P 8500 5700
-F 0 "C11" H 8550 5800 50  0000 L CNN
-F 1 "0.1uF" H 8550 5600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 8500 5700 50  0001 C CNN
-F 3 "~" H 8500 5700 50  0001 C CNN
-	1    8500 5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L archive:Device_C_Small C12
 U 1 1 60DA4E3C
-P 9650 5700
-F 0 "C12" H 9700 5800 50  0000 L CNN
-F 1 "10uF" H 9700 5600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9650 5700 50  0001 C CNN
-F 3 "~" H 9650 5700 50  0001 C CNN
-	1    9650 5700
+P 9950 5675
+F 0 "C12" H 10000 5775 50  0000 L CNN
+F 1 "10uF" H 10000 5575 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9950 5675 50  0001 C CNN
+F 3 "~" H 9950 5675 50  0001 C CNN
+	1    9950 5675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -198,58 +176,41 @@ F 3 "" H 9100 6000 50  0001 C CNN
 	1    9100 6000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9100 5700 9100 6000
-$Comp
-L archive:power_GND #PWR015
-U 1 1 60DAA209
-P 8500 6000
-F 0 "#PWR015" H 8500 5750 50  0001 C CNN
-F 1 "GND" H 8505 5827 50  0000 C CNN
-F 2 "" H 8500 6000 50  0001 C CNN
-F 3 "" H 8500 6000 50  0001 C CNN
-	1    8500 6000
-	1    0    0    -1  
-$EndComp
 $Comp
 L archive:power_GND #PWR017
 U 1 1 60DAA5AA
-P 9650 6000
-F 0 "#PWR017" H 9650 5750 50  0001 C CNN
-F 1 "GND" H 9655 5827 50  0000 C CNN
-F 2 "" H 9650 6000 50  0001 C CNN
-F 3 "" H 9650 6000 50  0001 C CNN
-	1    9650 6000
+P 9950 5975
+F 0 "#PWR017" H 9950 5725 50  0001 C CNN
+F 1 "GND" H 9955 5802 50  0000 C CNN
+F 2 "" H 9950 5975 50  0001 C CNN
+F 3 "" H 9950 5975 50  0001 C CNN
+	1    9950 5975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 5800 8500 6000
+	9950 5775 9950 5975
 Wire Wire Line
-	9650 5800 9650 6000
+	9700 5375 9950 5375
 Wire Wire Line
-	9400 5400 9650 5400
+	9950 5375 9950 5575
 Wire Wire Line
-	9650 5400 9650 5600
-Wire Wire Line
-	8500 5600 8500 5400
-Wire Wire Line
-	8500 5400 8800 5400
+	8200 5375 8500 5375
 $Comp
 L archive:power_+3V3 #PWR018
 U 1 1 60DB2DA4
-P 9900 5250
-F 0 "#PWR018" H 9900 5100 50  0001 C CNN
-F 1 "+3V3" H 9915 5423 50  0000 C CNN
-F 2 "" H 9900 5250 50  0001 C CNN
-F 3 "" H 9900 5250 50  0001 C CNN
-	1    9900 5250
+P 10200 5225
+F 0 "#PWR018" H 10200 5075 50  0001 C CNN
+F 1 "+3V3" H 10215 5398 50  0000 C CNN
+F 2 "" H 10200 5225 50  0001 C CNN
+F 3 "" H 10200 5225 50  0001 C CNN
+	1    10200 5225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 5400 9900 5400
+	9950 5375 10200 5375
 Wire Wire Line
-	9900 5400 9900 5250
-Connection ~ 9650 5400
+	10200 5375 10200 5225
+Connection ~ 9950 5375
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60DF3D23
@@ -371,17 +332,16 @@ Connection ~ 5700 5350
 $Comp
 L archive:power_+5V #PWR014
 U 1 1 60EF9622
-P 8500 5250
-F 0 "#PWR014" H 8500 5100 50  0001 C CNN
-F 1 "+5V" H 8515 5423 50  0000 C CNN
-F 2 "" H 8500 5250 50  0001 C CNN
-F 3 "" H 8500 5250 50  0001 C CNN
-	1    8500 5250
+P 8200 5225
+F 0 "#PWR014" H 8200 5075 50  0001 C CNN
+F 1 "+5V" H 8215 5398 50  0000 C CNN
+F 2 "" H 8200 5225 50  0001 C CNN
+F 3 "" H 8200 5225 50  0001 C CNN
+	1    8200 5225
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 5250 8500 5400
-Connection ~ 8500 5400
+	8200 5225 8200 5375
 Wire Notes Line
 	500  4350 11200 4350
 Text Notes 7150 4650 0    98   Italic 20
@@ -703,7 +663,7 @@ $EndComp
 Wire Wire Line
 	7300 3825 7300 3475
 Wire Notes Line
-	6950 6500 6950 4350
+	6975 6500 6975 4350
 Wire Wire Line
 	7350 1675 7350 1775
 Wire Wire Line
@@ -731,26 +691,11 @@ Wire Wire Line
 	8050 2575 8700 2575
 NoConn ~ 7200 2775
 Text Notes 750  2450 0    50   ~ 0
-The P channel Mosfet in series with the batery works as a\nsimple reverse polarity protection circuit.\n\nIf the battery is reversed it will not conduct, hence not turning the\ncircuit on.\n\nI didin't use the zenner on the gate because the Mosfet's maximum\nVgs voltage is higher than what we will be applied by the battery.\n\nAlso, I didin't use a resistor on the gate because the mosfet is \nconstantly on, wich means ringing will not occur.\n\nWatch this to learn more:\nhttps://www.youtube.com/watch?v=IrB-FPcv1Dc
+The P channel Mosfet in series with the batery works as a\nsimple reverse polarity protection circuit.\n\nIf the battery is reversed it will not conduct, hence not turning the\ncircuit on.\n\nI didin't use the zenner on the gate because the Mosfet's maximum\nVgs voltage is higher than what will be applied by the battery.\n\nAlso, I didin't use a resistor on the gate because the mosfet is \nconstantly on, wich means ringing will not occur.\n\nWatch this to learn more:\nhttps://www.youtube.com/watch?v=IrB-FPcv1Dc
 Text Notes 750  3700 0    50   ~ 0
-The MAX17201 is an I2C single cell battery monitor. Be aware of \nthe differences of the MAX17211, wich uses the 1-Wire protocol.\n\nThis component will measure the battery volatge and with the\n0.01 ohm shunt it will also measure the current.\n\nAlso be aware of the MAX17205, wich is a multiple cell monitor.
+The MAX17201 is an I2C single cell battery monitor. Be aware of \nthe differences of the MAX17211, wich uses the 1-Wire protocol.\n\nThis component will measure the battery voltage and using a\n0.01 ohm shunt it will also measure the current.\n\nAlso be aware of the MAX17205, wich is a multiple cell monitor.
 Wire Wire Line
 	4650 1475 4650 1575
-$Comp
-L archive:MSS-102545-14A-V-SMT_MSS-102545-14A-V-SMT S6
-U 1 1 6196346E
-P 2125 6100
-F 0 "S6" V 1950 6150 50  0000 L CNN
-F 1 "MSS-102545-14A-V-SMT" H 1375 6400 50  0000 L CNN
-F 2 "SW_MSS-102545-14A-V-SMT" H 2125 6100 50  0001 L BNN
-F 3 "" H 2125 6100 50  0001 L BNN
-F 4 "Manufacturer Recommendations" H 2125 6100 50  0001 L BNN "STANDARD"
-F 5 "1.0" H 2125 6100 50  0001 L BNN "PARTREV"
-F 6 "CUI Devices" H 2125 6100 50  0001 L BNN "MANUFACTURER"
-F 7 "2.7 mm" H 2125 6100 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-	1    2125 6100
-	-1   0    0    1   
-$EndComp
 Text HLabel 1000 5650 0    50   Input ~ 0
 Pack
 Wire Wire Line
@@ -1073,4 +1018,49 @@ B0 D1 0F 03 1F 22 9D 18 B2 10 E9 34 F5 11 A4 A3 70 66 CB AE A9 D9 F5 36 E9 1C BB
 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L SamacSys_Parts:TC1264-3.3VDB IC4
+U 1 1 62272C03
+P 9100 5425
+F 0 "IC4" H 9450 5625 50  0000 C CNN
+F 1 "TC1264-3.3VDB" H 9000 5625 50  0000 C CNN
+F 2 "SamacSys_Parts:SOT230P700X180-4N" H 10150 5525 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21375d.pdf" H 10150 5425 50  0001 L CNN
+F 4 "LDO Regulator Pos 3.3V 0.8A Automotive 4-Pin(3+Tab) SOT-223 Tube" H 10150 5325 50  0001 L CNN "Description"
+F 5 "1.8" H 10150 5225 50  0001 L CNN "Height"
+F 6 "579-TC1264-3.3VDB" H 10150 5125 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/TC1264-33VDB?qs=AkCjCAp%252BzjQSxS5e2ugTcA%3D%3D" H 10150 5025 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 10150 4925 50  0001 L CNN "Manufacturer_Name"
+F 9 "TC1264-3.3VDB" H 10150 4825 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9100 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5875 9050 5950
+Wire Wire Line
+	9050 5950 9100 5950
+Wire Wire Line
+	9150 5950 9150 5875
+Wire Wire Line
+	9100 6000 9100 5950
+Connection ~ 9100 5950
+Wire Wire Line
+	9100 5950 9150 5950
+$Comp
+L archive:MSS-102545-14A-V-SMT_MSS-102545-14A-V-SMT S6
+U 1 1 6196346E
+P 2125 6100
+F 0 "S6" V 1950 6150 50  0000 L CNN
+F 1 "MSS-102545-14A-V-SMT" H 1375 6400 50  0000 L CNN
+F 2 "SW_MSS-102545-14A-V-SMT" H 2125 6100 50  0001 L BNN
+F 3 "" H 2125 6100 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 2125 6100 50  0001 L BNN "STANDARD"
+F 5 "1.0" H 2125 6100 50  0001 L BNN "PARTREV"
+F 6 "CUI Devices" H 2125 6100 50  0001 L BNN "MANUFACTURER"
+F 7 "2.7 mm" H 2125 6100 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    2125 6100
+	-1   0    0    -1  
+$EndComp
+Text Notes 8625 5700 2    50   ~ 0
+There's no capacitor in the input\nbecause C10 and C8 are placed\nnear the regulator on the PCB.
 $EndSCHEMATC
