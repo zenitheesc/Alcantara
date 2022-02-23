@@ -356,7 +356,7 @@ U 1 1 61591953
 P 4050 2725
 F 0 "BT2" H 4168 2821 50  0000 L CNN
 F 1 "Battery_Cell" H 4168 2730 50  0000 L CNN
-F 2 "Zenith_Homemade_Components:BatteryHolder_Short_Pin_Keystone_1042_1x18650" V 4050 2785 50  0001 C CNN
+F 2 "Alcantara_v.1:BatteryHolder_Keystone_1042_1x18650_Modified" V 4050 2785 50  0001 C CNN
 F 3 "~" V 4050 2785 50  0001 C CNN
 	1    4050 2725
 	1    0    0    -1  

@@ -1,5 +1,5 @@
 Drill report for E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.kicad_pcb
-Created on 13/02/2022 21:11:37
+Created on 22/02/2022 01:06:12
 
 Copper Layer Stackup:
     =============================================================
@@ -13,12 +13,13 @@ Drill file 'Alcantara_v.1.0-PTH.drl' contains
     plated through holes:
     =============================================================
     T1  0,200mm  0,0079"  (9 holes)
-    T2  0,250mm  0,0098"  (85 holes)
-    T3  0,300mm  0,0118"  (45 holes)
-    T4  0,400mm  0,0157"  (145 holes)
-    T5  0,900mm  0,0354"  (4 holes)
+    T2  0,250mm  0,0098"  (78 holes)
+    T3  0,300mm  0,0118"  (138 holes)
+    T4  0,400mm  0,0157"  (147 holes)
+    T5  0,500mm  0,0197"  (11 holes)
+    T6  0,900mm  0,0354"  (4 holes)
 
-    Total plated holes count 288
+    Total plated holes count 387
 
 
 Drill file 'Alcantara_v.1.0-NPTH.drl' contains

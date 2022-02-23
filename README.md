@@ -110,7 +110,7 @@ And the last page has the peripherals, the USB connector with its ESD protector,
 ## BOM
 
 https://htmlpreview.github.io/?https://github.com/zenitheesc/Alcantara_v.1.0/blob/main/Other_Files/ibom.html
-
+<!--
 ## Use concept
 
 <p align = "center">
@@ -139,3 +139,4 @@ https://htmlpreview.github.io/?https://github.com/zenitheesc/Alcantara_v.1.0/blo
 <p align = "center">
 <a href="zenith.eesc@gmail.com">zenith.eesc@gmail.com</a>
 </p>
+-->

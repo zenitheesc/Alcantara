@@ -1,319 +1,319 @@
-01-20 01:12:52 archive_project.action_archive_project 108:Plugin executed on: 'win32'
-01-20 01:12:52 archive_project.action_archive_project 109:Plugin executed with python version: '2.7.18 (default, Apr 20 2020, 16:57:11)  [GCC 9.3.0 64 bit (AMD64)]'
-01-20 01:12:52 archive_project.action_archive_project 110:KiCad build version: (5.1.10)-1
-01-20 01:12:52 archive_project.action_archive_project 111:Archive plugin version: 48 started
-01-20 01:13:03 archive_project.action_archive_project 167:Starting archiving only schematics
-01-20 01:13:03 archive_project.archive_project 199:Starting to archive symbols
-01-20 01:13:03 archive_project.archive_project 206:Pcb filename:E:/Zenith/CubeSat 2020/Alcantara/Alcantara - KiCad/Alcantara/KiCad_Files/Alcantara_v.1.0.kicad_pcb
-01-20 01:13:03 archive_project.archive_project 218:Kicad config path: C:\Users\julio\AppData\Roaming\kicad
-01-20 01:13:03 archive_project.archive_project 290:Entering archive library in sym-lib-table
-01-20 01:13:03 archive_project.archive_project 132:found subsheet:
+02-23 00:40:01 Kicad_action_plugins-master.archive_project.action_archive_project 108:Plugin executed on: 'win32'
+02-23 00:40:01 Kicad_action_plugins-master.archive_project.action_archive_project 109:Plugin executed with python version: '2.7.18 (default, Apr 20 2020, 16:57:11)  [GCC 9.3.0 64 bit (AMD64)]'
+02-23 00:40:01 Kicad_action_plugins-master.archive_project.action_archive_project 110:KiCad build version: (5.1.10)-1
+02-23 00:40:01 Kicad_action_plugins-master.archive_project.action_archive_project 111:Archive plugin version: 48 started
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.action_archive_project 167:Starting archiving only schematics
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 199:Starting to archive symbols
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 206:Pcb filename:E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.kicad_pcb
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 218:Kicad config path: C:\Users\julio\AppData\Roaming\kicad
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 278:project-archive.lib is already in the sym-lib-table, using its nickname
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 132:found subsheet:
 	E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Power Management.sch
 	 in:
 	E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.sch, line: 19
-01-20 01:13:03 archive_project.archive_project 132:found subsheet:
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 132:found subsheet:
 	E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Telecommunications.sch
 	 in:
 	E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.sch, line: 29
-01-20 01:13:03 archive_project.archive_project 132:found subsheet:
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 132:found subsheet:
 	E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Peripherals.sch
 	 in:
 	E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.sch, line: 50
-01-20 01:13:03 archive_project.archive_project 380:found all subsheets
-01-20 01:13:03 archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.sch
-01-20 01:13:03 archive_project.archive_project 392:Checking file integrity
-01-20 01:13:03 archive_project.archive_project 407:Go through all symbols within the file
-01-20 01:13:03 archive_project.archive_project 533:Reached end of file
-01-20 01:13:03 archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Telecommunications.sch
-01-20 01:13:03 archive_project.archive_project 392:Checking file integrity
-01-20 01:13:03 archive_project.archive_project 407:Go through all symbols within the file
-01-20 01:13:03 archive_project.archive_project 533:Reached end of file
-01-20 01:13:03 archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Peripherals.sch
-01-20 01:13:03 archive_project.archive_project 392:Checking file integrity
-01-20 01:13:03 archive_project.archive_project 407:Go through all symbols within the file
-01-20 01:13:03 archive_project.archive_project 533:Reached end of file
-01-20 01:13:03 archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Power Management.sch
-01-20 01:13:03 archive_project.archive_project 392:Checking file integrity
-01-20 01:13:03 archive_project.archive_project 407:Go through all symbols within the file
-01-20 01:13:03 archive_project.archive_project 533:Reached end of file
-01-20 01:13:03 archive_project.archive_project 546:Writing schematics file(s)
-01-20 01:13:03 archive_project.archive_project 139:Starting to archive worksheets
-01-20 01:13:03 archive_project.archive_project 154:Found worksheet entry:  at line: 16
-01-20 01:13:03 archive_project.archive_project 156:Full worksheet path: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files
-01-20 01:13:03 archive_project.archive_project 159:Worksheet file does not exist
-01-20 01:13:03 archive_project.archive_project 154:Found worksheet entry:  at line: 257
-01-20 01:13:03 archive_project.archive_project 156:Full worksheet path: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files
-01-20 01:13:03 archive_project.archive_project 159:Worksheet file does not exist
-01-20 01:13:05 archive_project.action_archive_project 216:Starting 3D model archiving
-01-20 01:13:05 archive_project.archive_project 561:Starting to archive 3D models
-01-20 01:13:05 archive_project.archive_project 563:All defined environment variables: {'TMP': 'C:\\Users\\julio\\AppData\\Local\\Temp', 'BESIEGE_UNITY_ASSEMBLIES': 'C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\\Managed/', 'COMPUTERNAME': 'DESKTOP-OOPRH75', 'BESIEGE_GAME_ASSEMBLIES': 'C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\\Managed/', 'PSMODULEPATH': 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'KICAD_TEMPLATE_DIR': 'C:\\Program Files\\KiCad\\share\\kicad\\template', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 158 Stepping 13, GenuineIntel', 'PROGRAMFILES': 'C:\\Program Files', 'PROCESSOR_REVISION': '9e0d', 'SYSTEMROOT': 'C:\\Windows', 'PATH': 'C:\\Program Files\\KiCad\\bin;C:\\Program Files\\KiCad\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK Utility;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Users\\julio\\MATLAB\\Polyspace\\R2020a\\runtime\\win64;C:\\Users\\julio\\MATLAB\\Polyspace\\R2020a\\bin;C:\\Users\\julio\\AppData\\Local\\Microsoft\\WindowsApps;C:\\intelFPGA_lite\\20.1\\modelsim_ase\\win32aloem;C:\\Users\\julio\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\julio\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\julio\\AppData\\Roaming\\npm;C:\\Users\\julio\\.dotnet\\tools', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'KICAD_SYMBOL_DIR': 'C:\\Program Files\\KiCad\\share\\kicad\\library', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'QUARTUS_ROOTDIR': 'C:\\intelFPGA_lite\\20.1\\quartus', 'KISYS3DMOD': 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d\\', 'TEMP': 'C:\\Users\\julio\\AppData\\Local\\Temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'USERDOMAIN': 'DESKTOP-OOPRH75', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'LOCALAPPDATA': 'C:\\Users\\julio\\AppData\\Local', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEPATH': '\\Users\\julio', 'USERDOMAIN_ROAMINGPROFILE': 'DESKTOP-OOPRH75', 'PROGRAMW6432': 'C:\\Program Files', 'USERNAME': 'julio', 'SOPC_KIT_NIOS2': 'C:\\intelFPGA_lite\\20.1\\nios2eds', 'LOGONSERVER': '\\\\DESKTOP-OOPRH75', 'ONEDRIVECONSUMER': 'C:\\Users\\julio\\OneDrive', 'SESSIONNAME': 'Console', 'PROGRAMDATA': 'C:\\ProgramData', 'ONEDRIVE': 'C:\\Users\\julio\\OneDrive', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'ZES_ENABLE_SYSMAN': '1', 'KICAD_USER_TEMPLATE_DIR': 'E:\\Documentos\\kicad\\template', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'KISYSMOD': 'C:\\Program Files\\KiCad\\share\\kicad\\modules', 'WINDIR': 'C:\\Windows', 'KIGITHUB': 'https://github.com/KiCad', 'HOMEDRIVE': 'C:', 'SYSTEMDRIVE': 'C:', 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe', 'NUMBER_OF_PROCESSORS': '8', 'QSYS_ROOTDIR': 'C:\\intelFPGA_lite\\20.1\\quartus\\sopc_builder\\bin', 'APPDATA': 'C:\\Users\\julio\\AppData\\Roaming', 'PROCESSOR_LEVEL': '6', 'KIPRJMOD': 'E:\\Zenith\\CubeSat 2020\\Alcantara\\Alcantara - KiCad\\Alcantara\\KiCad_Files', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'OS': 'Windows_NT', 'PUBLIC': 'C:\\Users\\Public', 'USERPROFILE': 'C:\\Users\\julio'}
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: S6
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: E:/Documentos/KiCad/Libraries/Downloaded/MSS-102545-14A-V-SMT/CUI_DEVICES_MSS-102545-14A-V-SMT.step
-01-20 01:13:05 archive_project.archive_project 656:Remapping: E:/Documentos/KiCad/Libraries/Downloaded/MSS-102545-14A-V-SMT/CUI_DEVICES_MSS-102545-14A-V-SMT.step
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: D2
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/RGB_LED_Vertical_Zenith_Short v2.step
-01-20 01:13:05 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/RGB_LED_Vertical_Zenith_Short v2.step
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: S2
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/BTNKSC990 + Cap.step
-01-20 01:13:05 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/BTNKSC990 + Cap.step
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: R29
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: R8
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: R34
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: R33
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: Q7
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\2N7002NXAKR.stp
-01-20 01:13:05 archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\2N7002NXAKR.stp
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: G***
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: G***
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: J8
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Zenith3DModels.3dshapes/Picoblade_5_Pin_Horizontal v2.step
-01-20 01:13:05 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Zenith3DModels.3dshapes/Picoblade_5_Pin_Horizontal v2.step
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: J2
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/Amphenol 132415.STEP
-01-20 01:13:05 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/Amphenol 132415.STEP
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
-01-20 01:13:05 archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
-01-20 01:13:05 archive_project.archive_project 588:Getting 3D models for footprint of: J3
-01-20 01:13:05 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/Amphenol 132415.STEP
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/Amphenol 132415.STEP
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: C10
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/CP_Elec_5x5.3.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/CP_Elec_5x5.3.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: L2
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0402_1005Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Inductor_SMD.3dshapes/L_0402_1005Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: U1
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/E22-900M30S v3.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/E22-900M30S v3.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: U5
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/AST0760MCTRQ.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/AST0760MCTRQ.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: S1
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/BTNKSC990 + Cap.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/BTNKSC990 + Cap.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: S5
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: S4
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: U2
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/Texas_S-PVQFN-N16_EP2.7x2.7mm.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/Texas_S-PVQFN-N16_EP2.7x2.7mm.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: IC2
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\MAX17201G+T.stp
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\MAX17201G+T.stp
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: BT2
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/BatteryHolder_Keystone_1042_1x18650_No_Stubs.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/BatteryHolder_Keystone_1042_1x18650_No_Stubs.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: Q4
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/User Library-User Library-SOT-346T.STEP
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/User Library-User Library-SOT-346T.STEP
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: Q2
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: Q1
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: J4
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: IC3
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: Q3
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\2N7002NXAKR.stp
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\2N7002NXAKR.stp
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: J5
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\PJS008U-3000-0.stp
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\PJS008U-3000-0.stp
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: U4
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Zenith3DModels.3dshapes/User Library-neo-m8n.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Zenith3DModels.3dshapes/User Library-neo-m8n.step
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/User Library-neo-m8n.step
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/User Library-neo-m8n.step
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: C21
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: R26
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: R13
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: R11
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: R6
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: R5
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: R3
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: IC1
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\TLV809ED29DBZR.stp
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\TLV809ED29DBZR.stp
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: L1
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\TYA40206R8M-10.stp
-01-20 01:13:06 archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\TYA40206R8M-10.stp
-01-20 01:13:06 archive_project.archive_project 588:Getting 3D models for footprint of: U7
-01-20 01:13:06 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/ssop28_model.STEP
-01-20 01:13:07 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/ssop28_model.STEP
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: MOD1
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/ESP32_Wroom.step
-01-20 01:13:07 archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/ESP32_Wroom.step
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: J1
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Connector_Coaxial.3dshapes/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: U3
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-223.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-223.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R12
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: D1
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Diode_SMD.3dshapes/D_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Diode_SMD.3dshapes/D_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R7
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C6
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C5
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C4
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R4
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C12
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C11
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C8
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R31
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R30
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R28
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R27
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R25
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R24
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R23
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R22
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R21
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R20
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R19
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R18
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R17
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R16
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R14
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R15
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R10
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R9
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R2
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: R1
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C20
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C19
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C18
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C17
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C16
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C15
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C14
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C13
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C9
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C7
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C3
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C2
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: C1
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: U6
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: TH1
-01-20 01:13:07 archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl
-01-20 01:13:07 archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl
-01-20 01:13:07 archive_project.archive_project 588:Getting 3D models for footprint of: BT1
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 380:found all subsheets
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Alcantara_v.1.0.sch
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 392:Checking file integrity
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 407:Go through all symbols within the file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 533:Reached end of file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Telecommunications.sch
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 392:Checking file integrity
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 407:Go through all symbols within the file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 533:Reached end of file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Peripherals.sch
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 392:Checking file integrity
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 407:Go through all symbols within the file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 533:Reached end of file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 389:Archiving file: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files\Power Management.sch
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 392:Checking file integrity
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 407:Go through all symbols within the file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 533:Reached end of file
+02-23 00:43:26 Kicad_action_plugins-master.archive_project.archive_project 546:Writing schematics file(s)
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 139:Starting to archive worksheets
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 154:Found worksheet entry:  at line: 16
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 156:Full worksheet path: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 159:Worksheet file does not exist
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 154:Found worksheet entry:  at line: 268
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 156:Full worksheet path: E:\Zenith\CubeSat 2020\Alcantara\Alcantara - KiCad\Alcantara\KiCad_Files
+02-23 00:43:27 Kicad_action_plugins-master.archive_project.archive_project 159:Worksheet file does not exist
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.action_archive_project 216:Starting 3D model archiving
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 561:Starting to archive 3D models
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 563:All defined environment variables: {'TMP': 'C:\\Users\\julio\\AppData\\Local\\Temp', 'BESIEGE_UNITY_ASSEMBLIES': 'C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\\Managed/', 'COMPUTERNAME': 'DESKTOP-OOPRH75', 'BESIEGE_GAME_ASSEMBLIES': 'C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\\Managed/', 'PSMODULEPATH': 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'KICAD_TEMPLATE_DIR': 'C:\\Program Files\\KiCad\\share\\kicad\\template', 'COMMONPROGRAMFILES': 'C:\\Program Files\\Common Files', 'PROCESSOR_IDENTIFIER': 'Intel64 Family 6 Model 158 Stepping 13, GenuineIntel', 'PROGRAMFILES': 'C:\\Program Files', 'PROCESSOR_REVISION': '9e0d', 'SYSTEMROOT': 'C:\\Windows', 'PATH': 'C:\\Program Files\\KiCad\\bin;C:\\Program Files\\KiCad\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\STMicroelectronics\\STM32 ST-LINK Utility\\ST-LINK Utility;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\nodejs\\;C:\\Users\\julio\\MATLAB\\Polyspace\\R2020a\\runtime\\win64;C:\\Users\\julio\\MATLAB\\Polyspace\\R2020a\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\julio\\AppData\\Local\\Microsoft\\WindowsApps;C:\\intelFPGA_lite\\20.1\\modelsim_ase\\win32aloem;C:\\Users\\julio\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\julio\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\julio\\AppData\\Roaming\\npm;C:\\Users\\julio\\.dotnet\\tools;', 'PROGRAMFILES(X86)': 'C:\\Program Files (x86)', 'KICAD_SYMBOL_DIR': 'C:\\Program Files\\KiCad\\share\\kicad\\library', 'DRIVERDATA': 'C:\\Windows\\System32\\Drivers\\DriverData', 'QUARTUS_ROOTDIR': 'C:\\intelFPGA_lite\\20.1\\quartus', 'KISYS3DMOD': 'C:\\Program Files\\KiCad\\share\\kicad\\modules\\packages3d\\', 'TEMP': 'C:\\Users\\julio\\AppData\\Local\\Temp', 'COMMONPROGRAMFILES(X86)': 'C:\\Program Files (x86)\\Common Files', 'USERDOMAIN': 'DESKTOP-OOPRH75', 'PROCESSOR_ARCHITECTURE': 'AMD64', 'ALLUSERSPROFILE': 'C:\\ProgramData', 'LOCALAPPDATA': 'C:\\Users\\julio\\AppData\\Local', 'FPS_BROWSER_USER_PROFILE_STRING': 'Default', 'HOMEPATH': '\\Users\\julio', 'USERDOMAIN_ROAMINGPROFILE': 'DESKTOP-OOPRH75', 'PROGRAMW6432': 'C:\\Program Files', 'USERNAME': 'julio', 'SOPC_KIT_NIOS2': 'C:\\intelFPGA_lite\\20.1\\nios2eds', 'LOGONSERVER': '\\\\DESKTOP-OOPRH75', 'ONEDRIVECONSUMER': 'C:\\Users\\julio\\OneDrive', 'SESSIONNAME': 'Console', 'PROGRAMDATA': 'C:\\ProgramData', 'ONEDRIVE': 'C:\\Users\\julio\\OneDrive', 'FPS_BROWSER_APP_PROFILE_STRING': 'Internet Explorer', 'ZES_ENABLE_SYSMAN': '1', 'KICAD_USER_TEMPLATE_DIR': 'E:\\Documentos\\kicad\\template', 'PATHEXT': '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'KISYSMOD': 'C:\\Program Files\\KiCad\\share\\kicad\\modules', 'WINDIR': 'C:\\Windows', 'KIGITHUB': 'https://github.com/KiCad', 'HOMEDRIVE': 'C:', 'SYSTEMDRIVE': 'C:', 'COMSPEC': 'C:\\Windows\\system32\\cmd.exe', 'NUMBER_OF_PROCESSORS': '8', 'QSYS_ROOTDIR': 'C:\\intelFPGA_lite\\20.1\\quartus\\sopc_builder\\bin', 'APPDATA': 'C:\\Users\\julio\\AppData\\Roaming', 'PROCESSOR_LEVEL': '6', 'KIPRJMOD': 'E:\\Zenith\\CubeSat 2020\\Alcantara\\Alcantara - KiCad\\Alcantara\\KiCad_Files', 'COMMONPROGRAMW6432': 'C:\\Program Files\\Common Files', 'OS': 'Windows_NT', 'PUBLIC': 'C:\\Users\\Public', 'USERPROFILE': 'C:\\Users\\julio'}
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: L1
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Zenith3DModels.3dshapes/NR3015_4mm.step
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Zenith3DModels.3dshapes/NR3015_4mm.step
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: G***
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: BT2
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Zenith3DModels.3dshapes/BatteryHolder_Keystone_1042_1x18650_With_Hole.step
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Zenith3DModels.3dshapes/BatteryHolder_Keystone_1042_1x18650_With_Hole.step
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: BT1
+02-23 00:43:29 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Zenith3DModels.3dshapes/ML414H IV01E--3DModel-STEP-56544.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Zenith3DModels.3dshapes/ML414H IV01E--3DModel-STEP-56544.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: IC1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/TLV809ED29DBZR.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/TLV809ED29DBZR.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: J5
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\MEM2075-00-140-01-A.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\MEM2075-00-140-01-A.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: D2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/RGB_LED_Vertical_Zenith_Short v2.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/RGB_LED_Vertical_Zenith_Short v2.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: U1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/E22-900M30S v3.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/E22-900M30S v3.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: S6
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:/Documentos/KiCad/Libraries/Downloaded/MSS-102545-14A-V-SMT/CUI_DEVICES_MSS-102545-14A-V-SMT.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:/Documentos/KiCad/Libraries/Downloaded/MSS-102545-14A-V-SMT/CUI_DEVICES_MSS-102545-14A-V-SMT.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C7
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: U5
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/AST0760MCTRQ.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/AST0760MCTRQ.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: REF**
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: S4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: S5
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:/Zenith/CubeSat 2020/Alcantara/Arquivo de placas/3D models/EVPAA.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: J8
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KISYS3DMOD}/Zenith3DModels.3dshapes/Picoblade_5_Pin_Horizontal v2.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KISYS3DMOD}/Zenith3DModels.3dshapes/Picoblade_5_Pin_Horizontal v2.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R21
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: IC5
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\PESD2ETH-ADX.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\PESD2ETH-ADX.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: U7
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/ssop28_model.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/ssop28_model.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R34
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: IC4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\TC1264-3.3VDB.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: E:\Documentos\KiCad\Libraries\SamacSys_Parts.3dshapes\TC1264-3.3VDB.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: MOD1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/ESP32_Wroom.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/ESP32_Wroom.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R29
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: Q3
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/2N7002NXAKR.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/2N7002NXAKR.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: IC3
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/SOT-323_SC-70.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/SOT-323_SC-70.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R8
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R6
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R23
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R12
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R15
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: TH1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0402_1005Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0402_1005Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: S2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/BTNKSC990 + Cap.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/BTNKSC990 + Cap.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R33
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: Q7
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/2N7002NXAKR.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/2N7002NXAKR.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: G***
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: J2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: J3
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Amphenol 132415.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C10
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/CP_Elec_5x5.3.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/CP_Elec_5x5.3.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: L2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/L_0402_1005Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/L_0402_1005Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: S1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/BTNKSC990 + Cap.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/BTNKSC990 + Cap.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: U2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/Texas_S-PVQFN-N16_EP2.7x2.7mm.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/Texas_S-PVQFN-N16_EP2.7x2.7mm.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: IC2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/MAX17201G+T.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/MAX17201G+T.stp
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: Q4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/User Library-User Library-SOT-346T.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/User Library-User Library-SOT-346T.STEP
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: Q2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/SOT-23.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/SOT-23.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: Q1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/SOT-23.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/SOT-23.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: J4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/USB_Micro-B_Molex_47346-0001.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/USB_Micro-B_Molex_47346-0001.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: U4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/User Library-neo-m8n.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/User Library-neo-m8n.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/User Library-neo-m8n.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/User Library-neo-m8n.step
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C21
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0805_2012Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0805_2012Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R26
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R13
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R11
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R5
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R3
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: J1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/U.FL_Hirose_U.FL-R-SMT-1_Vertical.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: D1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/D_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/D_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R7
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0805_2012Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0805_2012Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C6
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_1206_3216Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_1206_3216Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C5
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R4
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C12
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_1206_3216Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_1206_3216Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C8
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_1206_3216Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_1206_3216Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R31
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R30
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R28
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R27
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R25
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R24
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R22
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R20
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R19
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R18
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R17
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R16
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R14
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R10
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R9
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: R1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/R_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C20
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C19
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C18
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C17
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C16
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C15
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C14
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C13
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C9
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C3
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C2
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 588:Getting 3D models for footprint of: C1
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 599:Trying to copy: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl
+02-23 00:43:30 Kicad_action_plugins-master.archive_project.archive_project 656:Remapping: ${KIPRJMOD}/shapes3D/C_0603_1608Metric.wrl

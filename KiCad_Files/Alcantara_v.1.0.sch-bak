@@ -552,7 +552,7 @@ NoConn ~ 3100 2100
 NoConn ~ 3100 2000
 NoConn ~ 3100 1900
 NoConn ~ 3100 1800
-Text GLabel 1650 3400 0    50   Input ~ 0
+Text GLabel 1650 2100 0    50   Input ~ 0
 RGB_LED_B
 Text GLabel 3150 3000 2    50   Input ~ 0
 BUTTON_1
@@ -566,7 +566,7 @@ Text GLabel 3150 2800 2    50   Input ~ 0
 RADIO_DIO1
 Text GLabel 3150 2700 2    50   Input ~ 0
 RADIO_DIO2
-Text GLabel 1650 2200 0    50   Input ~ 0
+Text GLabel 1650 3300 0    50   Input ~ 0
 RADIO_TXEN
 Text GLabel 1650 3200 0    50   Input ~ 0
 RADIO_RXEN
@@ -578,7 +578,7 @@ Wire Wire Line
 	1650 3300 1700 3300
 Wire Wire Line
 	1650 3400 1700 3400
-Text GLabel 1650 3300 0    50   Input ~ 0
+Text GLabel 1650 2200 0    50   Input ~ 0
 BUZZER
 Wire Wire Line
 	1650 3200 1700 3200
@@ -729,9 +729,9 @@ Connection ~ 7350 1275
 Connection ~ 7350 1825
 Wire Wire Line
 	7350 1625 7350 1825
-Text GLabel 1650 2300 0    50   Input ~ 0
+Text GLabel 1650 3400 0    50   Input ~ 0
 GPS_ON_OFF
-Text GLabel 1650 2100 0    50   Input ~ 0
+Text GLabel 1650 2300 0    50   Input ~ 0
 SDCARD_NSS
 Wire Wire Line
 	7825 3675 7975 3675
