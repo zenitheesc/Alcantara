@@ -22,22 +22,22 @@
 #define LED_TIMER_ALARM_GENERATION_RATE 5000000 //microseconds
 
 #define TOTAL_STATES 3
-typedef enum {FSK, LoRa} radio_com_protocol;
-//typedef enum {parse_obsat(), parse_Z_reduced(), parse_Z_full()} radio_collect_function;
-typedef enum {O, Z} net;
-typedef enum {B, BB, BBB} n_blinks;
+typedef enum {FSK, LoRa} radio_com_protocol_t;
+//typedef enum {parse_obsat(), parse_Z_reduced(), parse_Z_full()} radio_parse_function_t;
+typedef enum {OBSAT, ZENITH} net_t;
+typedef enum {SINGLE_BLINK, DOUBLE_BLINK, TRIPLE_BLINK} n_blinks_t;
 typedef struct {
-    radio_com_protocol RCP;
-    //radio_collect_function RCF;
-    net NET;
-    n_blinks BLINKS;
-} radio_configuration_state;
+    radio_com_protocol_t comunication_protocol;
+    //radio_parse_function_t parse_function;
+    net_t radio_net;
+    n_blinks_t led_blinks;
+} radio_configuration_state_t;
 static const char * const radio_com_protocol_type[] = {
   [FSK] = "FSK",
   [LoRa] = "LoRa"
 };
 
-volatile radio_configuration_state selected_state;
+volatile radio_configuration_state_t selected_state;
 
 volatile unsigned int interruptCounter;
 hw_timer_t * timer = NULL;
@@ -45,7 +45,7 @@ portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
 void IRAM_ATTR blink_RGB_LED() {
   portENTER_CRITICAL_ISR(&timerMux);
-  for (int i = 0; i <= selected_state.BLINKS; i++) {
+  for (int i = 0; i <= selected_state.led_blinks; i++) {
     digitalWrite(GPIO_RGB_LED_B, HIGH);
     delay(750);
     digitalWrite(GPIO_RGB_LED_B, LOW);
@@ -53,7 +53,7 @@ void IRAM_ATTR blink_RGB_LED() {
   }
 
   #ifdef ISDEBUG
-  Serial.println("%d PULSOS DO LED!\n", (selected_state.BLINKS + 1));
+  Serial.println("%d PULSOS DO LED!\n", (selected_state.led_blinks + 1));
   #endif
   
   portEXIT_CRITICAL_ISR(&timerMux);
@@ -61,19 +61,19 @@ void IRAM_ATTR blink_RGB_LED() {
 
 void setup() {
   char UART_configuration_instruction[UART_INSTRUCTION_BUFFER_SIZE]; //Instrução da forma ("PROTOCOLO_DO_RÁDIO"[0]+"NET")\0 - Ex: "FZ\0";
-  radio_configuration_state radio_state[3];
+  radio_configuration_state_t radio_state[3];
   
-  radio_state[0].RCP = FSK;
-  radio_state[0].NET = O;
-  radio_state[0].BLINKS = B;
+  radio_state[0].comunication_protocol = FSK;
+  radio_state[0].radio_net = OBSAT;
+  radio_state[0].led_blinks = SINGLE_BLINK;
   
-  radio_state[1].RCP = LoRa;
-  radio_state[1].NET = Z;
-  radio_state[1].BLINKS = BB;
+  radio_state[1].comunication_protocol = LoRa;
+  radio_state[1].radio_net = ZENITH;
+  radio_state[1].led_blinks = DOUBLE_BLINK;
   
-  radio_state[2].RCP = FSK;
-  radio_state[2].NET = Z;
-  radio_state[2].BLINKS = BBB;
+  radio_state[2].comunication_protocol = FSK;
+  radio_state[2].radio_net = ZENITH;
+  radio_state[2].led_blinks = TRIPLE_BLINK;
   
   Serial.begin(115200);
   Serial.println("Comunicação SERIAL estabelecida!\n");
@@ -103,16 +103,16 @@ void setup() {
       switch (UART_configuration_instruction[1]) {
         case 'O': {
           ///radio.config(FSK, O);
-          selected_state.RCP = radio_state[0].RCP;
-          selected_state.NET = radio_state[0].NET;
-          selected_state.BLINKS = radio_state[0].BLINKS;
+          selected_state.comunication_protocol = radio_state[0].comunication_protocol;
+          selected_state.radio_net = radio_state[0].radio_net;
+          selected_state.led_blinks = radio_state[0].led_blinks;
           break;
         }
         case 'Z': {
           ///radio.config(FSK, Z);
-          selected_state.RCP = radio_state[1].RCP;
-          selected_state.NET = radio_state[1].NET;
-          selected_state.BLINKS = radio_state[1].BLINKS;
+          selected_state.comunication_protocol = radio_state[1].comunication_protocol;
+          selected_state.radio_net = radio_state[1].radio_net;
+          selected_state.led_blinks = radio_state[1].led_blinks;
           break;
         }
       }
@@ -120,9 +120,9 @@ void setup() {
     }
     case 'L': {
       ///radio.config(LoRa, Z);
-      selected_state.RCP = radio_state[2].RCP;
-      selected_state.NET = radio_state[2].NET;
-      selected_state.BLINKS = radio_state[2].BLINKS;
+      selected_state.comunication_protocol = radio_state[2].comunication_protocol;
+      selected_state.radio_net = radio_state[2].radio_net;
+      selected_state.led_blinks = radio_state[2].led_blinks;
       break;
     }
   }
