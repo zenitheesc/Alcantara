@@ -45,17 +45,17 @@ portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
 void IRAM_ATTR blink_RGB_LED() {
   portENTER_CRITICAL_ISR(&timerMux);
-  switch (selected_state.BLINKS) {
-    case B: {
-      blink_RGB_LED_once();
-    }
-    case BB: {
-      blink_RGB_LED_twice();
-    }
-    case BBB: {
-      blink_RGB_LED_three_times();
-    }
+  for (int i = 0; i <= selected_state.BLINKS; i++) {
+    digitalWrite(GPIO_RGB_LED_B, HIGH);
+    delay(750);
+    digitalWrite(GPIO_RGB_LED_B, LOW);
+    delay(500);
   }
+
+  #ifdef ISDEBUG
+  Serial.println("%d PULSOS DO LED!\n", (selected_state.BLINKS + 1));
+  #endif
+  
   portEXIT_CRITICAL_ISR(&timerMux);
 }
 
@@ -143,48 +143,6 @@ void loop() {
     interruptCounter--;
     portEXIT_CRITICAL(&timerMux);
   }
-}
-
-void blink_RGB_LED_once() {
-  digitalWrite(GPIO_RGB_LED_B, HIGH);
-  delay(750);
-  digitalWrite(GPIO_RGB_LED_B, LOW);
-
-  #ifdef ISDEBUG
-  Serial.println("UM PULSO DO LED!\n");
-  #endif
-}
-
-void blink_RGB_LED_twice() {
-  digitalWrite(GPIO_RGB_LED_B, HIGH);
-  delay(750);
-  digitalWrite(GPIO_RGB_LED_B, LOW);
-  delay(500);
-  digitalWrite(GPIO_RGB_LED_B, HIGH);
-  delay(750);
-  digitalWrite(GPIO_RGB_LED_B, LOW);
-  
-  #ifdef ISDEBUG
-  Serial.println("DOIS PULSOS DO LED!\n");
-  #endif
-}
-
-void blink_RGB_LED_three_times() {
-  digitalWrite(GPIO_RGB_LED_B, HIGH);
-  delay(750);
-  digitalWrite(GPIO_RGB_LED_B, LOW);
-  delay(500);
-  digitalWrite(GPIO_RGB_LED_B, HIGH);
-  delay(750);
-  digitalWrite(GPIO_RGB_LED_B, LOW);
-  delay(500);
-  digitalWrite(GPIO_RGB_LED_B, HIGH);
-  delay(750);
-  digitalWrite(GPIO_RGB_LED_B, LOW);
-
-  #ifdef ISDEBUG
-  Serial.println("TRÊS PULSOS DO LED!\n");
-  #endif
 }
 
 void buzz() {
