@@ -41,7 +41,7 @@ static const char * const radio_com_protocol_type[] = {
 volatile radio_configuration_state_t selected_state;
 
 volatile unsigned int interruptCounter;
-hw_timer_t * timer = NULL;
+hw_timer_t * timer = nullptr;
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
 void IRAM_ATTR blink_RGB_LED() {
