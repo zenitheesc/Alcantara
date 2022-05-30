@@ -11,7 +11,8 @@
 #define GPIO_BUZZER 24
 #define GPIO_RGB_LED_B 13
 
-#define BUZZER_PWM_CHANNEL 0 //Avoid use of channels 2, 3, 10, 11, as they make use of timer 1, which is being used for other purposes. More info in: https://github.com/espressif/arduino-esp32/blob/master/cores/esp32/esp32-hal-ledc.c
+#define BUZZER_PWM_CHANNEL 0 //Avoid use of channels 2, 3, 10, 11, as they make use of timer 1, which is being used for other purposes.
+//More info in: https://github.com/espressif/arduino-esp32/blob/master/cores/esp32/esp32-hal-ledc.c
 #define NO_TONE_FREQUENCY 0
 #define BUZZER_FREQUENCY 6000
 #define BUZZER_FREQUENCY_RESOLUTION 13 //bits
