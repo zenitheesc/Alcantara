@@ -62,19 +62,9 @@ void IRAM_ATTR blink_RGB_LED() {
 
 void setup() {
   char UART_configuration_instruction[UART_INSTRUCTION_BUFFER_SIZE]; //Instrução da forma ("PROTOCOLO_DO_RÁDIO"[0]+"NET")\0 - Ex: "FZ\0";
-  radio_configuration_state_t radio_state[3];
-  
-  radio_state[0].comunication_protocol = FSK;
-  radio_state[0].radio_net = OBSAT;
-  radio_state[0].led_blinks = SINGLE_BLINK;
-  
-  radio_state[1].comunication_protocol = LoRa;
-  radio_state[1].radio_net = ZENITH;
-  radio_state[1].led_blinks = DOUBLE_BLINK;
-  
-  radio_state[2].comunication_protocol = FSK;
-  radio_state[2].radio_net = ZENITH;
-  radio_state[2].led_blinks = TRIPLE_BLINK;
+  radio_configuration_state_t radio_state[3] = {{FSK, OBSAT, SINGLE_BLINK},
+                                                {LoRa, ZENITH, DOUBLE_BLINK},
+                                                {FSK, ZENITH, TRIPLE_BLINK}};
   
   Serial.begin(115200);
   Serial.println("Comunicação SERIAL estabelecida!\n");
