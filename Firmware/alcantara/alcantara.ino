@@ -38,15 +38,15 @@ static const char * const radio_com_protocol_type[] = {
   [LoRa] = "LoRa"
 };
 
-volatile radio_configuration_state_t selected_state;
+volatile radio_configuration_state_t g_selected_state;
 
-volatile unsigned int interruptCounter;
+volatile unsigned int g_interruptCounter;
 hw_timer_t * timer = nullptr;
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 
 void IRAM_ATTR blink_RGB_LED() {
   portENTER_CRITICAL_ISR(&timerMux);
-  for (int i = 0; i <= selected_state.led_blinks; i++) {
+  for (int i = 0; i <= g_selected_state.led_blinks; i++) {
     digitalWrite(GPIO_RGB_LED_B, HIGH);
     delay(750);
     digitalWrite(GPIO_RGB_LED_B, LOW);
@@ -54,7 +54,7 @@ void IRAM_ATTR blink_RGB_LED() {
   }
 
   #ifdef ISDEBUG
-  Serial.println("%d PULSOS DO LED!\n", (selected_state.led_blinks + 1));
+  Serial.println("%d PULSOS DO LED!\n", (g_selected_state.led_blinks + 1));
   #endif
   
   portEXIT_CRITICAL_ISR(&timerMux);
@@ -62,9 +62,9 @@ void IRAM_ATTR blink_RGB_LED() {
 
 void setup() {
   char UART_configuration_instruction[UART_INSTRUCTION_BUFFER_SIZE]; //Instrução da forma ("PROTOCOLO_DO_RÁDIO"[0]+"NET")\0 - Ex: "FZ\0";
-  radio_configuration_state_t radio_state[3] = {{FSK, OBSAT, SINGLE_BLINK},
-                                                {LoRa, ZENITH, DOUBLE_BLINK},
-                                                {FSK, ZENITH, TRIPLE_BLINK}};
+  radio_configuration_state_t radio_state[3] = {{.comunication_protocol = FSK, .radio_net = OBSAT, .led_blinks = SINGLE_BLINK},
+                                                {.comunication_protocol = LoRa, .radio_net = ZENITH, .led_blinks = DOUBLE_BLINK},
+                                                {.comunication_protocol = FSK, .radio_net = ZENITH, .led_blinks = TRIPLE_BLINK}};
   
   Serial.begin(115200);
   Serial.println("Comunicação SERIAL estabelecida!\n");
@@ -94,16 +94,16 @@ void setup() {
       switch (UART_configuration_instruction[1]) {
         case 'O': {
           ///radio.config(FSK, O);
-          selected_state.comunication_protocol = radio_state[0].comunication_protocol;
-          selected_state.radio_net = radio_state[0].radio_net;
-          selected_state.led_blinks = radio_state[0].led_blinks;
+          g_selected_state.comunication_protocol = radio_state[0].comunication_protocol;
+          g_selected_state.radio_net = radio_state[0].radio_net;
+          g_selected_state.led_blinks = radio_state[0].led_blinks;
           break;
         }
         case 'Z': {
           ///radio.config(FSK, Z);
-          selected_state.comunication_protocol = radio_state[1].comunication_protocol;
-          selected_state.radio_net = radio_state[1].radio_net;
-          selected_state.led_blinks = radio_state[1].led_blinks;
+          g_selected_state.comunication_protocol = radio_state[1].comunication_protocol;
+          g_selected_state.radio_net = radio_state[1].radio_net;
+          g_selected_state.led_blinks = radio_state[1].led_blinks;
           break;
         }
       }
@@ -111,9 +111,9 @@ void setup() {
     }
     case 'L': {
       ///radio.config(LoRa, Z);
-      selected_state.comunication_protocol = radio_state[2].comunication_protocol;
-      selected_state.radio_net = radio_state[2].radio_net;
-      selected_state.led_blinks = radio_state[2].led_blinks;
+      g_selected_state.comunication_protocol = radio_state[2].comunication_protocol;
+      g_selected_state.radio_net = radio_state[2].radio_net;
+      g_selected_state.led_blinks = radio_state[2].led_blinks;
       break;
     }
   }
@@ -129,9 +129,9 @@ void setup() {
 }
 
 void loop() {
-  if(interruptCounter > 0) {
+  if(g_interruptCounter > 0) {
     portENTER_CRITICAL(&timerMux);
-    interruptCounter--;
+    g_interruptCounter--;
     portEXIT_CRITICAL(&timerMux);
   }
 }
