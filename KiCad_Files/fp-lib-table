@@ -4,4 +4,5 @@
   (lib (name digikey-kicad-library-master)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded/digikey-kicad-library-master)(options "")(descr ""))
   (lib (name Downloaded)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded)(options "")(descr ""))
   (lib (name eec)(type KiCad)(uri E:/Documentos/KiCad/Libraries/Downloaded/Switch_E-SWITCH_TL3305AF160QG/eec.pretty)(options "")(descr ""))
+  (lib (name Alcantara_Footprints)(type KiCad)(uri E:/Documentos/KiCad/Zenith_KiCad_Library/Footprints/Alcantara_Footprints.pretty)(options "")(descr ""))
 )

@@ -1059,11 +1059,11 @@ Wire Wire Line
 	5450 6150 5450 6850
 Connection ~ 5450 6850
 $Comp
-L SamacSys_Parts:PESD2ETH-ADX IC5
+L archive:SamacSys_Parts_PESD2ETH-ADX IC5
 U 1 1 625E745E
 P 4650 1725
-F 0 "IC5" H 5350 1990 50  0000 C CNN
-F 1 "PESD2ETH-ADX" H 5350 1899 50  0000 C CNN
+F 0 "IC5" H 4800 1950 50  0000 C CNN
+F 1 "PESD2ETH-ADX" H 5075 1200 50  0000 C CNN
 F 2 "SamacSys_Parts:SOT95P275X110-6N" H 5900 1825 50  0001 L CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/PESD2ETH-AD.pdf" H 5900 1725 50  0001 L CNN
 F 4 "Ultra low capacitance double rail-to-rail ESD protection diode" H 5900 1625 50  0001 L CNN "Description"
