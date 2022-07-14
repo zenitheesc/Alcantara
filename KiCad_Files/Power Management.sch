@@ -16,142 +16,142 @@ $EndDescr
 $Comp
 L archive:power_GND #PWR012
 U 1 1 60D85621
-P 6650 3825
-F 0 "#PWR012" H 6650 3575 50  0001 C CNN
-F 1 "GND" H 6655 3652 50  0000 C CNN
-F 2 "" H 6650 3825 50  0001 C CNN
-F 3 "" H 6650 3825 50  0001 C CNN
-	1    6650 3825
+P 6225 3775
+F 0 "#PWR012" H 6225 3525 50  0001 C CNN
+F 1 "GND" H 6230 3602 50  0000 C CNN
+F 2 "" H 6225 3775 50  0001 C CNN
+F 3 "" H 6225 3775 50  0001 C CNN
+	1    6225 3775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 2175 7350 2175
-Text HLabel 8700 2375 2    50   Input ~ 0
+	6775 2125 6925 2125
+Text HLabel 8275 2325 2    50   Input ~ 0
 SDA
-Text HLabel 8700 2575 2    50   Input ~ 0
+Text HLabel 8275 2525 2    50   Input ~ 0
 SCL
-Text HLabel 8700 2175 2    50   Input ~ 0
+Text HLabel 8275 2125 2    50   Input ~ 0
 ALRT1
-Text HLabel 8750 1175 2    50   Input ~ 0
+Text HLabel 8325 1125 2    50   Input ~ 0
 Pack
 $Comp
 L archive:Device_Thermistor_NTC TH?
 U 1 1 60D8563E
-P 5550 3325
+P 5125 3275
 AR Path="/60D8563E" Ref="TH?"  Part="1" 
 AR Path="/60D72946/60D8563E" Ref="TH1"  Part="1" 
-F 0 "TH1" H 5647 3371 50  0000 L CNN
-F 1 "10k" H 5647 3280 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 5550 3375 50  0001 C CNN
-F 3 "https://br.mouser.com/ProductDetail/Murata-Electronics/NCU15XH103F6SRC?qs=qSfuJ%252Bfl%2Fd4Hxm3YkwLMjg%3D%3D" H 5550 3375 50  0001 C CNN
-	1    5550 3325
+F 0 "TH1" H 5222 3321 50  0000 L CNN
+F 1 "10k" H 5222 3230 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 5125 3325 50  0001 C CNN
+F 3 "https://br.mouser.com/ProductDetail/Murata-Electronics/NCU15XH103F6SRC?qs=qSfuJ%252Bfl%2Fd4Hxm3YkwLMjg%3D%3D" H 5125 3325 50  0001 C CNN
+	1    5125 3275
 	1    0    0    -1  
 $EndComp
 $Comp
 L archive:Device_R R7
 U 1 1 60D85651
-P 6250 3725
-F 0 "R7" V 6043 3725 50  0000 C CNN
-F 1 "0.01" V 6134 3725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6180 3725 50  0001 C CNN
-F 3 "~" H 6250 3725 50  0001 C CNN
-	1    6250 3725
+P 5825 3675
+F 0 "R7" V 5618 3675 50  0000 C CNN
+F 1 "0.01" V 5709 3675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5755 3675 50  0001 C CNN
+F 3 "~" H 5825 3675 50  0001 C CNN
+	1    5825 3675
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	7200 2375 7700 2375
+	6775 2325 7275 2325
 Wire Wire Line
-	7200 2575 8050 2575
+	6775 2525 7625 2525
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60D8567C
-P 7350 1875
+P 6925 1825
 AR Path="/60D8567C" Ref="R?"  Part="1" 
 AR Path="/60D72946/60D8567C" Ref="R14"  Part="1" 
-F 0 "R14" H 7409 1921 50  0000 L CNN
-F 1 "4.7K" H 7409 1830 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7350 1875 50  0001 C CNN
-F 3 "~" H 7350 1875 50  0001 C CNN
-	1    7350 1875
+F 0 "R14" H 6984 1871 50  0000 L CNN
+F 1 "4.7K" H 6984 1780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6925 1825 50  0001 C CNN
+F 3 "~" H 6925 1825 50  0001 C CNN
+	1    6925 1825
 	1    0    0    -1  
 $EndComp
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60D85683
-P 8050 1875
+P 7625 1825
 AR Path="/60D85683" Ref="R?"  Part="1" 
 AR Path="/60D72946/60D85683" Ref="R12"  Part="1" 
-F 0 "R12" H 8109 1921 50  0000 L CNN
-F 1 "4.7K" H 8109 1830 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8050 1875 50  0001 C CNN
-F 3 "~" H 8050 1875 50  0001 C CNN
-	1    8050 1875
+F 0 "R12" H 7684 1871 50  0000 L CNN
+F 1 "4.7K" H 7684 1780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7625 1825 50  0001 C CNN
+F 3 "~" H 7625 1825 50  0001 C CNN
+	1    7625 1825
 	1    0    0    -1  
 $EndComp
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60D85689
-P 7700 1875
+P 7275 1825
 AR Path="/60D85689" Ref="R?"  Part="1" 
 AR Path="/60D72946/60D85689" Ref="R15"  Part="1" 
-F 0 "R15" H 7759 1921 50  0000 L CNN
-F 1 "4.7K" H 7759 1830 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7700 1875 50  0001 C CNN
-F 3 "~" H 7700 1875 50  0001 C CNN
-	1    7700 1875
+F 0 "R15" H 7334 1871 50  0000 L CNN
+F 1 "4.7K" H 7334 1780 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7275 1825 50  0001 C CNN
+F 3 "~" H 7275 1825 50  0001 C CNN
+	1    7275 1825
 	1    0    0    -1  
 $EndComp
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60D85697
-P 8450 2175
+P 8025 2125
 AR Path="/60D85697" Ref="R?"  Part="1" 
 AR Path="/60D72946/60D85697" Ref="R16"  Part="1" 
-F 0 "R16" V 8254 2175 50  0000 C CNN
-F 1 "1K" V 8345 2175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8450 2175 50  0001 C CNN
-F 3 "~" H 8450 2175 50  0001 C CNN
-	1    8450 2175
+F 0 "R16" V 7829 2125 50  0000 C CNN
+F 1 "1K" V 7920 2125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8025 2125 50  0001 C CNN
+F 3 "~" H 8025 2125 50  0001 C CNN
+	1    8025 2125
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8550 2175 8700 2175
+	8125 2125 8275 2125
 Wire Wire Line
-	7700 1575 7700 1675
-Connection ~ 7700 1675
+	7275 1525 7275 1625
+Connection ~ 7275 1625
 $Comp
 L archive:power_+3V3 #PWR?
 U 1 1 60D856B4
-P 7700 1575
+P 7275 1525
 AR Path="/60D856B4" Ref="#PWR?"  Part="1" 
 AR Path="/60D72946/60D856B4" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 7700 1425 50  0001 C CNN
-F 1 "+3V3" H 7715 1748 50  0000 C CNN
-F 2 "" H 7700 1575 50  0001 C CNN
-F 3 "" H 7700 1575 50  0001 C CNN
-	1    7700 1575
+F 0 "#PWR013" H 7275 1375 50  0001 C CNN
+F 1 "+3V3" H 7290 1698 50  0000 C CNN
+F 2 "" H 7275 1525 50  0001 C CNN
+F 3 "" H 7275 1525 50  0001 C CNN
+	1    7275 1525
 	1    0    0    -1  
 $EndComp
 $Comp
 L archive:Device_C_Small C9
 U 1 1 60D9A0A0
-P 5150 2375
-F 0 "C9" H 5200 2475 50  0000 L CNN
-F 1 "0.1uF" H 5200 2275 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5150 2375 50  0001 C CNN
-F 3 "~" H 5150 2375 50  0001 C CNN
-	1    5150 2375
+P 4725 2325
+F 0 "C9" H 4775 2425 50  0000 L CNN
+F 1 "0.1uF" H 4775 2225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4725 2325 50  0001 C CNN
+F 3 "~" H 4725 2325 50  0001 C CNN
+	1    4725 2325
 	1    0    0    -1  
 $EndComp
 $Comp
 L archive:Device_C_Small C7
 U 1 1 60D9AA24
-P 7300 3375
-F 0 "C7" H 7350 3475 50  0000 L CNN
-F 1 "0.47uF" H 7350 3275 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7300 3375 50  0001 C CNN
-F 3 "~" H 7300 3375 50  0001 C CNN
-	1    7300 3375
+P 6875 3325
+F 0 "C7" H 6925 3425 50  0000 L CNN
+F 1 "0.47uF" H 6925 3225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6875 3325 50  0001 C CNN
+F 3 "~" H 6875 3325 50  0001 C CNN
+	1    6875 3325
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -214,14 +214,14 @@ Connection ~ 9950 5375
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60DF3D23
-P 5600 1925
+P 5175 1875
 AR Path="/60DF3D23" Ref="R?"  Part="1" 
 AR Path="/60D72946/60DF3D23" Ref="R9"  Part="1" 
-F 0 "R9" H 5541 1879 50  0000 R CNN
-F 1 "10" H 5541 1970 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 1925 50  0001 C CNN
-F 3 "~" H 5600 1925 50  0001 C CNN
-	1    5600 1925
+F 0 "R9" H 5116 1829 50  0000 R CNN
+F 1 "10" H 5116 1920 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5175 1875 50  0001 C CNN
+F 3 "~" H 5175 1875 50  0001 C CNN
+	1    5175 1875
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -353,12 +353,12 @@ Stand-alone Fuel Gauge
 $Comp
 L archive:Device_Battery_Cell BT2
 U 1 1 61591953
-P 4050 2725
-F 0 "BT2" H 4168 2821 50  0000 L CNN
-F 1 "Battery_Cell" H 4168 2730 50  0000 L CNN
-F 2 "Alcantara_v.1:BatteryHolder_Keystone_1042_1x18650_Modified" V 4050 2785 50  0001 C CNN
-F 3 "~" V 4050 2785 50  0001 C CNN
-	1    4050 2725
+P 3625 2675
+F 0 "BT2" H 3743 2771 50  0000 L CNN
+F 1 "Battery_Cell" H 3743 2680 50  0000 L CNN
+F 2 "Alcantara_v.1:BatteryHolder_Keystone_1042_1x18650_Modified" V 3625 2735 50  0001 C CNN
+F 3 "~" V 3625 2735 50  0001 C CNN
+	1    3625 2675
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -392,23 +392,23 @@ Connection ~ 4300 6550
 $Comp
 L archive:Device_Q_PMOS_GSD Q4
 U 1 1 610D18A9
-P 4650 1275
-F 0 "Q4" V 4992 1275 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 4901 1275 50  0000 C CNN
-F 2 "Alcantara_v.1:SOT346" H 4850 1375 50  0001 C CNN
-F 3 "~" H 4650 1275 50  0001 C CNN
-	1    4650 1275
+P 4225 1225
+F 0 "Q4" V 4567 1225 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 4476 1225 50  0000 C CNN
+F 2 "Alcantara_v.1:SOT346" H 4425 1325 50  0001 C CNN
+F 3 "~" H 4225 1225 50  0001 C CNN
+	1    4225 1225
 	0    -1   -1   0   
 $EndComp
 $Comp
 L archive:power_GND #PWR0108
 U 1 1 610FCF6D
-P 4650 1575
-F 0 "#PWR0108" H 4650 1325 50  0001 C CNN
-F 1 "GND" H 4655 1402 50  0000 C CNN
-F 2 "" H 4650 1575 50  0001 C CNN
-F 3 "" H 4650 1575 50  0001 C CNN
-	1    4650 1575
+P 4225 1525
+F 0 "#PWR0108" H 4225 1275 50  0001 C CNN
+F 1 "GND" H 4230 1352 50  0000 C CNN
+F 2 "" H 4225 1525 50  0001 C CNN
+F 3 "" H 4225 1525 50  0001 C CNN
+	1    4225 1525
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -519,183 +519,183 @@ $EndComp
 $Comp
 L archive:Device_R_Small R?
 U 1 1 60D85691
-P 5550 2925
+P 5125 2875
 AR Path="/60D85691" Ref="R?"  Part="1" 
 AR Path="/60D72946/60D85691" Ref="R10"  Part="1" 
-F 0 "R10" V 5354 2925 50  0000 C CNN
-F 1 "10K" V 5445 2925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 2925 50  0001 C CNN
-F 3 "~" H 5550 2925 50  0001 C CNN
-	1    5550 2925
+F 0 "R10" V 4929 2875 50  0000 C CNN
+F 1 "10K" V 5020 2875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5125 2875 50  0001 C CNN
+F 3 "~" H 5125 2875 50  0001 C CNN
+	1    5125 2875
 	-1   0    0    1   
 $EndComp
 $Comp
 L archive:SamacSys_Parts_MAX17201G+T IC2
 U 1 1 613217CA
-P 5800 2325
-F 0 "IC2" H 6500 2740 50  0000 C CNN
-F 1 "MAX17201G+T" H 6500 2649 50  0000 C CNN
-F 2 "SamacSys_Parts:SON40P300X300X80-15N" H 7050 2425 50  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17201-MAX17215.pdf" H 7050 2325 50  0001 L CNN
-F 4 "IC BATT MONITOR 1CELL 14TDFN" H 7050 2225 50  0001 L CNN "Description"
-F 5 "0.8" H 7050 2125 50  0001 L CNN "Height"
-F 6 "700-MAX17201G+T" H 7050 2025 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX17201G%2bT?qs=6Gr%2FA8Y8f6fpSbQH80s5tg%3D%3D" H 7050 1925 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Maxim Integrated" H 7050 1825 50  0001 L CNN "Manufacturer_Name"
-F 9 "MAX17201G+T" H 7050 1725 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5800 2325
+P 5375 2275
+F 0 "IC2" H 6075 2690 50  0000 C CNN
+F 1 "MAX17201G+T" H 6075 2599 50  0000 C CNN
+F 2 "SamacSys_Parts:SON40P300X300X80-15N" H 6625 2375 50  0001 L CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17201-MAX17215.pdf" H 6625 2275 50  0001 L CNN
+F 4 "IC BATT MONITOR 1CELL 14TDFN" H 6625 2175 50  0001 L CNN "Description"
+F 5 "0.8" H 6625 2075 50  0001 L CNN "Height"
+F 6 "700-MAX17201G+T" H 6625 1975 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/MAX17201G%2bT?qs=6Gr%2FA8Y8f6fpSbQH80s5tg%3D%3D" H 6625 1875 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Maxim Integrated" H 6625 1775 50  0001 L CNN "Manufacturer_Name"
+F 9 "MAX17201G+T" H 6625 1675 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5375 2275
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 2175 5800 2175
+	5175 2125 5375 2125
 Wire Wire Line
-	5800 2575 5600 2575
+	5375 2525 5175 2525
 Wire Wire Line
-	5800 2475 5600 2475
+	5375 2425 5175 2425
 Wire Wire Line
-	5600 2175 5600 2275
-Connection ~ 5600 2475
+	5175 2125 5175 2225
+Connection ~ 5175 2425
 Wire Wire Line
-	5600 2475 5600 2575
+	5175 2425 5175 2525
 Wire Wire Line
-	5800 2375 5600 2375
-Connection ~ 5600 2375
+	5375 2325 5175 2325
+Connection ~ 5175 2325
 Wire Wire Line
-	5600 2375 5600 2475
+	5175 2325 5175 2425
 Wire Wire Line
-	5800 2275 5600 2275
-Connection ~ 5600 2275
+	5375 2225 5175 2225
+Connection ~ 5175 2225
 Wire Wire Line
-	5600 2275 5600 2375
+	5175 2225 5175 2325
 Wire Wire Line
-	4450 1175 4050 1175
+	4025 1125 3625 1125
 Wire Wire Line
-	4050 1175 4050 2525
-Connection ~ 5600 2175
+	3625 1125 3625 2475
+Connection ~ 5175 2125
 Wire Wire Line
-	6400 3725 6500 3725
+	5975 3675 6075 3675
 Wire Wire Line
-	6500 3725 6500 3425
+	6075 3675 6075 3375
 Wire Wire Line
-	6500 3725 6650 3725
+	6075 3675 6225 3675
 Wire Wire Line
-	6650 3725 6650 3425
-Connection ~ 6500 3725
+	6225 3675 6225 3375
+Connection ~ 6075 3675
 Wire Wire Line
-	6650 3825 6650 3725
-Connection ~ 6650 3725
+	6225 3775 6225 3675
+Connection ~ 6225 3675
 Wire Wire Line
-	6100 3725 5900 3725
+	5675 3675 5475 3675
 Wire Wire Line
-	4050 3725 4050 2825
+	3625 3675 3625 2775
 Wire Wire Line
-	6350 3425 6350 3525
+	5925 3375 5925 3475
 Wire Wire Line
-	6350 3525 5900 3525
+	5925 3475 5475 3475
 Wire Wire Line
-	5900 3525 5900 3725
-Connection ~ 5900 3725
+	5475 3475 5475 3675
+Connection ~ 5475 3675
 Wire Wire Line
-	5900 3725 4050 3725
+	5475 3675 3625 3675
 $Comp
 L archive:power_GND #PWR0112
 U 1 1 61366CA9
-P 5550 3475
-F 0 "#PWR0112" H 5550 3225 50  0001 C CNN
-F 1 "GND" H 5555 3302 50  0000 C CNN
-F 2 "" H 5550 3475 50  0001 C CNN
-F 3 "" H 5550 3475 50  0001 C CNN
-	1    5550 3475
+P 5125 3425
+F 0 "#PWR0112" H 5125 3175 50  0001 C CNN
+F 1 "GND" H 5130 3252 50  0000 C CNN
+F 2 "" H 5125 3425 50  0001 C CNN
+F 3 "" H 5125 3425 50  0001 C CNN
+	1    5125 3425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 3175 5550 3125
+	5125 3125 5125 3075
 Wire Wire Line
-	5550 3125 5800 3125
+	5125 3075 5375 3075
 Wire Wire Line
-	5550 2825 5550 2775
+	5125 2775 5125 2725
 Wire Wire Line
-	5550 2775 5800 2775
+	5125 2725 5375 2725
 Wire Wire Line
-	5550 3025 5550 3125
-Connection ~ 5550 3125
+	5125 2975 5125 3075
+Connection ~ 5125 3075
 $Comp
 L archive:power_GND #PWR0113
 U 1 1 61376F3D
-P 5150 2575
-F 0 "#PWR0113" H 5150 2325 50  0001 C CNN
-F 1 "GND" H 5155 2402 50  0000 C CNN
-F 2 "" H 5150 2575 50  0001 C CNN
-F 3 "" H 5150 2575 50  0001 C CNN
-	1    5150 2575
+P 4725 2525
+F 0 "#PWR0113" H 4725 2275 50  0001 C CNN
+F 1 "GND" H 4730 2352 50  0000 C CNN
+F 2 "" H 4725 2525 50  0001 C CNN
+F 3 "" H 4725 2525 50  0001 C CNN
+	1    4725 2525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 2575 5150 2475
+	4725 2525 4725 2425
 Wire Wire Line
-	5150 2275 5150 2175
+	4725 2225 4725 2125
 Wire Wire Line
-	5150 2175 5600 2175
+	4725 2125 5175 2125
 Wire Wire Line
-	4850 1175 5600 1175
+	4425 1125 5175 1125
 Wire Wire Line
-	5600 1825 5600 1175
-Connection ~ 5600 1175
+	5175 1775 5175 1125
+Connection ~ 5175 1125
 Wire Wire Line
-	5600 1175 8750 1175
+	5175 1125 8325 1125
 Wire Wire Line
-	5600 2025 5600 2175
+	5175 1975 5175 2125
 Wire Wire Line
-	7300 3275 7300 3125
+	6875 3225 6875 3075
 Wire Wire Line
-	7300 3125 7200 3125
+	6875 3075 6775 3075
 $Comp
 L archive:power_GND #PWR0114
 U 1 1 6138DA91
-P 7300 3825
-F 0 "#PWR0114" H 7300 3575 50  0001 C CNN
-F 1 "GND" H 7305 3652 50  0000 C CNN
-F 2 "" H 7300 3825 50  0001 C CNN
-F 3 "" H 7300 3825 50  0001 C CNN
-	1    7300 3825
+P 6875 3775
+F 0 "#PWR0114" H 6875 3525 50  0001 C CNN
+F 1 "GND" H 6880 3602 50  0000 C CNN
+F 2 "" H 6875 3775 50  0001 C CNN
+F 3 "" H 6875 3775 50  0001 C CNN
+	1    6875 3775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 3825 7300 3475
+	6875 3775 6875 3425
 Wire Notes Line
 	6975 6500 6975 4350
 Wire Wire Line
-	7350 1675 7350 1775
+	6925 1625 6925 1725
 Wire Wire Line
-	7350 1675 7700 1675
+	6925 1625 7275 1625
 Wire Wire Line
-	8050 1675 8050 1775
+	7625 1625 7625 1725
 Wire Wire Line
-	7700 1675 8050 1675
+	7275 1625 7625 1625
 Wire Wire Line
-	7700 1775 7700 1675
+	7275 1725 7275 1625
 Wire Wire Line
-	7350 1975 7350 2175
-Connection ~ 7350 2175
+	6925 1925 6925 2125
+Connection ~ 6925 2125
 Wire Wire Line
-	7350 2175 8350 2175
+	6925 2125 7925 2125
 Wire Wire Line
-	7700 1975 7700 2375
-Connection ~ 7700 2375
+	7275 1925 7275 2325
+Connection ~ 7275 2325
 Wire Wire Line
-	7700 2375 8700 2375
+	7275 2325 8275 2325
 Wire Wire Line
-	8050 1975 8050 2575
-Connection ~ 8050 2575
+	7625 1925 7625 2525
+Connection ~ 7625 2525
 Wire Wire Line
-	8050 2575 8700 2575
-NoConn ~ 7200 2775
+	7625 2525 8275 2525
+NoConn ~ 6775 2725
 Text Notes 750  2450 0    50   ~ 0
 The P channel Mosfet in series with the batery works as a\nsimple reverse polarity protection circuit.\n\nIf the battery is reversed it will not conduct, hence not turning the\ncircuit on.\n\nI didin't use the zenner on the gate because the Mosfet's maximum\nVgs voltage is higher than what will be applied by the battery.\n\nAlso, I didin't use a resistor on the gate because the mosfet is \nconstantly on, wich means ringing will not occur.\n\nWatch this to learn more:\nhttps://www.youtube.com/watch?v=IrB-FPcv1Dc
 Text Notes 750  3700 0    50   ~ 0
 The MAX17201 is an I2C single cell battery monitor. Be aware of \nthe differences of the MAX17211, wich uses the 1-Wire protocol.\n\nThis component will measure the battery voltage and using a\n0.01 ohm shunt it will also measure the current.\n\nAlso be aware of the MAX17205, wich is a multiple cell monitor.
 Wire Wire Line
-	4650 1475 4650 1575
+	4225 1425 4225 1525
 Text HLabel 1000 5650 0    50   Input ~ 0
 Pack
 Wire Wire Line
@@ -1063,4 +1063,90 @@ F 7 "2.7 mm" H 2125 6100 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
 $EndComp
 Text Notes 8625 5700 2    50   ~ 0
 There's no capacitor in the input\nbecause C10 and C8 are placed\nnear the regulator on the PCB.
+Wire Notes Line
+	8900 475  8900 4350
+Text Notes 9075 775  0    98   Italic 20
+Last minute Barometer :)
+$Comp
+L dk_Pressure-Sensors-Transducers:MS560702BA03-50 U3
+U 1 1 62D38FA2
+P 10050 2500
+F 0 "U3" H 9800 2875 50  0000 C CNN
+F 1 "MS560702BA03-50" H 10525 2025 50  0000 C CNN
+F 2 "digikey-footprints:SMD-8_5x3mm" H 10250 2700 60  0001 L CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English" H 10250 2800 60  0001 L CNN
+F 4 "223-1198-1-ND" H 10250 2900 60  0001 L CNN "Digi-Key_PN"
+F 5 "MS560702BA03-50" H 10250 3000 60  0001 L CNN "MPN"
+F 6 "Sensors, Transducers" H 10250 3100 60  0001 L CNN "Category"
+F 7 "Pressure Sensors, Transducers" H 10250 3200 60  0001 L CNN "Family"
+F 8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5607-02BA03&DocType=Data+Sheet&DocLang=English" H 10250 3300 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/te-connectivity-measurement-specialties/MS560702BA03-50/223-1198-1-ND/4700921" H 10250 3400 60  0001 L CNN "DK_Detail_Page"
+F 10 "BAROMETRIC PRESSURE SENSOR" H 10250 3500 60  0001 L CNN "Description"
+F 11 "TE Connectivity Measurement Specialties" H 10250 3600 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10250 3700 60  0001 L CNN "Status"
+	1    10050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:power_GND #PWR023
+U 1 1 62D3A382
+P 10050 3050
+F 0 "#PWR023" H 10050 2800 50  0001 C CNN
+F 1 "GND" H 10055 2877 50  0000 C CNN
+F 2 "" H 10050 3050 50  0001 C CNN
+F 3 "" H 10050 3050 50  0001 C CNN
+	1    10050 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L archive:power_+3V3 #PWR?
+U 1 1 62D3A9E9
+P 10050 2025
+AR Path="/62D3A9E9" Ref="#PWR?"  Part="1" 
+AR Path="/60D72946/62D3A9E9" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 10050 1875 50  0001 C CNN
+F 1 "+3V3" H 10065 2198 50  0000 C CNN
+F 2 "" H 10050 2025 50  0001 C CNN
+F 3 "" H 10050 2025 50  0001 C CNN
+	1    10050 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2025 10050 2100
+Wire Wire Line
+	10050 3000 10050 3050
+$Comp
+L archive:power_+3V3 #PWR?
+U 1 1 62D43525
+P 9500 2300
+AR Path="/62D43525" Ref="#PWR?"  Part="1" 
+AR Path="/60D72946/62D43525" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 9500 2150 50  0001 C CNN
+F 1 "+3V3" H 9515 2473 50  0000 C CNN
+F 2 "" H 9500 2300 50  0001 C CNN
+F 3 "" H 9500 2300 50  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2300 9500 2400
+Wire Wire Line
+	9500 2400 9650 2400
+Wire Wire Line
+	9650 2500 9500 2500
+Wire Wire Line
+	9500 2500 9500 2400
+Connection ~ 9500 2400
+NoConn ~ 10450 2400
+Text HLabel 10500 2500 2    50   Input ~ 0
+SDA
+Text HLabel 9600 2700 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	9600 2700 9650 2700
+Wire Wire Line
+	10450 2500 10500 2500
+Text Notes 9000 4200 0    50   ~ 0
+It was added the night before sending the boards to\nmanufacturing.\n\nIt will live next to the decoupling capacitor of another\ncomponent, so don't worry about it.
+NoConn ~ 9650 2600
 $EndSCHEMATC
