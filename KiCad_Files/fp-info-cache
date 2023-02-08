@@ -1,4 +1,4 @@
-21074033902017856
+21082327121401779
 Alcantara_Footprints
 2.4_GHZ_Antenna_Left_Art
 http://www.ti.com/lit/an/swra117d/swra117d.pdf
@@ -60424,6 +60424,20 @@ AlcantaraLogo_2022_4,4mm
 0
 0
 LogosZenith
+Alcantara_1,7mm
+
+
+0
+0
+0
+LogosZenith
+Alcantara_2,7mm
+
+
+0
+0
+0
+LogosZenith
 Alcantarav+Logo_3,6mm
 
 
@@ -60488,6 +60502,13 @@ CaurinLogoV2_2,5mm
 0
 LogosZenith
 CaurinLogoV2_3mm
+
+
+0
+0
+0
+LogosZenith
+CaurinLogoV2_noyear_7mm
 
 
 0
@@ -60593,6 +60614,13 @@ ThisBetterWork_15,9mm
 0
 LogosZenith
 ThisBetterWork_15,9mm_2
+
+
+0
+0
+0
+LogosZenith
+VarelaLogov2_noyear_2,7mm
 
 
 0
@@ -80912,6 +80940,13 @@ Integrated Circuit
 0
 8
 8
+SamacSys_Parts
+SOIC127P1036X363-16N
+16so
+Integrated Circuit
+0
+16
+16
 SamacSys_Parts
 SON40P300X300X80-15N
 T1433+2C
