@@ -54,7 +54,7 @@ This system was designed using KiCad 5.1.10.
 ## Block Diagram
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Diagram.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Diagram.png"/>
 </p>
 
 
@@ -65,61 +65,61 @@ The design was separated in hierarchical sheets to accommodate all components in
 On the experimental_realocate_components sheet you can find the ESP32 WROOM Module, the SD Card module (connected via SPI), Boot and Reset button (with the Brownout prevention voltage supervisor), auto upload transistors and the external connector.
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Schematic_Page_1.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Schematic_Page_1.png"/>
 </p>
 
 
 The second page contains the power section, with the TPS61092 Boost Converter (with another voltage supervisor for undervolting protection for the battery) for 5V, a 3.3V linear voltage regulator, the battery with a P channel mosfet for reverse voltage protection and a MAX17201G+T stand-alone fuel gauge for the 18650 battery voltage and current monitoring.
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Schematic_Page_2.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Schematic_Page_2.png"/>
 </p>
 
 On the third page you find the Neo-M8N module from u-blox and the E22-900M30S module from EBYTE.
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Schematic_Page_3.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Schematic_Page_3.png"/>
 </p>
 
 And the last page has the peripherals, the USB connector with its ESD protector, the RGB LED, the buzzer with its mosfet, the two user interface buttons and the USB to Serial Converter.
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Schematic_Page_4.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Schematic_Page_4.png"/>
 </p>
 
 
 ## Board
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Top.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Top.png"/>
 </p>
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Bottom.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Bottom.png"/>
 </p>
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Perspective1.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Perspective1.png"/>
 </p>
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/Perspective2.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/Perspective2.png"/>
 </p>
 
 
 ## Interactive BOM
 
-https://htmlpreview.github.io/?https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/ibom.html
+https://htmlpreview.github.io/?https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/ibom.html
 
 <!--
 ## Use concept
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/PhoneConcept.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/PhoneConcept.png"/>
 </p>
 
 <p align = "center">
-<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/docs/img/BoxConcept.png"/>
+<img src="https://github.com/zenitheesc/Alcantara_v.1.0/blob/experimental_realocate_components/Other_Files/Images/BoxConcept.png"/>
 </p>
 
 
