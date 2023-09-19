@@ -1,0 +1,32 @@
+menu "Project Configuration"
+
+  config WIFI_SSID
+    string "WiFi SSID"
+    default "claudin"
+    help
+      SSID (network name) for Claudin to connect to.
+
+  config WIFI_PASSWORD
+    string "WiFi Password"
+    default "zensenha"
+    help
+      WiFi password to be used by Claudin.
+
+  config RADIO_FREQUENCY
+    int "Frequency to be used by Claudin"
+    range 0 915000000
+    default 915000000
+    help
+      Band in Heartz for transmission or reception
+
+  choice MODE
+    prompt "Choose operating mode"
+    default MODE_TRANSMITTER
+    config MODE_TRANSMITTER
+      bool "Transmitter mode"
+    config MODE_RECEIVER
+      bool "Receiver mode"
+  endchoice
+
+endmenu
+

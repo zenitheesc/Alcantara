@@ -1,0 +1,18 @@
+{
+  "payload": {
+    "sensor_status": "active",
+    "temperature": 22.8,
+    "humidity": 47.5,
+    "gyroscope": {
+      "x": 0.02,
+      "y": -0.03,
+      "z": 0.01
+    },
+    "accelerometer": {
+      "x": 0.98,
+      "y": 0.05,
+      "z": 9.72
+    },
+    "motion_detected": true
+  }
+}

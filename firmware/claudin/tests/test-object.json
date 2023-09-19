@@ -1,0 +1,21 @@
+{
+  "timestamp": "2023-08-17T12:00:00Z",
+  "device_id": "ABC123",
+  "sensor_status": "normal",
+  "payload": {
+    "temperature": 25.6,
+    "humidity": 68.2,
+    "pressure": 1013.2,
+    "light": 520,
+    "co2_level": 450,
+    "gas_sensor": {
+      "gas_type": "carbon_monoxide",
+      "value": 15.2,
+      "unit": "ppm"
+    },
+    "location": {
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  }
+}

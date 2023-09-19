@@ -1,0 +1,15 @@
+{
+  "useless": {
+    "foo": "bar"
+  },
+  "payload": {
+    "timestamp": "2023-08-17T12:30:00Z",
+    "location": "Factory Floor",
+    "machine_id": "MACH456",
+    "temperature": 150.3,
+    "pressure": 5678.9,
+    "vibration_intensity": 1.2,
+    "sound": 78.5,
+    "proximity": 0.2
+  }
+}

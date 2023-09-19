@@ -1,0 +1,14 @@
+idf_component_register(
+  SRCS
+    "claudin-main.c"
+    "claudin-spi.c"
+    "claudin-uart.c"
+    "claudin-wifi.c"
+    "claudin-webserver.c"
+    "claudin-radio.c"
+    "claudin-gps.c"
+    "SX127X.c"
+  INCLUDE_DIRS
+    "."
+    "include"
+)
