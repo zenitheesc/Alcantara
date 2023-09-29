@@ -3,6 +3,11 @@
 //#define ISDEBUG 1
 //#define ISPRETTYDEBUG 1
 
+TaskHandle_t RGBLEDTaskHandle;
+TaskHandle_t ParseFunctionsTaskHandle;
+TaskHandle_t RadioDataTaskHandle;
+QueueHandle_t xNewRadioDataQueue;
+
 #include "FS.h"
 #include "SD.h"
 #include "SPI.h"
@@ -17,8 +22,13 @@ enum class SD_CARD_ERROR_CODES {
   FS_FAIL_FILE_OPEN_WRITE,
   FS_FAIL_FILE_OPEN_APPEND
 };
+enum class PARSE_ERROR_CODES {
+  PARSE_SUCCESS,
+  PARSE_DATA_NOT_APPENDED,
+  PARSE_DATA_NOT_PRINTED
+};
 using SD_CARD_error_t = uint8_t;
-using parse_error_t = uint8_t;
+using parse_error_t = PARSE_ERROR_CODES;
 
 #define UART_INSTRUCTION_BUFFER_SIZE 3
 #define RADIO_DATA_INPUT_BUFFER_SIZE 256
@@ -72,7 +82,7 @@ typedef union {
   zenith_reduced_packet_t zen_reduced_pkt;
   byte raw[RADIO_DATA_INPUT_BUFFER_SIZE];
 } last_packet_t;
-typedef parse_error_t (* radio_parse_function_t) (byte *, last_packet_t *);
+typedef parse_error_t (* radio_parse_function_t) (last_packet_t *);
 typedef enum {OBSAT, ZENITH} net_t;
 typedef enum {SINGLE_BLINK, DOUBLE_BLINK, TRIPLE_BLINK} n_blinks_t;
 typedef struct {
@@ -86,40 +96,36 @@ static const char * const radio_com_protocol_type[] = {
   [LoRa] = "LoRa"
 };
 
-volatile bool new_data_to_parse = false;
-
 typedef union {
   float floating_point;
   byte binary[4];
 } binary_float_t;
 
 volatile radio_configuration_state_t g_selected_state;
+volatile last_packet_t * g_pxLastPacket;
 
 volatile unsigned int g_interruptCounter;
 hw_timer_t * timer = nullptr;
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 portMUX_TYPE parseMux = portMUX_INITIALIZER_UNLOCKED;
 
-void IRAM_ATTR blink_RGB_LED() {
-  portENTER_CRITICAL_ISR(&timerMux);
+void blink_RGB_LED (void * pvParameters) {
+  for( ; ; ) {
   for (int i = 0; i <= g_selected_state.led_blinks; i++) {
     digitalWrite(GPIO_RGB_LED_B, HIGH);
-    delay(750);
+    vTaskDelay(750 / portTICK_PERIOD_MS);
     digitalWrite(GPIO_RGB_LED_B, LOW);
-    delay(500);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
   }
 
   #ifdef ISDEBUG
   Serial.println("%d PULSOS DO LED!\n", (g_selected_state.led_blinks + 1));
   #endif
-  
-  portEXIT_CRITICAL_ISR(&timerMux);
+
+  }
 }
 
-parse_error_t IRAM_ATTR parse_obsat (byte *raw, last_packet_t * last_pkt) {
-  portENTER_CRITICAL_ISR(&parseMux);
-  memcpy(last_pkt->raw, raw, RADIO_DATA_INPUT_BUFFER_SIZE);
-  
+parse_error_t parse_obsat (last_packet_t * last_pkt) {
   //UART data transmission
   Serial.write(last_pkt->obsat_pkt.id);
   Serial.print(";");
@@ -138,12 +144,11 @@ parse_error_t IRAM_ATTR parse_obsat (byte *raw, last_packet_t * last_pkt) {
   appendFile(SD, "/data.txt", (char *) ("Pacote: " + (String)last_pkt->obsat_pkt.id + "\n").c_str());
   appendFile(SD, "/data.txt", "Dados: " + (String)last_pkt->obsat_pkt.data + "\n");
   #endif
-  portEXIT_CRITICAL_ISR(&parseMux);
+
+  return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
 
-parse_error_t IRAM_ATTR parse_zenith_reduced (byte *raw, last_packet_t * last_pkt) {
-  portENTER_CRITICAL_ISR(&parseMux);
-  memcpy(last_pkt->raw, raw, RADIO_DATA_INPUT_BUFFER_SIZE);
+parse_error_t parse_zenith_reduced (last_packet_t * last_pkt) {
   binary_float_t binary_float;
   
   //UART data transmission
@@ -188,12 +193,11 @@ parse_error_t IRAM_ATTR parse_zenith_reduced (byte *raw, last_packet_t * last_pk
   appendFile(SD, "/data.txt", (char *) ("Carga da Bateria: " + (String)last_pkt->zen_reduced_pkt.batt_charge + "\n").c_str());
   appendFile(SD, "/data.txt", (char *) ("Horário: Segundos: " + (String)last_pkt->zen_reduced_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_reduced_pkt.minutes + ". Horas: " + (String)last_pkt->zen_reduced_pkt.hours + "\n\n\r").c_str());
   #endif
-  portEXIT_CRITICAL_ISR(&parseMux);
+
+  return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
 
-parse_error_t IRAM_ATTR parse_zenith_full (byte *raw, last_packet_t * last_pkt) {
-  portENTER_CRITICAL_ISR(&parseMux);
-  memcpy(last_pkt->raw, raw, RADIO_DATA_INPUT_BUFFER_SIZE);
+parse_error_t parse_zenith_full (last_packet_t * last_pkt) {
   binary_float_t binary_float;
   
   //UART data transmission
@@ -272,8 +276,35 @@ parse_error_t IRAM_ATTR parse_zenith_full (byte *raw, last_packet_t * last_pkt) 
   appendFile(SD, "/data.txt", (char *) ("Carga da Bateria: " + (String)last_pkt->zen_full_pkt.batt_charge + "\n").c_str());
   appendFile(SD, "/data.txt", (char *) ("Horário: Segundos: " + (String)last_pkt->zen_full_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_full_pkt.minutes + ". Horas: " + (String)last_pkt->zen_full_pkt.hours + "\n\n\r").c_str());
   #endif
-  portEXIT_CRITICAL_ISR(&parseMux);
+
+  return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
+
+//**
+void parse_functions_selector(void * pvParameters) {
+  last_packet_t * last_pkt;
+
+  for( ; ; ) {
+    if(xNewRadioDataQueue != NULL) {
+      if (xQueueReceive(xNewRadioDataQueue, &last_pkt, (TickType_t) 10) == pdPASS) {
+        Serial.println("The message was received from the queue!\n\n");   
+      }
+    }
+    g_selected_state.parse_function(last_pkt);
+  }
+}
+
+void parse_radio (void * pvParameters) {
+  for( ; ; ) {
+    if (xNewRadioDataQueue != 0) {
+      /*parse_radio_library_function*/(((last_packet_t *) pvParameters)->raw);
+      if (xQueueSend(xNewRadioDataQueue, (void *) &pvParameters, (TickType_t) 10) != pdPASS) {
+        Serial.println("The message was not posted in the queue!\n (Timed out after 10 ticks)!\n\n");   
+      }
+    }
+  }
+}
+//**
 
 void setup() {
   char UART_configuration_instruction[UART_INSTRUCTION_BUFFER_SIZE]; //Instrução da forma ("PROTOCOLO_DO_RÁDIO"[0]+"NET")\0 - Ex: "FZ\0";
@@ -369,35 +400,39 @@ void setup() {
     }
   }
   Serial.println("Configuração do rádio bem sucedida!\n");
+//**
+  UBaseType_t uxHighWaterMarkRGBLED = 100 * configMINIMAL_STACK_SIZE;
 
+  if ((xTaskCreate(blink_RGB_LED, "Blink RGB LED", uxHighWaterMarkRGBLED, NULL, 2, &RGBLEDTaskHandle)) == pdPASS) {
+    Serial.println("Tarefa 'Blink RGB LED' criada com sucesso!\n");
+  }
+
+  UBaseType_t uxHighWaterMarkParseFunctions = 100 * configMINIMAL_STACK_SIZE;
+
+  if ((xTaskCreate(parse_functions_selector, "Parse Function", uxHighWaterMarkParseFunctions, NULL, 4, &ParseFunctionsTaskHandle)) == pdPASS) {
+    Serial.println("Tarefa 'Parse Function' criada com sucesso!\n");
+  }
+
+  UBaseType_t uxHighWaterMarkReceiveRadioData = 100 * configMINIMAL_STACK_SIZE;
+
+  if ((xTaskCreate(parse_radio, "Receive Radio Data", uxHighWaterMarkReceiveRadioData, (void *) &g_pxLastPacket, 5, &RadioDataTaskHandle)) == pdPASS) {
+    Serial.println("Tarefa 'Receive Radio Data' criada com sucesso!\n");
+  }
+
+  xNewRadioDataQueue = xQueueCreate(10, sizeof(last_packet_t *));
+
+  if(xNewRadioDataQueue == NULL) {
+    Serial.println("Queue was not created!\n");
+    // Dar um jeito de matar o código, sem a fila, não há como continuar (ou implementar um backup que processa diretamente as coisas sem a fila)
+  }
+//**
   //attachInterrupt(digitalPinToInterrupt(GPIO_RADIO_INTERRUPT_PIN), parse_handler, ?FALLING?); *******************
 
   buzz();
-
-  timer = timerBegin(LED_TIMER_HARDWARE_NUMBER, LED_TIMER_DIVIDER, true);
-  timerAttachInterrupt(timer, &blink_RGB_LED, true);
-  timerAlarmWrite(timer, LED_TIMER_ALARM_GENERATION_RATE, true);
-  timerAlarmEnable(timer);
-  Serial.println("Timer do LED configurado!\n");
 }
 
 void loop() {
-  /*if(g_interruptCounter > 0) {
-    portENTER_CRITICAL(&timerMux);
-    g_interruptCounter--;
-    portEXIT_CRITICAL(&timerMux);
-  }*/
-  if (new_data_to_parse) {
-    byte raw[RADIO_DATA_INPUT_BUFFER_SIZE];
-    last_packet_t last_packet;
-  
-    //radio.receive(raw, ???);
-  
-    g_selected_state.parse_function(raw, &last_packet);
-    portENTER_CRITICAL_ISR(&parseMux);
-    new_data_to_parse = false;
-    portEXIT_CRITICAL_ISR(&parseMux);
-  }
+
 }
 
 void buzz() {
@@ -412,10 +447,4 @@ void buzz() {
   #ifdef ISDEBUG
   Serial.println("BIP!\n");
   #endif
-}
-
-void IRAM_ATTR parse_handler () {
-  portENTER_CRITICAL_ISR(&parseMux);
-  new_data_to_parse = true;
-  portEXIT_CRITICAL_ISR(&parseMux);
 }
