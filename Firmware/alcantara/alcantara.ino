@@ -93,12 +93,6 @@ typedef struct {
     n_blinks_t led_blinks;
 } radio_configuration_state_t;
 
-//NÃO ENTENDI
-static const char * const radio_com_protocol_type[] = {
-  [FSK] = "FSK",
-  [LoRa] = "LoRa"
-};
-
 typedef union {
   float floating_point;
   byte binary[4];
@@ -122,8 +116,6 @@ void blink_RGB_LED (void * pvParameters) {
       digitalWrite(GPIO_RGB_LED_B, LOW);
       vTaskDelay(500 / portTICK_PERIOD_MS);
   }
-
-// ???????????????????????????????????
   #ifdef ISDEBUG
   Serial.println("%d PULSOS DO LED!\n", (g_selected_state.led_blinks + 1));
   #endif
