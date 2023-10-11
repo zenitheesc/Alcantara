@@ -9,25 +9,14 @@ TaskHandle_t RadioDataTaskHandle;
 QueueHandle_t xNewRadioDataQueue;
 
 #include "FS.h"
-#include "SD.h"
 #include "SPI.h"
-#define SD_CARD_CS 5
-#define SD_CARD_ERROR_INSTRUCTION_BUFFER_SIZE 2
-#define SD_CARD_ERROR_INSTRUCTION_INPUT_DURATION 7000
-volatile bool ignore_SD_CARD = false;
-enum class SD_CARD_ERROR_CODES {
-  SD_CARD_NOT_MOUNTED,
-  SD_CARD_TYPE_NONE,
-  SD_CARD_BEGIN_FAIL,
-  FS_FAIL_FILE_OPEN_WRITE,
-  FS_FAIL_FILE_OPEN_APPEND
-};
+
 enum class PARSE_ERROR_CODES {
   PARSE_SUCCESS,
   PARSE_DATA_NOT_APPENDED,
   PARSE_DATA_NOT_PRINTED
 };
-using SD_CARD_error_t = uint8_t;
+
 using parse_error_t = PARSE_ERROR_CODES;
 
 #define UART_INSTRUCTION_BUFFER_SIZE 3
@@ -55,10 +44,15 @@ using parse_error_t = PARSE_ERROR_CODES;
 #define TOTAL_STATES 3
 typedef enum {FSK, LoRa} radio_com_protocol_t;
 typedef uint8_t obc_blob_t[OBC_BLOB_SIZE]; //More info about packet's structs definitions in: https://github.com/zenitheesc/Probe-CDH/blob/architecture/firmware/CDH_Firmware/Core/Inc/CDH.h
+
+//------------OBSAT PACKET---------------
 typedef struct {
   uint8_t id;
   obc_blob_t data;
 } __attribute__((packed)) obsat_packet_t;
+//---------------------------------------
+
+//----------------ZENITH PACKETS--------------------
 typedef struct {
   float latitude, longitude, altitude;
   float preassure_primary;
@@ -69,6 +63,7 @@ typedef struct {
   uint8_t seconds, minutes, hours;
   uint8_t packet_id;
 } __attribute__((packed)) zenith_full_packet_t;
+
 typedef struct {
   float latitude, longitude, altitude;
   float preassure_primary;
@@ -76,21 +71,29 @@ typedef struct {
   uint8_t seconds, minutes, hours;
   uint8_t packet_id;
 } __attribute__((packed)) zenith_reduced_packet_t;
+//-------------------------------------------------
+
 typedef union {
   obsat_packet_t obsat_pkt;
   zenith_full_packet_t zen_full_pkt;
   zenith_reduced_packet_t zen_reduced_pkt;
   byte raw[RADIO_DATA_INPUT_BUFFER_SIZE];
 } last_packet_t;
+
+//Define um tipo que é um ponteiro pra uma função de parse
 typedef parse_error_t (* radio_parse_function_t) (last_packet_t *);
+
 typedef enum {OBSAT, ZENITH} net_t;
 typedef enum {SINGLE_BLINK, DOUBLE_BLINK, TRIPLE_BLINK} n_blinks_t;
+
 typedef struct {
     radio_com_protocol_t comunication_protocol;
     radio_parse_function_t parse_function;
     net_t radio_net;
     n_blinks_t led_blinks;
 } radio_configuration_state_t;
+
+//NÃO ENTENDI
 static const char * const radio_com_protocol_type[] = {
   [FSK] = "FSK",
   [LoRa] = "LoRa"
@@ -104,20 +107,23 @@ typedef union {
 volatile radio_configuration_state_t g_selected_state;
 volatile last_packet_t * g_pxLastPacket;
 
+//--------------Porque fez tudo isso se não vai usar?-------------------
 volatile unsigned int g_interruptCounter;
 hw_timer_t * timer = nullptr;
 portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
 portMUX_TYPE parseMux = portMUX_INITIALIZER_UNLOCKED;
+//----------------------------------------------------------------------
 
 void blink_RGB_LED (void * pvParameters) {
   for( ; ; ) {
-  for (int i = 0; i <= g_selected_state.led_blinks; i++) {
-    digitalWrite(GPIO_RGB_LED_B, HIGH);
-    vTaskDelay(750 / portTICK_PERIOD_MS);
-    digitalWrite(GPIO_RGB_LED_B, LOW);
-    vTaskDelay(500 / portTICK_PERIOD_MS);
+    for (int i = 0; i <= g_selected_state.led_blinks; i++) {
+      digitalWrite(GPIO_RGB_LED_B, HIGH);
+      vTaskDelay(750 / portTICK_PERIOD_MS);
+      digitalWrite(GPIO_RGB_LED_B, LOW);
+      vTaskDelay(500 / portTICK_PERIOD_MS);
   }
 
+// ???????????????????????????????????
   #ifdef ISDEBUG
   Serial.println("%d PULSOS DO LED!\n", (g_selected_state.led_blinks + 1));
   #endif
@@ -125,6 +131,7 @@ void blink_RGB_LED (void * pvParameters) {
   }
 }
 
+//------------------Envia as informações do pacote por serial-------------------------
 parse_error_t parse_obsat (last_packet_t * last_pkt) {
   //UART data transmission
   Serial.write(last_pkt->obsat_pkt.id);
@@ -136,15 +143,8 @@ parse_error_t parse_obsat (last_packet_t * last_pkt) {
   Serial.write(last_pkt->obsat_pkt.data, OBC_BLOB_SIZE);
   Serial.print("\n");
   #endif
-  
-  //SD data transmission
-  appendFile(SD, "/data.txt", (char *) "Pacote, Dados\n");
-  appendFile(SD, "/data.txt", (char *) ((String)last_pkt->obsat_pkt.id + "," + (String)/*...*/ + "\n").c_str());
-  #ifdef ISPRETTYDEBUG
-  appendFile(SD, "/data.txt", (char *) ("Pacote: " + (String)last_pkt->obsat_pkt.id + "\n").c_str());
-  appendFile(SD, "/data.txt", "Dados: " + (String)last_pkt->obsat_pkt.data + "\n");
-  #endif
 
+  //Porque retorna algo se não recebe em nenhum lugar?
   return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
 
@@ -182,18 +182,8 @@ parse_error_t parse_zenith_reduced (last_packet_t * last_pkt) {
   Serial.println("Carga da Bateria: " + (String)last_pkt->zen_reduced_pkt.batt_charge + "\n");
   Serial.println("Horário: Segundos: " + (String)last_pkt->zen_reduced_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_reduced_pkt.minutes + ". Horas: " + (String)last_pkt->zen_reduced_pkt.hours + "\n\n");
   #endif
-  
-  //SD data transmission
-  appendFile(SD, "/data.txt", (char *) "Pacote, Latitude, Longitude, Altitude, Pressão Primária, Carga da Bateria, Horário: Segundos, Horário: Minutos, Horário: Horas\n");
-  appendFile(SD, "/data.txt", (char *) ((String)last_pkt->zen_reduced_pkt.packet_id + "," + (String)last_pkt->zen_reduced_pkt.latitude + "," + (String)last_pkt->zen_reduced_pkt.longitude + "," + (String)last_pkt->zen_reduced_pkt.altitude + "," + (String)last_pkt->zen_reduced_pkt.preassure_primary + "," + (String)last_pkt->zen_reduced_pkt.batt_charge + "," + (String)last_pkt->zen_reduced_pkt.seconds + "," + (String)last_pkt->zen_reduced_pkt.minutes + "," + (String)last_pkt->zen_reduced_pkt.hours + "\n").c_str());
-  #ifdef ISPRETTYDEBUG
-  appendFile(SD, "/data.txt", (char *) ("Pacote: " + (String)last_pkt->zen_reduced_pkt.packet_id + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Latitude: " + (String)last_pkt->zen_reduced_pkt.latitude + ". Longitude: " + (String)last_pkt->zen_reduced_pkt.longitude + ". Altitude: " + (String)last_pkt->zen_reduced_pkt.altitude + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Pressão Primária: " + (String)last_pkt->zen_reduced_pkt.preassure_primary + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Carga da Bateria: " + (String)last_pkt->zen_reduced_pkt.batt_charge + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Horário: Segundos: " + (String)last_pkt->zen_reduced_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_reduced_pkt.minutes + ". Horas: " + (String)last_pkt->zen_reduced_pkt.hours + "\n\n\r").c_str());
-  #endif
 
+  //Porque retorna algo se não recebe em nenhum lugar?
   return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
 
@@ -262,25 +252,15 @@ parse_error_t parse_zenith_full (last_packet_t * last_pkt) {
   Serial.println("Carga da Bateria: " + (String)last_pkt->zen_full_pkt.batt_charge + "\n");
   Serial.println("Horário: Segundos: " + (String)last_pkt->zen_full_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_full_pkt.minutes + ". Horas: " + (String)last_pkt->zen_full_pkt.hours + "\n\n");
   #endif
-  
-  //SD data transmission
-  appendFile(SD, "/data.txt", (char *) "Pacote, Latitude, Longitude, Altitude, Pressão Primária, Temperaturas: Temp1, Temperaturas: Temp2, Temperaturas: Temp3, Tensões: V1, Tensões: V2, Tensões: V3, Correntes: i1, Correntes: i2, Correntes: i3, Carga da Bateria, Horário: Segundos, Horário: Minutos, Horário: Horas\n");
-  appendFile(SD, "/data.txt", (char *) ((String)last_pkt->zen_reduced_pkt.packet_id + "," + (String)last_pkt->zen_reduced_pkt.latitude + "," + (String)last_pkt->zen_reduced_pkt.longitude + "," + (String)last_pkt->zen_reduced_pkt.altitude + "," + (String)last_pkt->zen_reduced_pkt.preassure_primary + "," + (String)last_pkt->zen_reduced_pkt.batt_charge + "," + (String)last_pkt->zen_reduced_pkt.seconds + "," + (String)last_pkt->zen_reduced_pkt.minutes + "," + (String)last_pkt->zen_reduced_pkt.hours + "\n").c_str());
-  #ifdef ISPRETTYDEBUG
-  appendFile(SD, "/data.txt", (char *) ("Pacote: " + (String)last_pkt->zen_full_pkt.packet_id + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Latitude: " + (String)last_pkt->zen_full_pkt.latitude + ". Longitude: " + (String)last_pkt->zen_full_pkt.longitude + ". Altitude: " + (String)last_pkt->zen_full_pkt.altitude + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Pressão Primária: " + (String)last_pkt->zen_full_pkt.preassure_primary + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Temperaturas: Temp1: " + (String)last_pkt->zen_full_pkt.temp_1 + ". Temp2: " + (String)last_pkt->zen_full_pkt.temp_2 + ". Temp3: " + (String)last_pkt->zen_full_pkt.temp_3 + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Tensões: V1: " + (String)last_pkt->zen_full_pkt.v_1 + ". V2: " + (String)last_pkt->zen_full_pkt.v_2 + ". V3: " + (String)last_pkt->zen_full_pkt.v_3 + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Correntes: i1: " + (String)last_pkt->zen_full_pkt.i_1 + ". i2: " + (String)last_pkt->zen_full_pkt.i_2 + ". i3: " + (String)last_pkt->zen_full_pkt.i_3 + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Carga da Bateria: " + (String)last_pkt->zen_full_pkt.batt_charge + "\n").c_str());
-  appendFile(SD, "/data.txt", (char *) ("Horário: Segundos: " + (String)last_pkt->zen_full_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_full_pkt.minutes + ". Horas: " + (String)last_pkt->zen_full_pkt.hours + "\n\n\r").c_str());
-  #endif
 
+  //Porque retorna algo se não recebe em nenhum lugar?
   return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
+//------------------------------------------------------------------------------------
+
 
 //**
+//Recebe o ultimo pacote e inicia alguma função de parse presente no pacote
 void parse_functions_selector(void * pvParameters) {
   last_packet_t * last_pkt;
 
@@ -294,6 +274,7 @@ void parse_functions_selector(void * pvParameters) {
   }
 }
 
+//Envia dados do ultimo pacote para fila
 void parse_radio (void * pvParameters) {
   for( ; ; ) {
     if (xNewRadioDataQueue != 0) {
@@ -307,7 +288,9 @@ void parse_radio (void * pvParameters) {
 //**
 
 void setup() {
+  // Não vamos utilizar mais FSK, somente LoRa
   char UART_configuration_instruction[UART_INSTRUCTION_BUFFER_SIZE]; //Instrução da forma ("PROTOCOLO_DO_RÁDIO"[0]+"NET")\0 - Ex: "FZ\0";
+  // parse_function inicia as funções: parse_obsat, parse_zenith_reduced e parse_zenith_full
   radio_configuration_state_t radio_state[3] = {{.comunication_protocol = FSK, .parse_function = parse_obsat, .radio_net = OBSAT, .led_blinks = SINGLE_BLINK},
                                                 {.comunication_protocol = LoRa, .parse_function = parse_zenith_reduced, .radio_net = ZENITH, .led_blinks = DOUBLE_BLINK},
                                                 {.comunication_protocol = FSK, .parse_function = parse_zenith_full, .radio_net = ZENITH, .led_blinks = TRIPLE_BLINK}};
@@ -317,42 +300,6 @@ void setup() {
   
   //Iniciar o Rádio
   //Serial.println("Rádio Iniciado!\n");
-
-  if(!SD.begin(SD_CARD_CS)) {
-    SD_CARD_error_handler((SD_CARD_error_t) SD_CARD_ERROR_CODES::SD_CARD_NOT_MOUNTED);
-  }
-  if (!ignore_SD_CARD) {
-    uint8_t cardType = SD.cardType();
-    if(cardType == CARD_NONE) {
-      SD_CARD_error_handler((SD_CARD_error_t) SD_CARD_ERROR_CODES::SD_CARD_TYPE_NONE);
-    }
-    if (!ignore_SD_CARD) {
-      Serial.println("Iniciando cartão SD...s\n");
-      if(!SD.begin(SD_CARD_CS)) {
-        SD_CARD_error_handler((SD_CARD_error_t) SD_CARD_ERROR_CODES::SD_CARD_BEGIN_FAIL);
-      }
-      if (!ignore_SD_CARD) {
-        Serial.println("Cartão SD corretamente configurado!\n");
-      } else {
-        Serial.println("Cartão SD não configurado! Envio de dados da Alcântara exclusivamente via UART!\n");
-      }
-    } else {
-      Serial.println("Cartão SD não configurado! Envio de dados da Alcântara exclusivamente via UART!\n");
-    }
-  } else {
-    Serial.println("Cartão SD não configurado! Envio de dados da Alcântara exclusivamente via UART!\n");
-  }
-
-  if (!ignore_SD_CARD) {
-    File file = SD.open("data.txt");
-    if (!file) {
-      Serial.println("O arquivo 'data.txt' não existe. Criando arquivo...!\n");
-      writeFile(SD, "data.txt", "Dados Recebidos da Sonda:\r\n");
-    } else {
-      Serial.println("O arquivo 'data.txt' já existe!\n");
-    }
-    file.close();
-  }
 
   //pinMode(GPIO_BTN_SELECT, INPUT);
   //pinMode(GPIO_BTN_ENTER, INPUT);
@@ -365,7 +312,7 @@ void setup() {
   ledcAttachPin(GPIO_BUZZER, BUZZER_PWM_CHANNEL);
   Serial.println("Canal PWM do buzzer configurado!\n");
 
-  //Recebe configuração via UART //CONSERTAR AQUI COM DELAY ANTES DO IF E PRINTS DE LINHA COM O PASSO A PASSO PARA AJUDAR A PESSOA QUE VAI INSERIR A INSTRUÇÃO
+  //Recebe configuração via UART ["FO", "FZ" ou "L"]//CONSERTAR AQUI COM DELAY ANTES DO IF E PRINTS DE LINHA COM O PASSO A PASSO PARA AJUDAR A PESSOA QUE VAI INSERIR A INSTRUÇÃO
   if (Serial.available() > 0) {
     Serial.readBytes(UART_configuration_instruction, UART_INSTRUCTION_BUFFER_SIZE);
     Serial.println("Instruções de configuração recebidas com sucesso!\n");
