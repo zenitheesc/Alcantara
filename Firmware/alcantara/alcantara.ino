@@ -8,9 +8,6 @@ TaskHandle_t ParseFunctionsTaskHandle;
 TaskHandle_t RadioDataTaskHandle;
 QueueHandle_t xNewRadioDataQueue;
 
-#include "FS.h"
-#include "SPI.h"
-
 enum class PARSE_ERROR_CODES {
   PARSE_SUCCESS,
   PARSE_DATA_NOT_APPENDED,
@@ -102,10 +99,10 @@ volatile radio_configuration_state_t g_selected_state;
 volatile last_packet_t * g_pxLastPacket;
 
 //--------------Porque fez tudo isso se não vai usar?-------------------
-volatile unsigned int g_interruptCounter;
-hw_timer_t * timer = nullptr;
-portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-portMUX_TYPE parseMux = portMUX_INITIALIZER_UNLOCKED;
+// volatile unsigned int g_interruptCounter;
+// hw_timer_t * timer = nullptr;
+// portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
+// portMUX_TYPE parseMux = portMUX_INITIALIZER_UNLOCKED;
 //----------------------------------------------------------------------
 
 void blink_RGB_LED (void * pvParameters) {
@@ -116,6 +113,7 @@ void blink_RGB_LED (void * pvParameters) {
       digitalWrite(GPIO_RGB_LED_B, LOW);
       vTaskDelay(500 / portTICK_PERIOD_MS);
   }
+  
   #ifdef ISDEBUG
   Serial.println("%d PULSOS DO LED!\n", (g_selected_state.led_blinks + 1));
   #endif
