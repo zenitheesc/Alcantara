@@ -105,9 +105,6 @@ volatile radio_configuration_state_t g_selected_state;
 volatile last_packet_t * g_pxLastPacket;
 
 volatile unsigned int g_interruptCounter;
-hw_timer_t * timer = nullptr;
-portMUX_TYPE timerMux = portMUX_INITIALIZER_UNLOCKED;
-portMUX_TYPE parseMux = portMUX_INITIALIZER_UNLOCKED;
 
 void blink_RGB_LED (void * pvParameters) {
   for( ; ; ) {
@@ -126,6 +123,10 @@ void blink_RGB_LED (void * pvParameters) {
 }
 
 parse_error_t parse_obsat (last_packet_t * last_pkt) {
+
+  String data_message = ("Pacote: " + (String)last_pkt->obsat_pkt.id + "\n" +
+                         "Dados: " + (String) String(last_pkt->obsat_pkt.data, HEX) + "\n");
+
   //UART data transmission
   Serial.write(last_pkt->obsat_pkt.id);
   Serial.print(";");
@@ -136,13 +137,13 @@ parse_error_t parse_obsat (last_packet_t * last_pkt) {
   Serial.write(last_pkt->obsat_pkt.data, OBC_BLOB_SIZE);
   Serial.print("\n");
   #endif
-  
+
   //SD data transmission
   appendFile(SD, "/data.txt", (char *) "Pacote, Dados\n");
-  appendFile(SD, "/data.txt", (char *) ((String)last_pkt->obsat_pkt.id + "," + (String)/*...*/ + "\n").c_str());
+  appendFile(SD, "/data.txt", (char *) ((String)last_pkt->obsat_pkt.id + "," + (String) String(last_pkt->obsat_pkt.data, HEX) + "\n").c_str());
   #ifdef ISPRETTYDEBUG
   appendFile(SD, "/data.txt", (char *) ("Pacote: " + (String)last_pkt->obsat_pkt.id + "\n").c_str());
-  appendFile(SD, "/data.txt", "Dados: " + (String)last_pkt->obsat_pkt.data + "\n");
+  appendFile(SD, "/data.txt", (char *) ("Dados: " + (String)last_pkt->obsat_pkt.data + "\n").c_str());
   #endif
 
   return PARSE_ERROR_CODES::PARSE_SUCCESS;
@@ -151,6 +152,12 @@ parse_error_t parse_obsat (last_packet_t * last_pkt) {
 parse_error_t parse_zenith_reduced (last_packet_t * last_pkt) {
   binary_float_t binary_float;
   
+  String data_message = ("Pacote: " + (String)last_pkt->zen_reduced_pkt.packet_id + "\n" + 
+                         "Latitude: " + (String)last_pkt->zen_reduced_pkt.latitude + ". Longitude: " + (String)last_pkt->zen_reduced_pkt.longitude + ". Altitude: " + (String)last_pkt->zen_reduced_pkt.altitude + "\n" + 
+                         "Pressão Primária: " + (String)last_pkt->zen_reduced_pkt.preassure_primary + "\n" + 
+                         "Carga da Bateria: " + (String)last_pkt->zen_reduced_pkt.batt_charge + "\n" +
+                         "Horário: Segundos: " + (String)last_pkt->zen_reduced_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_reduced_pkt.minutes + ". Horas: " + (String)last_pkt->zen_reduced_pkt.hours + "\n\n");
+
   //UART data transmission
   Serial.write(last_pkt->zen_reduced_pkt.packet_id);
   Serial.print(";");
@@ -200,6 +207,15 @@ parse_error_t parse_zenith_reduced (last_packet_t * last_pkt) {
 parse_error_t parse_zenith_full (last_packet_t * last_pkt) {
   binary_float_t binary_float;
   
+  String data_message = ("Pacote: " + (String)last_pkt->zen_full_pkt.packet_id + "\n" + 
+                         "Latitude: " + (String)last_pkt->zen_full_pkt.latitude + ". Longitude: " + (String)last_pkt->zen_full_pkt.longitude + ". Altitude: " + (String)last_pkt->zen_full_pkt.altitude + "\n" +
+                         "Pressão Primária: " + (String)last_pkt->zen_full_pkt.preassure_primary + "\n" +
+                         "Temperaturas: Temp1: " + (String)last_pkt->zen_full_pkt.temp_1 + ". Temp2: " + (String)last_pkt->zen_full_pkt.temp_2 + ". Temp3: " + (String)last_pkt->zen_full_pkt.temp_3 + "\n" +
+                         "Tensões: V1: " + (String)last_pkt->zen_full_pkt.v_1 + ". V2: " + (String)last_pkt->zen_full_pkt.v_2 + ". V3: " + (String)last_pkt->zen_full_pkt.v_3 + "\n" +
+                         "Correntes: i1: " + (String)last_pkt->zen_full_pkt.i_1 + ". i2: " + (String)last_pkt->zen_full_pkt.i_2 + ". i3: " + (String)last_pkt->zen_full_pkt.i_3 + "\n" +
+                         "Carga da Bateria: " + (String)last_pkt->zen_full_pkt.batt_charge + "\n" +
+                         "Horário: Segundos: " + (String)last_pkt->zen_full_pkt.seconds + ". Minutos: " + (String)last_pkt->zen_full_pkt.minutes + ". Horas: " + (String)last_pkt->zen_full_pkt.hours + "\n\n");
+
   //UART data transmission
   Serial.write(last_pkt->zen_full_pkt.packet_id);
   Serial.print(";");
@@ -280,20 +296,20 @@ parse_error_t parse_zenith_full (last_packet_t * last_pkt) {
   return PARSE_ERROR_CODES::PARSE_SUCCESS;
 }
 
-//**
+
 void parse_functions_selector(void * pvParameters) {
   last_packet_t * last_pkt;
 
   for( ; ; ) {
     if(xNewRadioDataQueue != NULL) {
       if (xQueueReceive(xNewRadioDataQueue, &last_pkt, (TickType_t) 10) == pdPASS) {
-        Serial.println("The message was received from the queue!\n\n");   
+        Serial.println("A mensagem foi recebida da fila!\n\n");   
       }
     }
     g_selected_state.parse_function(last_pkt);
   }
 }
-
+//*
 void parse_radio (void * pvParameters) {
   for( ; ; ) {
     if (xNewRadioDataQueue != 0) {
@@ -400,7 +416,7 @@ void setup() {
     }
   }
   Serial.println("Configuração do rádio bem sucedida!\n");
-//**
+
   UBaseType_t uxHighWaterMarkRGBLED = 100 * configMINIMAL_STACK_SIZE;
 
   if ((xTaskCreate(blink_RGB_LED, "Blink RGB LED", uxHighWaterMarkRGBLED, NULL, 2, &RGBLEDTaskHandle)) == pdPASS) {
@@ -422,10 +438,11 @@ void setup() {
   xNewRadioDataQueue = xQueueCreate(10, sizeof(last_packet_t *));
 
   if(xNewRadioDataQueue == NULL) {
-    Serial.println("Queue was not created!\n");
-    // Dar um jeito de matar o código, sem a fila, não há como continuar (ou implementar um backup que processa diretamente as coisas sem a fila)
+    Serial.println("A fila não foi criada!\n");
+    Serial.println("Encerrando...!\n");
+    exit(0);
   }
-//**
+
   //attachInterrupt(digitalPinToInterrupt(GPIO_RADIO_INTERRUPT_PIN), parse_handler, ?FALLING?); *******************
 
   buzz();
@@ -440,10 +457,6 @@ void buzz() {
   delay(BUZZER_DURATION);
   ledcWriteTone(BUZZER_PWM_CHANNEL, NO_TONE_FREQUENCY);
   
-  //digitalWrite(GPIO_BUZZER, HIGH);
-  //delay(500);
-  //digitalWrite(GPIO_BUZZER, LOW);
-
   #ifdef ISDEBUG
   Serial.println("BIP!\n");
   #endif
