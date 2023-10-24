@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/ian/Documentos/Alcantara_ESP/build/CMakeFiles/bootloader
+/home/ian/Documentos/Alcantara_ESP/build/CMakeFiles/bootloader.rule
+/home/ian/Documentos/Alcantara_ESP/build/CMakeFiles/bootloader-complete.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/ian/Documentos/Alcantara_ESP/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
